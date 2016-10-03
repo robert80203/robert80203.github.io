@@ -158,7 +158,7 @@ $(document).ready(function() {
 	 
 	/*Screen resize============================================*/
 	$(window).resize(function() {
-		
+
 		if(screen.height>=800)
 		{
 			$('#iframeArt')[0].setAttribute("height", 400);
@@ -166,11 +166,7 @@ $(document).ready(function() {
 			$('#iframeTec')[0].setAttribute("height", 400);
 			$('#iframeSci')[0].setAttribute("height", 400);
 			$('#iframeMath')[0].setAttribute("height", 400);
-			$('#emb_art')[0].height="650";
-			$('#emb_eng')[0].height="650";
-			$('#emb_tec')[0].height="650";
-			$('#emb_sci')[0].height="650";
-			$('#emb_math')[0].height="650";
+			
 		}
 		else if(screen.height<800 && screen.height>=650)
 		{
@@ -179,11 +175,7 @@ $(document).ready(function() {
 			$('#iframeTec')[0].setAttribute("height", 300);
 			$('#iframeSci')[0].setAttribute("height", 300);
 			$('#iframeMath')[0].setAttribute("height", 300);
-			$('#emb_art')[0].height="350";
-			$('#emb_eng')[0].height="350";
-			$('#emb_tec')[0].height="350";
-			$('#emb_sci')[0].height="350";
-			$('#emb_math')[0].height="350";
+
 		}
 		else if(screen.height<650)
 		{
@@ -192,11 +184,7 @@ $(document).ready(function() {
 			$('#iframeTec')[0].setAttribute("height", 200);
 			$('#iframeSci')[0].setAttribute("height", 200);
 			$('#iframeMath')[0].setAttribute("height", 200);
-			$('#emb_art')[0].height="150";
-			$('#emb_eng')[0].height="150";
-			$('#emb_tec')[0].height="150";
-			$('#emb_sci')[0].height="150";
-			$('#emb_math')[0].height="150";
+
 		}
 			
 	});
