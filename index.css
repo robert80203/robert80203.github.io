@@ -1,0 +1,191 @@
+body {
+	background-image: url(poster.jpg);
+    background-repeat: no-repeat;
+	background-size:100% 1600px;
+	background-position: 50% 0px; 
+}
+
+.mobile_btn{
+	width:100px;
+	height:50px;
+	background-image: url(menu.png);
+	background-position: 0px 0px; 
+	background-repeat: no-repeat;
+	background-size:75px 50px;
+}
+
+.news{
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	border-style: solid;
+	border-color: #A52A2A;
+	border-width: 1px;
+	margin-top:2%;
+	
+}
+
+.news_title{
+	background-color:#FFE4C4;
+	display: inline-block;
+	width: 748px;
+	border-style: solid;
+	border-color: #A52A2A;
+	border-width: 0px 0px 1px 0px;
+	text-align:left;
+	font-family:fantasy;
+	padding:5px;
+}
+
+
+.news_info{
+	
+	font-family:arial;
+	padding:5px;
+}
+.footer_css {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.footer_br{
+	
+}
+
+.header_css{
+	position:absolute;
+	top:0px;	
+	z-index:9999;
+	width:100%;
+}
+
+.nav_self_css{
+	font-family: 'Times New Roman';
+	margin-left:15%;
+	
+	
+}
+/*Menu font color*/
+.nav_self_css a {
+	color:	#FFD700;
+	font-size:24px;
+	
+}
+
+/*Change sub menu background color*/
+.nav_self_css ul{
+	background-color:#000088;
+	
+}
+/*Sub menu font color*/
+.nav_self_css ul li a{
+	color:	#FFD700;
+	/*color : #33CCFF;*/
+}
+
+.navbar-brand {
+	font-size: 24px;
+	
+}
+.nav_self_css ul li a:hover{
+	color:	#000000;
+}
+
+.dropdown:focus{
+	color: black;
+}
+
+/**********special effect************/
+nav.fill ul li a {
+  transition: all 1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: black;
+  z-index: 1;
+  background-color:#009FCC;/*Change hover background color*/
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+
+/***************************************/
+
+/*******Menu bar auto open*****/
+
+
+@keyframes downanime {
+    from {
+		background-color:none;
+		}
+    to {
+		background-color:#000088;
+	}
+}
+.scrolldown_css{
+	animation: downanime 1.0s forwards;
+}
+
+@keyframes upanime {
+    from {background-color:#000088;}
+    to {background-color:none;}
+}
+.scrollup_css{
+	animation-name: upanime;
+	animation-duration: 1s;
+}
+
+.dropdown:hover .dropdown-menu {
+	
+	/*animation-name: example;
+	animation-duration: 2s;*/
+	display:block;
+}
+
+
+/*****************************/
+
+
+
+/*Change menu background*/
+.navbar-container {
+	padding: 10px 0 10px 0;
+	background-color:none;
+	width:100%;
+}
+
+
+.navbar.navbar-fixed-top.fixed-theme {
+	background-color: #222;
+	border-color: #080808;
+	box-shadow: 0 0 5px rgba(0,0,0,.8);
+	
+}
+
+.navbar-brand.fixed-theme {
+	font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+	padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+	transition: 0.8s;
+	-webkit-transition:  0.8s;
+}

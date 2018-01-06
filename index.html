@@ -1,90 +1,106 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <link rel="stylesheet" href="cover_page.css">
-	  <link rel="icon" href="physicico.ico">
-	  <title>高中物理動手學</title>
-	  <meta name="author" content="Robert Lee">
-	  <meta name="description" content="NSYSU Physics web">
-	  <meta name="keywords" content="NSYSU,Physics">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Self-defined-->
+		<link href="index.css" rel="stylesheet">
+		<!--<script src="nav.js"></script><!--navbar-fixed-top-->
+		<script src="index.js"></script>
+		
 	</head>
-	<body style="background-image:url(Background-Images/bg.jpg);">
-	
-		
-		<div>			
-			<img class="main-nsysu" src="nsysu.png"/>
-			<img class="main-nsysu" src="kejibu.png"/>
-			<span class="tophead-style">高中物理動手學</span>
-			<span></span>
-		</div>
-		
-		</br>
-		</br>
+	<body>
+		<nav id="header" class="navbar header_css fill">
+			<div id="header-container" class="container navbar-container" >
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed mobile_btn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div> 
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav_self_css nav navbar-nav">
+						<li><a href="#" onclick="go_home();">Home</a>
+							
+						</li>
+						<li class="dropdown" ><a href="#">Conference Information</a>
+							<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#">About the Symposium</a></li>
+								<li><a href="#">Conference Chair</a></li>
+								<li><a href="#">Organizing Committee</a></li>
+							</ul>
+						</li><!-- data-toggle="dropdown" for click-->
+						<li class="dropdown"><a  href="#">Program</a>
+							<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#" onclick="go_agenda();">Symposium Agenda</a></li>
+								<li><a href="#">Keynote Speakers</a></li>
+								<li><a href="#">Conference Proceeding</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a  href="#">Venue and Travel</a>
+							<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#">Venue</a></li>
+								<li><a href="#">Accommodation</a></li>
+								<li><a href="#">Tour</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#">Photos</a>
+						</li>
+						<li class="dropdown"><a href="#">Registration</a>
+						</li>
+						<li class="dropdown"><a href="#">Contact Us</a>
+						</li>			  
+					</ul>
 
-		<div style="text-align:center;">
-			<button type="button" style="background-image:url(freefall.jpg);" class="btn-style" data-toggle="collapse" data-target="#btn1">
-				<div style="text-align:center;">
-					運動的軌跡-自由落體運動
+				</div><!-- /.nav-collapse -->
+			</div><!-- /.container -->
+		</nav><!-- /.navbar -->
+		<div class="container-fluid" style="margin-top:450px;">
+			<div class="row">
+				<div id="left_parent" style="text-align:center">
+					<iframe class="left_ele" width="750px" height="450px" src="intro_video.mp4" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe>
 				</div>
-			</button>
-			<div id="btn1" class="collapse" >
-				<div class="inner-collapse">
-					<div class="inner-text">
-						自由落體運動是指只受重力作用（不存在空氣阻力）的均勻加速度運動過程。
-						</br>
-						運動過程中重力與動能之和遵守機械能守恆定律
-						</br>
-						在地球上相同位置與相同高度，自由落體的加速度相同
-						</br>
-						<a href="#">詳細介紹</a>
+			
+				<!--<div class="col-md-4" style="text-align:center"></div>-->
+				<div id="left_parent2" ><!--class="col-md-12"-->
+					<div class="news left_ele">
+						<span class="news_title">News</span>
+						<div class="news_info">
+							<p>[2018/01/04] Test news</p>
+						</div>
+						<div class="news_info">
+							<p>[2018/01/04] Test news2</p>
+						</div>
+						<div class="news_info">
+							<p>[2018/01/04] Test news3</p>
+						</div>
+						<div class="news_info">
+							<p>[2018/01/04] Test news4</p>
+						</div>
 					</div>
+						
 				</div>
 			</div>
-			</br>
-			<button type="button" style="background-image:url(motionlaw.jpg);" class="btn-style" data-toggle="collapse" data-target="#btn2">
-				<div style="text-align:center;">
-					牛頓運動定律
-				</div>
-			</button>
-			<div id="btn2" class="collapse">
-				<div class="inner-collapse">
-					<div class="inner-text">
-						牛頓運動定律（Newton's laws of motion）描述物體與力之間的關係
-						</br>
-						被譽為是經典力學的基礎
-						</br>
-						這定律是英國物理泰斗艾薩克·牛頓所提出的三條運動定律的總稱
-						</br>
-						<a href="#">詳細介紹</a>
-					</div>
-				</div>
+			<div class="footer_css">
+				<img src="footer.png" style="width:100%;"></img>
+				<div style="position:absolute;bottom:40px;right:16px;">Copyright c National Sun Yat-sen University All rights reserved.</div>
+				<div style="position:absolute;bottom:24px;right:16px;">Address: No. 70, Lienhai Rd., Kaohsiung 80424 Taiwan, R.O.C.</div>
+				<div style="position:absolute;bottom:8px;right:16px;">Tel: +886-7- 5252000 x 2614</div>
 			</div>
-			</br>
-			<button type="button" style="background-image:url(unigravitation.jpg);" class="btn-style" data-toggle="collapse" data-target="#btn3">
-				<div style="text-align:center;">
-					克普勒、圓周運動、萬有引力
-				</div>
-			</button>
-			<div id="btn3" class="collapse">
-				<div class="inner-collapse">
-					<div class="inner-text">
-						任意兩個質點由通過連心線方向上的力相互吸引。	
-						</br>
-						該吸引力的大小與它們的質量乘積成正比，與它們距離的平方成反比
-						</br>
-						與兩物體的化學本質或物理狀態以及中介物質無關。
-						</br>
-						<a href="#">詳細介紹</a>
-					</div>
-				</div>
-			</div>
+	
+			<!--<span>Copyright c National Sun Yat-sen University All rights reserved.</span>
+			<span>Address: No. 70, Lienhai Rd., Kaohsiung 80424 Taiwan, R.O.C.</span>
+			<p>Tel: +886-7- 5252000 x 2614</p>-->
 		</div>
-		<footer style="margin-top:15%;">
-			<p>2017 NSYSU Physics Web</p>
-		</footer>
+
+
+		
 	</body>
 </html>
