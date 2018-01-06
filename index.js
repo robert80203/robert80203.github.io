@@ -82,7 +82,7 @@ function go_agenda(){
 	
 	var parent = $('#left_parent');
 	$('.left_ele').remove();
-	var newele = '<iframe class="left_ele" style="margin-left:5%;"width="1000px" height="1000px" src="agenda.jpg" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe>';
+	var newele = '<iframe class="left_ele" style="margin-left:5%;"width="1000px" height="1000px" src="agenda.JPG" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe>';
 	parent.append(newele);
 	
 }
