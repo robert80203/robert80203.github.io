@@ -67,19 +67,21 @@ body {
 }
 /*Menu font color*/
 .nav_self_css a {
-	color:	#FFD700;
+	color:	#000000;
 	font-size:24px;
+	font-weight:bold;
 	
 }
 
 /*Change sub menu background color*/
 .nav_self_css ul{
-	background-color:#000088;
+	background-color:#77DDFF;
 	
 }
 /*Sub menu font color*/
 .nav_self_css ul li a{
-	color:	#FFD700;
+	color:	#000000;
+	font-weight:bold;
 	/*color : #33CCFF;*/
 }
 
@@ -87,8 +89,9 @@ body {
 	font-size: 24px;
 	
 }
+
 .nav_self_css ul li a:hover{
-	color:	#000000;
+	color:	#880000;
 }
 
 .dropdown:focus{
@@ -105,8 +108,9 @@ nav.fill ul li a:after {
   margin: 0;
   opacity: 0;
 }
+/*Change sub menu hover color*/
 nav.fill ul li a:hover {
-  color: black;
+  color: #E63F00;
   z-index: 1;
   background-color:#009FCC;/*Change hover background color*/
 }
@@ -130,7 +134,7 @@ nav.fill ul li a:hover:after {
 		background-color:none;
 		}
     to {
-		background-color:#000088;
+		background-color:#77DDFF;
 	}
 }
 .scrolldown_css{
@@ -138,7 +142,7 @@ nav.fill ul li a:hover:after {
 }
 
 @keyframes upanime {
-    from {background-color:#000088;}
+    from {background-color:#77DDFF;}
     to {background-color:none;}
 }
 .scrollup_css{
