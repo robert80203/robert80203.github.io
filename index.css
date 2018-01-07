@@ -1,7 +1,7 @@
 body {
 	background-image: url(poster2.jpg);
     background-repeat: no-repeat;
-	background-size:100% 1600px;
+	background-size:100% 1300px;
 	background-position: 0 0; 
 }
 
@@ -117,7 +117,7 @@ body {
 /*Menu font color*/
 .nav_self_css a {
 	color:	#000000;
-	font-size:24px;
+	font-size:20px;
 	font-weight:bold;
 	
 }
