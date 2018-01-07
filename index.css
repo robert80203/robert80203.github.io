@@ -1,5 +1,5 @@
 body {
-	background-image: url(poster.jpg);
+	background-image: url(poster2.jpg);
     background-repeat: no-repeat;
 	background-size:100% 1600px;
 	background-position: 50% 0px; 
@@ -58,11 +58,26 @@ body {
 	z-index:9999;
 	width:100%;
 }
+/***********Let menu center*******/
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
 
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+/***********************************/
+
+
+/*For menu bar css*/
 .nav_self_css{
 	font-family: 'Times New Roman';
-	margin-left:15%;
-	
+	/*margin-left:15%;*/
+	width:100%;
 	
 }
 /*Menu font color*/
@@ -132,6 +147,7 @@ nav.fill ul li a:hover:after {
 @keyframes downanime {
     from {
 		background-color:none;
+		
 		}
     to {
 		background-color:#77DDFF;
@@ -164,7 +180,7 @@ nav.fill ul li a:hover:after {
 
 /*Change menu background*/
 .navbar-container {
-	padding: 10px 0 10px 0;
+	padding: 0px 20px 0px 20px;/*up right bottom left*/
 	background-color:none;
 	width:100%;
 }

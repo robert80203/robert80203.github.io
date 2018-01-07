@@ -29,11 +29,14 @@ $(document).ready(function() {
 	});*/
 });
 
+var top_position = 350;
+var first = 0;
+
 var elementMove=function () {
 	/*if(document.getElementById('#allBTN')) */{
 		// 取得其 top 值
 		var $allBTN = $('#header'),
-			_top = $allBTN.offset().top;
+			_top = $allBTN.offset().top ;
 
 		// 當網頁捲軸捲動時
 		var $win = $(window).scroll(function () {
@@ -55,23 +58,23 @@ var elementMove=function () {
 				// 還原座標系統為 absolute
 				$allBTN.css({
 					position: 'absolute',
-					top: 0
+					top: top_position
 				});
 				
 				
 			}
-			
-			if($win.scrollTop()>1)
+
+			if($win.scrollTop()>=top_position)
 			{
 				$allBTN.removeClass('scrollup_css');
 				$allBTN.addClass('scrolldown_css');
-			}
-				
-			else
+			}	
+			else if($win.scrollTop()==0)
 			{
 				$allBTN.removeClass('scrolldown_css');
 				$allBTN.addClass('scrollup_css');
 			}
+
 				
 				
 		});
@@ -94,7 +97,7 @@ function go_home(){
 	var newele = '<iframe class="left_ele" width="750px" height="450px" src="intro_video.mp4" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe>';
 	var newele2 = `
 		<div class="news left_ele">
-			<span class="news_title">News</span>
+			<span class="news_title">News & Events</span>
 			<div class="news_info">
 				<p>[2018/01/04] Test news</p>
 			</div>
