@@ -125,14 +125,13 @@ function go_ats(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="ats left_ele">  The 2018 NSYSU-UCSD Bilateral Research Symposium will convene in 
-campuscampus of National Sun Yat-sen University, Kaohsiung on March
-26-27, 2018. The purpose of this symposium is to set up a platform for future
-collaboration between scholars of National Sun Yat-sen University
-and University of California, San Diego.
+		<div class="ats left_ele">  The 2018 NSYSU-UCSD Bilateral Research Symposium will convene in campus of National Sun Yat-sen 
+University, Kaohsiung  on  March 26-27, 2018. The purpose of this symposium is to set up a  platform  for 
+future collaboration between scholars of  National Sun Yat-sen University and  University  of  California,
+San Diego.
 
-  The Program will consist of a keynote session followed by five parallel sessions 
-and student poster session on the second day.
+  The Program will consist of a keynote session followed by five parallel sessions and student poster session 
+on the second day.
 
 Symposium Scopes:
 <img class="title_num" src='1.png'><img>Smart City
@@ -141,8 +140,8 @@ Symposium Scopes:
 <img class="title_num" src='4.png'><img>Social Sciences
 <img class="title_num" src='5.png'><img>Aerosol Science and Biomedical Science
 
-  We hope this bilateral research symposium will bring together scholars of both 
-universities to engage in current research topics of mutual interest.
+  We hope this bilateral research symposium will bring together scholars of both universities to engage 
+in current research topics of mutual interest.
 					</div>`;
 	parent.append(newele);
 	parent2.append(newele2);
@@ -186,5 +185,37 @@ Specialization :
 					</div>`;
 	parent.append(newele);
 	parent2.append(newele2);
+}
+function go_occ(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Organizing Committee Chair
+	</div>`;
+	
+	var newele2 = `
+		<div class="ats left_ele"> 
+Mitch Ming-Chi Chou
+Vice President for Research and Development,
+National Sun Yat-sen University
+<img style="width:550px;height:650px;"src='mingchichou.jpg'><img>
+
+Educational Background :
+	Ph. D., University of Central Florida, USA (2000)
+Employment Experience : 
+	Vice President for Office of Research and Development, National Sun Yat-sen University (2017~ Present)
+	Technical consultant, Korea Atomic Energy Research Institute (KAERI). (2009~ Present)
+	Ad joint research fellow, National Synchrotron Radiation Research Center, Taiwan. (2010 ~ Present)
+	Material research scientist, Crystal Photonics Inc, Sanford, FL, USA. (2000~2004)
+Specialization : 
+	Single Crystal Growth
+	Electro-Optic Materials
+	Epitaxial Growth
+					</div>`;
+	parent.append(newele);
+	parent2.append(newele2);
+	
 }
 
