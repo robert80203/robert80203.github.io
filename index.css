@@ -2,7 +2,7 @@ body {
 	background-image: url(poster2.jpg);
     background-repeat: no-repeat;
 	background-size:100% 1600px;
-	background-position: 50% 0px; 
+	background-position: 0 0; 
 }
 
 .mobile_btn{
@@ -36,7 +36,41 @@ body {
 	font-family:fantasy;
 	padding:5px;
 }
+/*About the Symposium*/
+.ats{
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: Times New Roman;
+	font-size:24px;
+	white-space: pre;/*For text alignment*/
+}
+/*parent1 title css*/
+.title_css{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	font-size: 4em;
+    z-index: 100;
+	color:#444444;
+    text-shadow: .04em .04em 0 #9cb8b3;
+	width:850px;
+	height:150px;
+	background-image: url(wave.jpg);
+	background-repeat: no-repeat;
+	background-size:850px 200px;
+	text-align:center;
+	box-shadow: 0 0 10px 20px white inset;
+	padding:40px;
+}
 
+
+/*For title number - image*/
+.title_num{
+	width:26px;
+	height:26px;
+	margin-right:5px;
+}
 
 .news_info{
 	
