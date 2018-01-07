@@ -36,7 +36,16 @@ body {
 	font-family:fantasy;
 	padding:5px;
 }
-/*About the Symposium*/
+/*Member title css*/
+.memtitle_css{
+	text-align:center;
+	white-space: pre;
+	font-size:24px;
+	font-family: Times New Roman;
+	font-weight:bold;
+}
+
+/*Member content css*/
 .ats{
 	width:750px;
 	margin-left:auto;

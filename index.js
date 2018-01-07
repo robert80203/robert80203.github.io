@@ -159,11 +159,15 @@ function go_cc(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="ats left_ele"> 
-Ying-Yao Cheng
-President, National Sun Yat-sen University
-<img style="width:750px;height:550px;"src='yingyaocheng.png'><img>
+	<div class="memtitle_css left_ele">
+	Ying-Yao Cheng
+	President, National Sun Yat-sen University
+	
+	<img style="width:500px;height:300px;"src='yingyaocheng.png'><img>
+	</div>
+		
 
+<div class="ats left_ele"> 
 Educational Background :
 	Ph.D., Department of Education, National Chengchi University (June 1992)
 	M.Ed., Department of Education, National Kaohsiung Normal University (June 1985)
@@ -196,12 +200,15 @@ function go_occ(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="ats left_ele"> 
+		
+<div class="memtitle_css left_ele">
 Mitch Ming-Chi Chou
 Vice President for Research and Development,
 National Sun Yat-sen University
-<img style="width:550px;height:650px;"src='mingchichou.jpg'><img>
 
+<img style="width:300px;height:400px;"src='mingchichou.jpg'><img>
+</div>
+<div class="ats left_ele"> 
 Educational Background :
 	Ph. D., University of Central Florida, USA (2000)
 Employment Experience : 
