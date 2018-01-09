@@ -132,6 +132,10 @@ body {
 	
 }
 
+.nav_self_css > .dropdown > a{
+	font-size:20px;
+}
+
 /*Change sub menu background color*/
 .nav_self_css ul{
 	background-color:#77DDFF;
@@ -182,6 +186,11 @@ nav.fill ul li a:hover:after {
 }
 
 
+/*For contact table*/
+table, th, td {
+    border: 1px solid black;
+	text-align:center;
+}
 
 /***************************************/
 

@@ -12,7 +12,8 @@
 		<link href="index.css" rel="stylesheet">
 		<!--<script src="nav.js"></script><!--navbar-fixed-top-->
 		<script src="index.js"></script>
-		
+		<script type="text/javascript">
+		</script>
 	</head>
 	<body>
 		<nav id="header" class="navbar header_css fill" style="top:350px;">
@@ -27,7 +28,7 @@
 				</div> 
 				<div id="navbar" class="collapse navbar-collapse"  style="text-align:center;">
 					<ul class="nav_self_css nav navbar-nav">
-						<li><a href="#" onclick="go_home();">Home</a>
+						<li class="dropdown"><a href="#" onclick="go_home();">Home</a>
 							
 						</li>
 						<li class="dropdown" ><a href="#">Conference Information</a>
@@ -47,7 +48,7 @@
 						</li>
 						<li class="dropdown"><a  href="#">Venue and Travel</a>
 							<ul class="dropdown-menu" style="padding-top: 0px;">
-								<li><a href="#">Venue</a></li>
+								<li><a href="#" onclick='go_venue();'>Venue</a></li>
 								<li><a href="#">Accommodation</a></li>
 								<li><a href="#">Tour</a></li>
 							</ul>
@@ -56,7 +57,7 @@
 						</li>
 						<li class="dropdown"><a href="http://ora.nsysu.edu.tw/files/87-1049-2753.php?Lang=zh-tw">Registration</a>
 						</li>
-						<li class="dropdown"><a href="#">Contact Us</a>
+						<li class="dropdown"><a href="#" onclick='go_contact();'>Contact Us</a>
 						</li>			  
 					</ul>
 

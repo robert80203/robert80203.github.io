@@ -17,6 +17,9 @@
 	
 	
 });*/
+
+var current_page_position = '';
+
 $(document).ready(function() {
 	elementMove();
 		
@@ -27,6 +30,8 @@ $(document).ready(function() {
 	$('.dropdown').on('hide.bs.dropdown', function(e){
 	  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
 	});*/
+	
+	
 });
 
 var top_position = 350;
@@ -81,12 +86,17 @@ var elementMove=function () {
 	}
 }
 
+
+
+
 function go_agenda(){
 	
 	var parent = $('#left_parent');
 	$('.left_ele').remove();
 	var newele = '<iframe class="left_ele" style="margin-left:5%;"width="1000px" height="1000px" src="agenda.JPG" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe>';
 	parent.append(newele);
+	
+	current_page_position = 'go_agenda';
 	
 }
 
@@ -113,6 +123,8 @@ function go_home(){
 		</div>`;
 	parent.append(newele);
 	parent2.append(newele2);
+	
+	current_page_position = 'go_home';
 }
 /*About the symposium*/
 function go_ats(){
@@ -138,10 +150,11 @@ Symposium Scopes:
 <img class="title_num" src='2.png'><img>Marine Sciences
 <img class="title_num" src='3.png'><img>Photonics and Materials
 <img class="title_num" src='4.png'><img>Social Sciences
-<img class="title_num" src='5.png'><img>Aerosol Science and Biomedical Science
+<img class="title_num" src='5.png'><img>Aerosol Sciences
+<img class="title_num" src='6.png'><img>Biomedical Sciences
 
   We hope this bilateral research symposium will bring together scholars of both universities to engage 
-in current research topics of mutual interest.
+in current research topics of mutual interests.
 					</div>`;
 	parent.append(newele);
 	parent2.append(newele2);
@@ -223,6 +236,65 @@ Specialization :
 					</div>`;
 	parent.append(newele);
 	parent2.append(newele2);
+	
+}
+
+function go_venue(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Venue
+	</div>`;
+	
+	var newele2 = `
+	<div class="left_ele" style="text-align:center;">
+	<img class="left_ele" style="" width="800px" height="1000px" src="venue1.jpg"></img>'
+	<img class="left_ele" style="" width="800px" height="1000px" src="venue2.jpg"></img>'
+	</div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
+}
+
+function go_contact(){
+	var parent = $('#left_parent');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Contact Us
+	</div>`;
+	
+	var newele2 = `
+	<div class="left_ele" style="text-align:center;">
+		<table style="width:750px;margin-left:auto;margin-right:auto;font-size:18px;">
+			<tr>
+				<th></th>
+				<th>TPC Chair</th> 
+				<th>Secretariat</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>Email Address</td>
+				<td>Contact Phone Number</td>
+			</tr>
+			<tr>
+				<td>Prof. Hsiu-Chin Lin</td>
+				<td>hsiu.c.lin@gmail.com</td>
+				<td>+886-7-5252000#2609/5055</td>
+			</tr>
+			<tr>
+				<td>Ms. Yawen Cheng</td>
+				<td>livetolearn@mail.nsysu.edu.tw</td>
+				<td>+886-7-5252000#2614</td>
+			</tr>
+		</table>
+
+	</div>
+	`;
+	parent.append(newele);
+	parent.append(newele2);
 	
 }
 
