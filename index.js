@@ -281,7 +281,7 @@ function go_contact(){
 			</tr>
 			<tr>
 				<td>Email Address</td>
-				<td>hsiu.c.lin@gmail.com</td>
+				<td>hsiuchinlin@mail.nsysu.edu.tw</td>
 				<td>livetolearn@mail.nsysu.edu.tw</td>
 			</tr>
 			<tr>
