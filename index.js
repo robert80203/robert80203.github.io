@@ -276,17 +276,17 @@ function go_contact(){
 			</tr>
 			<tr>
 				<td>Name</td>
-				<td>Email Address</td>
-				<td>Contact Phone Number</td>
-			</tr>
-			<tr>
 				<td>Prof. Hsiu-Chin Lin</td>
-				<td>hsiu.c.lin@gmail.com</td>
-				<td>+886-7-5252000#2609/5055</td>
+				<td>Ms. Yawen Cheng</td>
 			</tr>
 			<tr>
-				<td>Ms. Yawen Cheng</td>
+				<td>Email Address</td>
+				<td>hsiu.c.lin@gmail.com</td>
 				<td>livetolearn@mail.nsysu.edu.tw</td>
+			</tr>
+			<tr>
+				<td>Contact Phone Number</td>
+				<td>+886-7-5252000#2609/5055</td>
 				<td>+886-7-5252000#2614</td>
 			</tr>
 		</table>
