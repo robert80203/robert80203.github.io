@@ -34,7 +34,7 @@ $(document).ready(function() {
 	
 });
 
-var top_position = 350;
+var top_position = 375;
 var first = 0;
 
 var elementMove=function () {
@@ -282,7 +282,7 @@ function go_contact(){
 			<tr>
 				<td>Email Address</td>
 				<td>hsiuchinlin@mail.nsysu.edu.tw</td>
-				<td>livetolearn@mail.nsysu.edu.tw</td>
+				<td>livetolearn@mail.nsysu.edu .tw</td>
 			</tr>
 			<tr>
 				<td>Contact Phone Number</td>
