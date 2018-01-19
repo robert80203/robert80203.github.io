@@ -14,18 +14,64 @@
 		<script src="index.js"></script>
 		<script type="text/javascript">
 		</script>
+		<style>
+			@media screen and (max-width: 768px) {
+				#header {
+					display:none;
+				}
+				#main{
+
+					display:block;
+
+				}
+			}
+
+		</style>
 	</head>
 	<body>
+		<!------------------------Responsive Menu------------------>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="container">
+				<a href="#" onclick="go_home();" style="color:white;font-size:20px">Home</a>
+				<a href="#" data-toggle="collapse" style="color:white;font-size:20px">Conference Information</a>
+				<div id="" class="collapse">
+					<a href="#" onclick='go_ats();'>About the Symposium</a>
+					<a href="#" onclick='go_cc();'>Conference Chair</a>
+					<a href="#" onclick='go_occ();'>Organizing Committee Chair</a>
+					<a href="#">Technical Program Committee</a>
+				</div>
+				<a href="#" data-toggle="collapse" style="color:white;font-size:20px">Program</a>
+				<div id="" class="collapse">
+					<a href="#" onclick="go_agenda();">Symposium Agenda</a>
+					<a href="#">Keynote Speakers</a>
+					<a href="#">Conference Proceeding</a>
+				</div>		
+				<a href="#col1" data-toggle="collapse" style="color:white;font-size:20px">Venue and Travel</a>
+				<div id="col1" class="collapse">
+					<a href="#" onclick='go_venue();'>Venue</a>
+					<a href="#">Accommodation</a>
+					<a href="#">Tour</a>
+				</div>
+				<a href="#" style="color:white;font-size:20px">Photos</a>
+				<a href="http://ora.nsysu.edu.tw/files/87-1049-2753.php?Lang=zh-tw" style="color:white;font-size:20px">Registration</a>
+				<a href="#" style="color:white;font-size:20px" onclick='go_contact();'>Contact Us</a>
+			</div>
+		</div>
+		<div id="main">
+		  <span class="sidebar" onclick="openNav()">&#9776;</span>
+		</div>
+		<!------------------------Responsive Menu------------------>
 		<nav id="header" class="navbar header_css fill" style="top:375px;">
 			<div id="header-container" class="container navbar-container" >
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed mobile_btn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<!--<div class="navbar-header" >
+					<button type="button" class="navbar-toggle collapsed mobile_btn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="width:100%;top:0px;">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-				</div> 
+				</div> -->
 				<div id="navbar" class="collapse navbar-collapse"  style="text-align:center;">
 					<ul class="nav_self_css nav navbar-nav">
 						<li class="dropdown"><a href="#" onclick="go_home();">Home</a>
@@ -64,7 +110,7 @@
 				</div><!-- /.nav-collapse -->
 			</div><!-- /.container -->
 		</nav><!-- /.navbar -->
-		<div class="container-fluid" style="margin-top:450px;">
+		<div class="container-fluid" style="margin-top:500px;z-index:-1">
 			<div class="row">
 				<div id="left_parent" style="text-align:center">
 					<iframe class="left_ele" width="750px" height="450px" src="intro_video.mp4" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe>

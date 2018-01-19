@@ -1,8 +1,11 @@
 body {
 	background-image: url(poster3.JPG);
     background-repeat: no-repeat;
-	background-size:1920px 100%;
+	background-size:1920px 1500px;
 	background-position: 0 0; 
+}
+
+.topnav{
 }
 
 .mobile_btn{
@@ -261,4 +264,82 @@ table, th, td {
 .navbar-container{
 	transition: 0.8s;
 	-webkit-transition:  0.8s;
+}
+
+/*==============Responsive Design===================*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar{
+	font-size:45px;
+	cursor:pointer;
+	color:black;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+    
+
+.sidenav a:hover, .offcanvas a:focus{
+    /*color: #f1f1f1;*/
+	
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+	display:none;
+}
+.applink{
+	background-color:#227700;
+    color: white;
+    padding: 35px 35px;
+	font-size:25px;
+    text-align: center;
+    text-decoration: none;
+	display:inline-block;
+}
+.appmode{
+	text-align:center;
+	display:none;
+}
+.apppic{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:80px;
+	width:80px;
+}
+.apptopstyle{
+	font-family:Microsoft JhengHei;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:25px;
+	text-shadow:5px 5px 5px #000000;
+	text-align:center;
 }
