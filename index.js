@@ -34,7 +34,7 @@ $(document).ready(function() {
 	
 });
 
-var top_position = 375;
+var top_position = 385;
 var first = 0;
 
 var elementMove=function () {
