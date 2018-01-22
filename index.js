@@ -261,7 +261,7 @@ function go_contact(){
 	</div>`;
 	
 	var newele2 = `
-	<div class="left_ele" style="text-align:center;">
+	<div class="left_ele" style="text-align:center;margin-top:20px;">
 		<table style="width:750px;margin-left:auto;margin-right:auto;font-size:18px;">
 			<tr>
 				<th></th>
@@ -285,6 +285,8 @@ function go_contact(){
 			</tr>
 		</table>
 
+	</div>
+	<div style='height:300px;'>
 	</div>
 	`;
 	parent.append(newele);
