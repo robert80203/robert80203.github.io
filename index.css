@@ -72,11 +72,11 @@ body {
 	margin-bottom:10px;
 	font-size: 4em;
     z-index: 100;
-	color:#444444;
-    text-shadow: .04em .04em 0 #9cb8b3;
+	color:#FFFFFF;
+    text-shadow: .08em .08em 0 #000000;
 	width:850px;
 	height:150px;
-	background-image: url(wave.jpg);
+	background-image: url(nsysu.png);
 	background-repeat: no-repeat;
 	background-size:850px 200px;
 	text-align:center;

@@ -344,7 +344,7 @@ function go_keyspe(){
 	
 	var newele2 = `
 		<div class="left_ele" style="text-align:center;margin-top:3%;">
-		  <img  src="unavailable.png" alt="error" style="width:300px;height:250px;border:0;">
+		  <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
 		</div>
 	`;
 	parent.append(newele);
@@ -363,7 +363,7 @@ function go_conpro(){
 	
 	var newele2 = `
 		<div class="left_ele" style="text-align:center;margin-top:3%;">
-		  <img  src="unavailable.png" alt="error" style="width:300px;height:250px;border:0;">
+		  <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
 		</div>
 	`;
 	parent.append(newele);
@@ -382,7 +382,7 @@ function go_photo(){
 	
 	var newele2 = `
 		<div class="left_ele" style="text-align:center;margin-top:3%;">
-		  <img  src="unavailable.png" alt="error" style="width:300px;height:250px;border:0;">
+		  <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
 		</div>
 	`;
 	parent.append(newele);
@@ -401,7 +401,7 @@ function go_tour(){
 	
 	var newele2 = `
 		<div class="left_ele" style="text-align:center;margin-top:3%;">
-		  <img  src="unavailable.png" alt="error" style="width:300px;height:250px;border:0;">
+		  <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
 		</div>
 	`;
 	parent.append(newele);
