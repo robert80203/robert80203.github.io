@@ -176,10 +176,9 @@ function go_cc(){
 	Ying-Yao Cheng
 	President, National Sun Yat-sen University
 	
-	<img style="width:500px;height:300px;"src='yingyaocheng.png'><img>
+	<img style="width:500px;height:300px;"src='yingyaocheng.png'><img>	
 	</div>
-		
-
+	
 <div class="ats left_ele"> 
 Educational Background :
 	Ph.D., Department of Education, National Chengchi University (June 1992)
@@ -325,7 +324,7 @@ function go_accom(){
 	
 	
 	var newele2 = `
-		<div class="left_ele" style="text-align:center"><a target="_blank" href="https://www.ambassador-hotels.com/tc/kaohsiung">
+		<div class="left_ele" style="text-align:center;margin-top:3%;"><a target="_blank" href="https://www.ambassador-hotels.com/en/kaohsiung">
 		  <img  src="guobin.jpg" alt="error" style="width:300px;height:250px;border:0;">
 		</a></div>
 	`;
@@ -333,6 +332,81 @@ function go_accom(){
 	parent2.append(newele2);
 }
 
+/*For Keynote Speakers*/
+function go_keyspe(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Keynote Speakers
+	</div>`;
+	
+	var newele2 = `
+		<div class="left_ele" style="text-align:center;margin-top:3%;">
+		  <img  src="unavailable.png" alt="error" style="width:300px;height:250px;border:0;">
+		</div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
+}
+
+/*For conference proceeding*/
+function go_conpro(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Conference Proceeding
+	</div>`;
+	
+	var newele2 = `
+		<div class="left_ele" style="text-align:center;margin-top:3%;">
+		  <img  src="unavailable.png" alt="error" style="width:300px;height:250px;border:0;">
+		</div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
+}
+
+/*For photos*/
+function go_photo(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Photos
+	</div>`;
+	
+	var newele2 = `
+		<div class="left_ele" style="text-align:center;margin-top:3%;">
+		  <img  src="unavailable.png" alt="error" style="width:300px;height:250px;border:0;">
+		</div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
+}
+
+/*For tour*/
+function go_tour(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Tour
+	</div>`;
+	
+	var newele2 = `
+		<div class="left_ele" style="text-align:center;margin-top:3%;">
+		  <img  src="unavailable.png" alt="error" style="width:300px;height:250px;border:0;">
+		</div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
+}
 /*=================Responsive Desgin======================*/
 
 function openNav() {
