@@ -98,7 +98,7 @@ function go_agenda(){
 	<div class="left_ele title_css">
 		Symposium Agenda
 	</div>`;
-	var newele2 = '<div style="text-align:center"><iframe class="left_ele" style="margin-left:5%;"width="850px" height="1000px" src="agenda.JPG" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe></div>';
+	var newele2 = '<div class="left_ele" style="text-align:center"><iframe  style="margin-left:5%;" width="850px" height="1100px" src="agenda.JPG" frameborder="0"></iframe></div>';
 	parent.append(newele);
 	parent2.append(newele2);
 	
@@ -306,7 +306,7 @@ function go_contact(){
 		</table>
 
 	</div>
-	<div style='height:300px;'>
+	<div class="left_ele" style='height:300px;'>
 	</div>
 	`;
 	parent.append(newele);
