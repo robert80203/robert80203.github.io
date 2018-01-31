@@ -92,9 +92,15 @@ var elementMove=function () {
 function go_agenda(){
 	
 	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
-	var newele = '<iframe class="left_ele" style="margin-left:5%;"width="1000px" height="1000px" src="agenda.JPG" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe>';
+	var newele = `
+	<div class="left_ele title_css">
+		Symposium Agenda
+	</div>`;
+	var newele2 = '<div style="text-align:center"><iframe class="left_ele" style="margin-left:5%;"width="850px" height="1000px" src="agenda.JPG" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe></div>';
 	parent.append(newele);
+	parent2.append(newele2);
 	
 	current_page_position = 'go_agenda';
 	
@@ -233,6 +239,20 @@ Specialization :
 	
 }
 
+/*For technical program committee*/
+function go_tpc(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Technical Program Committee
+	</div>`;
+	var newele2 = '<div class="left_ele" style="text-align:center"><iframe style="margin-left:5%;"width="850px" height="1000px" src="tpc.JPG" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe></div>';
+	parent.append(newele);
+	parent2.append(newele2);
+}
+
 function go_venue(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
@@ -292,6 +312,25 @@ function go_contact(){
 	parent.append(newele);
 	parent.append(newele2);
 	
+}
+
+function go_accom(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Accommodation
+	</div>`;
+	
+	
+	var newele2 = `
+		<div class="left_ele" style="text-align:center"><a target="_blank" href="https://www.ambassador-hotels.com/tc/kaohsiung">
+		  <img  src="guobin.jpg" alt="error" style="width:300px;height:250px;border:0;">
+		</a></div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
 }
 
 /*=================Responsive Desgin======================*/
