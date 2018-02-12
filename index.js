@@ -110,7 +110,7 @@ function go_home(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
-	var newele = '<iframe class="left_ele" width="750px" height="450px" src="intro_video.mp4" frameborder="0"  allow="encrypted-media" allowfullscreen></iframe>';
+	var newele = '<iframe class="left_ele" width="750px" height="450px" src="https://www.youtube.com/embed/Cl4idsb-e2o?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
 	var newele2 = `
 		<div class="news left_ele">
 			<span class="news_title">News & Events</span>
