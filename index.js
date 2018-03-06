@@ -98,7 +98,7 @@ function go_agenda(){
 	<div class="left_ele title_css">
 		Symposium Agenda
 	</div>`;
-	var newele2 = '<div class="left_ele" style="text-align:center"><iframe  style="margin-left:5%;" width="1000px" height="1300px" src="agenda.JPG" frameborder="0"></iframe></div>';
+	var newele2 = '<div class="left_ele" style="text-align:center"><iframe  style="margin-left:5%;" width="900px" height="1100px" src="agenda.jpg" frameborder="0"></iframe></div>';
 	parent.append(newele);
 	parent2.append(newele2);
 	
@@ -346,8 +346,8 @@ function go_keyspe(){
 		<div class="left_ele" style="text-align:center;margin-top:3%;">
 		  <img  src="keynote1.JPG" style="width:650px;height:200px;border:0;">
 		  <img  src="keynote4.JPG" style="width:650px;height:200px;border:0;">
-		  <img  src="keynote5.JPG" style="width:650px;height:200px;border:0;">
 		  <img  src="keynote2.JPG" style="width:650px;height:200px;border:0;">
+		  <img  src="keynote5.JPG" style="width:650px;height:200px;border:0;">
 		  <img  src="keynote3.JPG" style="width:650px;height:200px;border:0;">
 		  <img  src="keynote6.JPG" style="width:650px;height:200px;border:0;">
 		</div>
