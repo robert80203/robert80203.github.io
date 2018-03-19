@@ -110,7 +110,7 @@ function go_agenda(){
 	
 	var newele2 = `
 	<div class="row left_ele">
-		<div class="col-sm-8" style="text-align:right"><div class="sym_temp"><img width="900px" height="1200px" id="sympo_agId" src="agenda.jpg"></img></div></div>
+		<div class="col-sm-8" style="text-align:right"><div class="sym_temp"><img width="900px" height="1200px" id="sympo_agId" src="agenda.JPG"></img></div></div>
 		
 		<div class="col-sm-4" style="font-size:28px">
 			<div><a class="sym_link" onclick="sym_change('Smart_City.jpg');">Smart City</a></div>
@@ -119,7 +119,7 @@ function go_agenda(){
 			<div><a class="sym_link" onclick="sym_change('Social_Sciences.jpg');">Social Sciences</a></div>
 			<div><a class="sym_link" onclick="sym_change('Aerosol_Sciences.jpg');">Aerosol Sciences</a></div>
 			<div><a class="sym_link" onclick="sym_change('Biomedical_Sciences.jpg');">Biomedical Sciences</a></div>
-			<div><a class="sym_link" onclick="sym_change('agenda.jpg');">Symposium Agenda</a></div>
+			<div><a class="sym_link" onclick="sym_change('agenda.JPG');">Symposium Agenda</a></div>
 		</div>
 		
 	</div>
