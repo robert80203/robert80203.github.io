@@ -91,7 +91,7 @@ function sym_change(){
 	
 	var parent = $('.sym_temp');
 	$('#sympo_agId').remove();
-	var newele = '<img id="sympo_agId" width="850px" height="1100px" src='+arguments[0]+' frameborder="0"></img>'
+	var newele = '<img width="900px" height="1200px" id="sympo_agId" src='+arguments[0]+' frameborder="0"></img>'
 	parent.append(newele);
 }
 
@@ -110,7 +110,7 @@ function go_agenda(){
 	
 	var newele2 = `
 	<div class="row left_ele">
-		<div class="col-sm-8" style="text-align:right"><div class="sym_temp" width="900px" height="1200px"><img style="max-height:100%;max-width:100%" id="sympo_agId" src="agenda.jpg"></img></div></div>
+		<div class="col-sm-8" style="text-align:right"><div class="sym_temp"><img width="900px" height="1200px" id="sympo_agId" src="agenda.jpg"></img></div></div>
 		
 		<div class="col-sm-4" style="font-size:28px">
 			<div><a class="sym_link" onclick="sym_change('Smart_City.jpg');">Smart City</a></div>
