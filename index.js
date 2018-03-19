@@ -87,8 +87,16 @@ var elementMove=function () {
 }
 
 
+function sym_change(){
+	
+	var parent = $('.sym_temp');
+	$('#sympo_agId').remove();
+	var newele = '<img id="sympo_agId" width="850px" height="1100px" src='+arguments[0]+' frameborder="0"></img>'
+	parent.append(newele);
+}
 
 
+/*Note: This function now change iframe into div(with img) to display agenda*/
 function go_agenda(){
 	
 	var parent = $('#left_parent');
@@ -98,7 +106,24 @@ function go_agenda(){
 	<div class="left_ele title_css">
 		Symposium Agenda
 	</div>`;
-	var newele2 = '<div class="left_ele" style="text-align:center"><iframe  style="margin-left:5%;" width="900px" height="1100px" src="agenda.jpg" frameborder="0"></iframe></div>';
+	/*var newele2 = '<div class="left_ele" style="text-align:center"><iframe  style="margin-left:5%;" width="850px" height="1100px" src="agenda.jpg" frameborder="0"></iframe></div>';*/
+	
+	var newele2 = `
+	<div class="row left_ele">
+		<div class="col-sm-8" style="text-align:right"><div class="sym_temp" width="900px" height="1200px"><img style="max-height:100%;max-width:100%" id="sympo_agId" src="agenda.jpg"></img></div></div>
+		
+		<div class="col-sm-4" style="font-size:28px">
+			<div><a class="sym_link" onclick="sym_change('Smart_City.jpg');">Smart City</a></div>
+			<div><a class="sym_link" onclick="sym_change('Marine_Sciences.jpg');">Marine Sciences</a></div>
+			<div><a class="sym_link" onclick="sym_change('Photonics_Materials.jpg');">Photonics and Materials</a></div>
+			<div><a class="sym_link" onclick="sym_change('Social_Sciences.jpg');">Social Sciences</a></div>
+			<div><a class="sym_link" onclick="sym_change('Aerosol_Sciences.jpg');">Aerosol Sciences</a></div>
+			<div><a class="sym_link" onclick="sym_change('Biomedical_Sciences.jpg');">Biomedical Sciences</a></div>
+			<div><a class="sym_link" onclick="sym_change('agenda.jpg');">Symposium Agenda</a></div>
+		</div>
+		
+	</div>
+	`
 	parent.append(newele);
 	parent2.append(newele2);
 	

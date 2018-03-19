@@ -9,6 +9,11 @@ body {
 .topnav{
 }
 
+/*For 7 links under symposium agenda*/
+.sym_link{
+	text-align:left;
+	cursor: pointer;
+}
 
 .element-container{
 	margin-top:500px;
