@@ -168,6 +168,9 @@ function go_home(){
 		<div class="news left_ele">
 			<span class="news_title">News & Events</span>
 			<div class="news_info">
+				<p>〔2018.4.6〕<a href="https://www.flickr.com/photos/157290085@N03/albums" target="_blank">Symposium Photos</a></p>
+			</div>
+			<div class="news_info">
 				<p>〔2018.2.1〕Online Registration System Open : Feb. 01~Mar.20, 2018</p>
 			</div>
 			<div class="news_info">
