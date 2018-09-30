@@ -1,160 +1,25 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- jquery-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- Self-defined-->
-		<link href="index.css" rel="stylesheet">
-		<!--<script src="nav.js"></script><!--navbar-fixed-top-->
-		<script src="index.js"></script>
-		<script type="text/javascript">
-		</script>
-		<style>
-			@media screen and (max-width: 768px) {
-				#header {
-					display:none;
-				}
-				#main{
-
-					display:block;
-
-				}
-				body {
-					background-image:none;
-				}
-				.element-container{
-					margin-top:20px;
-				}
-			}
-
-		</style>
-	</head>
-	<body>
-		<!------------------------Responsive Menu------------------>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<div class="container">
-				<a href="#" onclick="go_home();" style="color:white;font-size:20px">Home</a>
-				<a href="#col1" data-toggle="collapse" style="color:white;font-size:20px">Conference Information</a>
-				<div id="col1" class="collapse">
-					<a href="#" onclick='go_ats();'>About the Symposium</a>
-					<a href="#" onclick='go_cc();'>Conference Chair</a>
-					<a href="#" onclick='go_occ();'>Organizing Committee Chair</a>
-					<a href="#" onclick='go_tpc();'>Technical Program Committee</a>
-				</div>
-				<a href="#col2" data-toggle="collapse" style="color:white;font-size:20px">Program</a>
-				<div id="col2" class="collapse">
-					<a href="#" onclick="go_agenda();">Symposium Agenda</a>
-					<a href="#" onclick="go_keyspe();">Keynote Speakers</a>
-				</div>		
-				<a href="#col3" data-toggle="collapse" style="color:white;font-size:20px">Venue and Travel</a>
-				<div id="col3" class="collapse">
-					<a href="#" onclick='go_venue();'>Venue</a>
-					<a href="#" onclick='go_accom();'>Accommodation</a>
-					<a href="#" onclick='go_tour();'>Tour</a>
-				</div>
-				<a target="_blank" href="http://ora.nsysu.edu.tw/files/87-1049-2753.php?Lang=zh-tw" style="color:white;font-size:20px">Registration</a>
-				<a href="#" style="color:white;font-size:20px" onclick='go_contact();'>Contact Us</a>
-			</div>
-		</div>
-		<div id="main">
-		  <span class="sidebar" onclick="openNav()">&#9776;</span>
-		</div>
-		<!------------------------Responsive Menu------------------>
-		<nav id="header" class="navbar header_css fill" style="top:385px;">
-			<div id="header-container" class="container navbar-container" >
-				<!--<div class="navbar-header" >
-					<button type="button" class="navbar-toggle collapsed mobile_btn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="width:100%;top:0px;">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div> -->
-				<div id="navbar" class="collapse navbar-collapse"  style="text-align:center;">
-					<ul class="nav_self_css nav navbar-nav">
-						<li class="dropdown"><a href="#" onclick="go_home();">Home</a>
-							
-						</li>
-						<li class="dropdown" ><a href="#">Conference Information</a>
-							<ul class="dropdown-menu" style="padding-top: 0px;">
-								<li><a href="#" onclick='go_ats();'>About the Symposium</a></li>
-								<li><a href="#" onclick='go_cc();'>Conference Chair</a></li>
-								<li><a href="#" onclick='go_occ();'>Organizing Committee Chair</a></li>
-								<li><a href="#" onclick='go_tpc();'>Technical Program Committee</a></li>
-							</ul>
-						</li><!-- data-toggle="dropdown" for click-->
-						<li class="dropdown"><a  href="#">Program</a>
-							<ul class="dropdown-menu" style="padding-top: 0px;">
-								<li><a href="#" onclick="go_agenda();">Symposium Agenda</a></li>
-								<li><a href="#" onclick="go_keyspe();">Keynote Speakers</a></li>
-							</ul>
-						</li>
-						<li class="dropdown"><a  href="#">Venue and Travel</a>
-							<ul class="dropdown-menu" style="padding-top: 0px;">
-								<li><a href="#" onclick='go_venue();'>Venue</a></li>
-								<li><a href="#" onclick='go_accom();'>Accommodation</a></li>
-								<li><a href="#" onclick='go_tour();'>Tour</a></li>
-							</ul>
-						</li>
-						<li class="dropdown"><a target="_blank" href="http://ora.nsysu.edu.tw/files/87-1049-2753.php?Lang=zh-tw">Registration</a>
-						</li>
-						<li class="dropdown"><a href="#" onclick='go_contact();'>Contact Us</a>
-						</li>			  
-					</ul>
-
-				</div><!-- /.nav-collapse -->
-			</div><!-- /.container -->
-		</nav><!-- /.navbar -->
-		<div  class="container-fluid element-container">
-			<div class="row">
-				<div id="left_parent" style="text-align:center">
-					<iframe class="left_ele" width="750px" height="450px" src="https://www.youtube.com/embed/Cl4idsb-e2o?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				
-			
-				<!--<div class="col-md-4" style="text-align:center"></div>-->
-				<div id="left_parent2" ><!--class="col-md-12"-->
-					<div class="news left_ele">
-						<span class="news_title">News & Events</span>
-						<div class="news_info">
-							<p>〔2018.4.6〕<a href="https://www.flickr.com/photos/157290085@N03/albums" target="_blank">Symposium Photos</a></p>
-						</div>
-						<div class="news_info">
-							<p>〔2018.2.1〕Online Registration System Open : Feb. 01~Mar.20, 2018</p>
-						</div>
-						<div class="news_info">
-							<p>〔2018.1.8〕Bio/Abstract for Invited Speakers Submission Deadline: Jan.31, 2018</p>
-						</div>
-						
-					</div>
-						
-				</div>
-			</div>
-			  
-			
+<!DOCTYPE>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
 	
-			<!--<span>Copyright c National Sun Yat-sen University All rights reserved.</span>
-			<span>Address: No. 70, Lienhai Rd., Kaohsiung 80424 Taiwan, R.O.C.</span>
-			<p>Tel: +886-7- 5252000 x 2614</p>-->
+	<div class="profile">
+		<img src="img.jpg" width="250" height="250">
+		<div>Robert Lee</div>
+		</br>
+		<div class="text">Hi~I'm a graduate student who majors in computer science and engineering at National Chiao-Tung University in Taiwan.
 		</div>
-		<div style="height:100px" class="footer_css">
-			<!--<img src="footer.jpg" style="width:100%;"></img>-->
-			
-			Number of Visits<a  href="http://www.hitwebcounter.com" target="_blank">
-						<img src="http://hitwebcounter.com/counter/counter.php?page=6883720&style=0006&nbdigits=6&type=ip&initCount=0" title="" Alt=""   border="0" >
-			</a>
-			<div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">Copyright @ National Sun Yat-sen University All rights reserved.
-Address: No. 70, Lienhai Rd., Kaohsiung 80424 Taiwan, R.O.C.
-Tel: +886-7- 5252000 x 2614</div>
+		<div class="text">The main research now is deep learning and Natural Language Processing(NLP).
 		</div>
-
-
-		
-	</body>
-</html>
+		</br>
+		<div class="contact_info">
+			<div>Contact me</div>
+			<div>Email: robert80203@gmail.com</div>
+		</div>
+	</div>
+	<div class="footer_css"></div>
+</body>
