@@ -1,9 +1,9 @@
 body {
-	background-image: url(poster4.jpg), url(footer.jpg);
+	background-image: url(home_small2.gif), url(footer.jpg);
 	background-color:#FFFFF6;
     background-repeat: no-repeat;
-	background-size:100% , 100% ;
-	background-position: top, bottom;
+	background-size: 40% , 100% ;
+	background-position: 50% 5%, bottom;
 }
 
 .topnav{
@@ -16,7 +16,7 @@ body {
 }
 
 .element-container{
-	margin-top:500px;
+	margin-top:250px;
 	z-index:-1
 }
 
@@ -37,7 +37,6 @@ body {
 	border-color: #A52A2A;
 	border-width: 1px;
 	margin-top:2%;
-	
 }
 
 .news_title{
@@ -50,6 +49,12 @@ body {
 	text-align:left;
 	font-family:fantasy;
 	padding:5px;
+}
+
+.news_date{
+	font-family:fantasy;
+    font-style:bold;
+    color:red;
 }
 /*Member title css*/
 .memtitle_css{
@@ -89,6 +94,11 @@ body {
 	padding:40px;
 }
 
+/*For research images*/
+.research_img{
+	width:350px;
+	height:250px;
+}
 
 /*For title number - image*/
 .title_num{

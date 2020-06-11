@@ -1,28 +1,24 @@
-/*$(document).ready(function(){
-	
-	
-	window.onscroll = function(e) {
-        //var a = $('#navbar').position();
-		var cur_pos = $(window).scrollTop();
-		if(cur_pos>180)
-		{
-			$('#header').addClass('navbar-fixed-top');
-		}
-		else
-		{
-			$('#header').removeClass('navbar-fixed-top');
-		}
-    }
-	
-	
-	
-});*/
+/*=================================================
+Change the variables below to modify the content
+=================================================*/
+
+homepage_youtube = "https://www.youtube.com/embed/X3WpaQzZBfE"
+RLencoderimg = "encoder_control.png"
+RLencoderimg2 = "encoder_control2.png"
+Videopredimg = "Video_Prediction.png"
+Videopredimg2 = "Video_Prediction2.png"
+Compressionimg = "Deep_image.png"
+Compressionimg2 = "Deep_image2.png"
+
+/*=================================================
+===================================================
+=================================================*/
 
 var current_page_position = '';
 
 $(document).ready(function() {
 	elementMove();
-		
+    go_home();
 	/*$('.dropdown').on('show.bs.dropdown', function(e){
 	  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
 	});
@@ -34,7 +30,7 @@ $(document).ready(function() {
 	
 });
 
-var top_position = 385;
+var top_position = 1;
 var first = 0;
 
 var elementMove=function () {
@@ -163,27 +159,25 @@ function go_home(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
-	var newele = '<iframe class="left_ele" width="750px" height="450px" src="https://www.youtube.com/embed/Cl4idsb-e2o?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-	var newele2 = `
+	//var newele = '<iframe class="left_ele" width="750px" height="450px" src="https://www.youtube.com/embed/Cl4idsb-e2o?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+	var newele = '<iframe class="left_ele" width="750px" height="450px" src="'+homepage_youtube+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    var newele2 = `
 		<div class="news left_ele">
-			<span class="news_title">News & Events</span>
-			<div class="news_info">
-				<p>〔2018.4.6〕<a href="https://www.flickr.com/photos/157290085@N03/albums" target="_blank">Symposium Photos</a></p>
-			</div>
-			<div class="news_info">
-				<p>〔2018.2.1〕Online Registration System Open : Feb. 01~Mar.20, 2018</p>
-			</div>
-			<div class="news_info">
-				<p>〔2018.1.8〕Bio/Abstract for Invited Speakers Submission Deadline: Jan.31, 2018</p>
-			</div>
+            <span class="news_title">News & Events</span>
+            <ul>
+              <li class="news_date">2020/06/02</li>
+              <p>Wen-Hsiao Peng: Co-organizer of IEEE TCSVT Special Section on Learning-based Image and Video Compression</p>
+            </ul>  
+			
+			
 		</div>`;
-	parent.append(newele);
+    parent.append(newele);
 	parent2.append(newele2);
 	
 	current_page_position = 'go_home';
 }
 /*About the symposium*/
-function go_ats(){
+function go_VCIC(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
@@ -193,25 +187,15 @@ function go_ats(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="ats left_ele">  The 2018 NSYSU-UCSD Bilateral Research Symposium will convene in campus of National Sun Yat-sen 
-University, Kaohsiung  on  March 26-27, 2018. The purpose of this symposium is to set up a  platform  for 
-future collaboration between scholars of  National Sun Yat-sen University and  University  of  California,
-San Diego.
-
-  The Program will consist of a keynote session followed by five parallel sessions and student poster session 
-on the second day.
-
-Symposium Scopes:
-<img class="title_num" src='1.png'><img>Smart City
-<img class="title_num" src='2.png'><img>Marine Sciences
-<img class="title_num" src='3.png'><img>Photonics and Materials
-<img class="title_num" src='4.png'><img>Social Sciences
-<img class="title_num" src='5.png'><img>Aerosol Sciences
-<img class="title_num" src='6.png'><img>Biomedical Sciences
-
-  We hope this bilateral research symposium will bring together scholars of both universities to engage 
-in current research topics of mutual interests.
-					</div>`;
+		<div class="ats left_ele">  
+            <img class="title_num" src='1.png'><img>Reinforcement Learning for Video Encoder Control
+            <img class="research_img" src="research/compression/RLencoder/` + RLencoderimg + `"></img><img class="research_img" src="research/compression/RLencoder/` + RLencoderimg2 + `"></img>
+            <img class="title_num" src='2.png'><img>Deep Video Prediction
+            <img class="research_img" src="research/compression/Videopred/` + Videopredimg + `"></img><img class="research_img" src="research/compression/Videopred/` + Videopredimg2 + `"></img>
+            <img class="title_num" src='3.png'><img>Deep Image/Video Compression
+            <img class="research_img" src="research/compression/Compression/` + Compressionimg + `"></img><img class="research_img" src="research/compression/Compression/` + Compressionimg2 + `"></img>
+        </div>
+        `;
 	parent.append(newele);
 	parent2.append(newele2);
 	
