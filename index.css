@@ -239,7 +239,7 @@ body {
 
 /*Change sub menu background color*/
 .nav_self_css ul{
-	background-color:rgb(134, 255, 82, 0.5);/*#77DDFF;*/
+	background-color:rgb(255, 255, 255, 0.8);/*rgb(134, 255, 82, 0.5);*//*#77DDFF;*/
 }
 /*Sub menu font color*/
 .nav_self_css ul li a{
@@ -280,7 +280,7 @@ nav.fill ul li a:focus{
 nav.fill ul li a:hover {
   color: #E63F00;
   z-index: 1;
-  background-color:rgb(134, 255, 82, 0.5);/*Change hover background color*/
+  background-color:rgb(255, 255, 255, 0.8);/*rgb(134, 255, 82, 0.5);*//*Change hover background color*/
 
 }
 /*
@@ -311,7 +311,7 @@ table, th, td {
 		
 		}
     to {
-		background-color:rgb(134, 255, 82, 0.5)
+		background-color:rgb(255, 255, 255, 0.8);/*rgb(134, 255, 82, 0.5)*/
 	}
 }
 
@@ -320,7 +320,7 @@ table, th, td {
 }
 
 @keyframes upanime {
-    from {background-color:rgb(134, 255, 82, 0.5);/*#77DDFF;*/}
+    from {background-color:rgb(255, 255, 255, 0.8);/*rgb(134, 255, 82, 0.5);*//*#77DDFF;*/}
     to {background-color:none;}
 }
 .scrollup_css{
