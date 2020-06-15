@@ -154,13 +154,31 @@ function go_IVC(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="ats left_ele">  
+		<div class="ats left_ele" style="width:950px;">  
+            <!--
             <img class="title_num" src='figures/1.png'><img>Reinforcement Learning for Video Encoder Control
             <img class="research_img" src="research/compression/RLencoder/` + RLencoderimg + `"></img><img class="research_img" src="research/compression/RLencoder/` + RLencoderimg2 + `"></img>
             <img class="title_num" src='figures/2.png'><img>Deep Video Prediction
             <img class="research_img" src="research/compression/Videopred/` + Videopredimg + `"></img><img class="research_img" src="research/compression/Videopred/` + Videopredimg2 + `"></img>
             <img class="title_num" src='figures/3.png'><img>Deep Image/Video Compression
             <img class="research_img" src="research/compression/Compression/` + Compressionimg + `"></img><img class="research_img" src="research/compression/Compression/` + Compressionimg2 + `"></img>
+            -->
+            <table style='text-align:left;'>
+                <tbody>
+                    <tr>
+                        <td>
+            <img class="title_num" src='figures/1.png'><img>Deep Video Prediction
+            <img class="research_img" src="research/compression/Videopred/` + Videopredimg + `"></img>
+                        </td>
+                        <td style="vertical-align: top;text-align: left;">
+            
+   <span style="font-weight:bolder;font-size:18px;">SME-Net: Sparse Motion Estimation for Parametric Video
+    Prediction through Reinforcement Learning</span>
+    Y. H. Ho, C. Y. Cho, W. H Peng, and G. L. Jin
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         `;
 	parent.append(newele);
@@ -300,7 +318,9 @@ function go_lec_LA(){
 	parent.append(newele);
 	parent2.append(newele2);
 }
-/*For tour*/
+/*=================================================
+Add for current members
+=================================================*/
 function go_cur_members(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
@@ -311,18 +331,47 @@ function go_cur_members(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="members_css left_ele">
-            <div class="course_title">Advisor</div>
-            <img style="width:200px;height:300px;"src='members/advisor.png'><img>
-            Educational Background :
-                - Ph.D., M.S. and B.S. in EE, National Chiao Tung University, Taiwan, 2005, 1999, 1997 (all with the highest honor)
-            Employment Experience : 
-                - July 2015 – July 2016, Visiting Professor, IBM Thomas J. Watson Research Center, New York, USA
-            Research Highlights:
-                - Machine/deep learning
-                - Computer vision
-                - ISO/IEC & ITU-T video coding standards
-            Personal Website: <a href="https://sites.google.com/g2.nctu.edu.tw/wpeng">wpeng</a>
+<div class="members_css left_ele">
+    <div class="course_title">Advisor</div>
+<table style='text-align:left;'>
+    <tbody>
+        <tr>
+            <td><img style="width:150px;height:200px;"src='members/advisor.png'><img></td>
+            <td>    <span style="font-weight:bolder;color:blue">Prof. Wen-Hsiao Peng, NCTU CS</span>
+    <a href="https://www.cs.nctu.edu.tw/">Department of Computer Science, National Chiao Tung University</a>
+    <span style="font-weight:bolder;">Address: </span>Room 431, Engineering Building 3, 1001 Ta-Hsueh Rd., Hsinchu 30010, Taiwan
+    <span style="font-weight:bolder;">Email: </span><a href="mailto:wpeng@cs.nctu.edu.tw">wpeng@cs.nctu.edu.tw</a>
+    <span style="font-weight:bolder;">Personal Website: </span><a href="https://sites.google.com/g2.nctu.edu.tw/wpeng">wpeng</a>
+    <a href="https://scholar.google.com/citations?user=HucsFB4AAAAJ&hl=en">Google Scholar</a> | <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwen-hsiao-peng-02752b141%2F&sa=D&sntz=1&usg=AFQjCNF4fUU-UdJ0UaACYsu17FzEh1LdAA">LinkedIn</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="course_title">Ph.D. Students</div>
+<table style="text-align:left;border-spacing:40px 0px;border-collapse:separate;">
+    <tbody>
+        <tr>            
+            <td>
+    <img style="width:150px;height:200px;" src='members/Christine.jpg'></img>
+    林惠婷 Hui-Ting Lin
+    <img style="width:20px;height:20px;" src='figures/mail.png'></img><a href="mailto:lin.huiting.christine@gmail.com">Email</a>
+    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href="https://sites.google.com/site/huitinglinchristine/">Website</a>
+            </td>
+            <td>
+    <img style="width:150px;height:200px;" src='members/hector.jpg'></img>
+    何永涵 Yung-Han Ho
+    <img style="width:20px;height:20px;" src='figures/mail.png'></img><a href="mailto:hectorho0409@gmail.com">Email</a>
+    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href=""></a>
+            </td>
+            <td>
+    <img style="width:150px;height:200px;" src='members/Niraj.jpg'></img>
+    Niraj Prakash Kini
+    <img style="width:20px;height:20px;" src='figures/mail.png'></img><a href="mailto:nirajnctu17@gmail.com">Email</a>
+    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href=""></a>
+            </td> 
+        </tr>
+    </tbody>
+</table>
         </div>`;
 	parent.append(newele);
 	parent2.append(newele2);

@@ -20,6 +20,10 @@ body {
 	cursor: pointer;
 }
 
+table tbody tr td{
+    text-align:left;
+}
+
 .element-container{
 	margin-top:100px;
 	z-index:-1
@@ -296,7 +300,8 @@ nav.fill ul li a:hover:after {
 
 /*For contact table*/
 table, th, td {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    border:none;
 	text-align:center;
 }
 
