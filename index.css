@@ -127,6 +127,39 @@ table tbody tr td{
     margin-bottom:-7%;
 }
 
+/*CSS for research content*/
+.research{
+    width:950px;
+    margin-left:auto;
+	margin-right:auto;
+}
+
+.research_topic{
+	font-weight:bolder;
+	font-size:22px;
+	font-family: Times New Roman, Helvetica, sans-serif;
+}
+
+.research_img{
+	width:250px;
+	height:150px;
+}
+
+.research_title{
+	font-weight:bolder;
+	font-size:18px;
+}
+
+.research_author{
+	font-size:16px;
+	color:#0066CC;
+}
+
+.research_from{
+	font-size:16px;
+	color:gray;
+	font-style:italic;
+}
 
 /*CSS for general purpose*/
 .ats{
@@ -167,21 +200,16 @@ table tbody tr td{
     z-index: 100;
 	color:#FFFFFF;
     text-shadow: .08em .08em 0 #000000;
-	width:850px;
+	width:1000px;
 	height:150px;
     background-image: url(figures/nctu_build3.jpg);
 	background-repeat: no-repeat;
-	background-size:850px 200px;
+	background-size:1000px 150px;
 	text-align:center;
 	box-shadow: 0 0 10px 20px white inset;
 	padding:40px;
 }
 
-/*For research images*/
-.research_img{
-	width:350px;
-	height:250px;
-}
 
 /*For title number - image*/
 .title_num{

@@ -106,7 +106,7 @@ function go_home(){
 	var newele = `
     <div class="left_ele intro">
         <div class="intro_css">
-        <img src="figures/home_small2.gif" style="height:100px;width:400px"></img>
+        <img src="figures/home_small2.gif" style="height:120px;width:400px"></img>
         We are recruiting PhD/Master students interested in conducting research in the following areas:
         1.Reinforcement Learning (RL) Applications
           -  RL for video encoder control
@@ -119,7 +119,7 @@ function go_home(){
         3.Deep Image/video Compression
         </div>
     </div>
-    <iframe class="left_ele" width="750px" height="450px" src="`+homepage_youtube+`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    <!--<iframe class="left_ele" width="750px" height="450px" src="`+homepage_youtube+`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->`;
 
     var newele2 = `
 		<div class="news left_ele">
@@ -154,7 +154,7 @@ function go_IVC(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="ats left_ele" style="width:950px;">  
+		<div class="research left_ele">  
             <!--
             <img class="title_num" src='figures/1.png'><img>Reinforcement Learning for Video Encoder Control
             <img class="research_img" src="research/compression/RLencoder/` + RLencoderimg + `"></img><img class="research_img" src="research/compression/RLencoder/` + RLencoderimg2 + `"></img>
@@ -163,18 +163,54 @@ function go_IVC(){
             <img class="title_num" src='figures/3.png'><img>Deep Image/Video Compression
             <img class="research_img" src="research/compression/Compression/` + Compressionimg + `"></img><img class="research_img" src="research/compression/Compression/` + Compressionimg2 + `"></img>
             -->
-            <table style='text-align:left;'>
+            <table style='text-align:left;border-spacing:10px 20px;border-collapse:separate;'>
+                <img class="title_num" src='figures/1.png'><img>
+            	<span class="research_topic">Deep Video Prediction</span>
+                <tbody>
+                    <tr>
+                        <td style="text-align:center">
+            				
+            				<img class="research_img" src="research/compression/Videopred/` + Videopredimg + `"></img>
+                        </td>
+                        <td style="vertical-align: top;text-align: left;">
+				    		<div style="text-align:justify;">
+				    			<div class="research_title">SME-Net: Sparse Motion Estimation for Parametric Video Prediction through Reinforcement Learning</div>
+				    			<div class="research_author">Yung-Han Ho, Chuan-Yuan Cho, Wen-Hsiao Peng, and Guo-Lun Jin</div>
+				            	<div class="research_from">IEEE International Conference on Computer Vision (ICCV), Oct. 2019.</div>
+				            	<a style="font-size:16px" href="">PDF</a> | <a href="">Github</a>
+				            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td style="text-align:center">
+            				<img class="research_img" src="research/compression/Videopred/` + Videopredimg2 + `"></img>
+                        </td>
+                        <td style="vertical-align: top;text-align: left;">
+				    		<div style="text-align:justify;">
+				    			<div class="research_title">Deep Video Prediction Through Sparse Motion Regularization,</div>
+				    			<div class="research_author">Yung-Han Ho, C. C. Chan, and Wen-Hsiao Peng</div>
+				            	<div class="research_from">IEEE International Conference on Image Processing (ICIP), Oct. 2020.</div>
+				            	<a style="font-size:16px" href="">PDF</a> | <a href="">Github</a>
+				            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style='text-align:left;border-spacing:10px 20px;border-collapse:separate;'>
+              	<img class="title_num" src='figures/2.png'><img>
+            	<span class="research_topic">Laerning-based Image/Video Compression</span>
                 <tbody>
                     <tr>
                         <td>
-            <img class="title_num" src='figures/1.png'><img>Deep Video Prediction
-            <img class="research_img" src="research/compression/Videopred/` + Videopredimg + `"></img>
+            				<img class="research_img" src="research/compression/Videopred/` + Videopredimg + `"></img>
                         </td>
                         <td style="vertical-align: top;text-align: left;">
-            
-   <span style="font-weight:bolder;font-size:18px;">SME-Net: Sparse Motion Estimation for Parametric Video
-    Prediction through Reinforcement Learning</span>
-    Y. H. Ho, C. Y. Cho, W. H Peng, and G. L. Jin
+				    		<div style="text-align:justify;">
+				    			<div class="research_title">Description of Challenge Proposal by NCTU: An Autoencoder-based Image Compressor with Principle Component Analysis and Soft-Bit Rate Estimation</div>
+				    			<div class="research_author">Chih-Peng Chang, David Alexandr, Wen-Hsiao Peng,  Hsueh-Ming Hang</div>
+				            	<div class="research_from">IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, Jun. 2019.</div>
+				            	<a style="font-size:16px" href="">PDF</a> | <a href="">Github</a>
+				            </div>
                         </td>
                     </tr>
                 </tbody>
@@ -184,6 +220,27 @@ function go_IVC(){
 	parent.append(newele);
 	parent2.append(newele2);
 	
+}
+
+/*=================================================
+Add materials for computer vision
+=================================================*/
+function go_CV(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Computer Vision
+	</div>`;
+	
+	var newele2 = `
+		<div class="left_ele" style="text-align:center;margin-top:3%;">
+            <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
+		</div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
 }
 
 /*=================================================
@@ -298,26 +355,7 @@ function go_lec_VC(){
 	parent2.append(newele2);
 }
 
-/*=================================================
-Add materials for linear algebra
-=================================================*/
-function go_lec_LA(){
-	var parent = $('#left_parent');
-	var parent2 = $('#left_parent2');
-	$('.left_ele').remove();
-	var newele = `
-	<div class="left_ele title_css">
-		Linear Algebra
-	</div>`;
-	
-	var newele2 = `
-		<div class="left_ele" style="text-align:center;margin-top:3%;">
-		  <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
-		</div>
-	`;
-	parent.append(newele);
-	parent2.append(newele2);
-}
+
 /*=================================================
 Add for current members
 =================================================*/
@@ -377,6 +415,9 @@ function go_cur_members(){
 	parent2.append(newele2);
 }
 
+/*=================================================
+Add materials for alumni
+=================================================*/
 function go_alu(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
@@ -395,13 +436,17 @@ function go_alu(){
 	parent2.append(newele2);
 }
 
-function go_work(){
+
+/*=================================================
+Add materials for join us
+=================================================*/
+function go_joinus(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
 	var newele = `
 	<div class="left_ele title_css">
-		Work/Study Opportunities
+		Join Us
 	</div>`;
 	
 	var newele2 = `
@@ -412,6 +457,29 @@ function go_work(){
 	parent.append(newele);
 	parent2.append(newele2);
 }
+
+/*=================================================
+Add materials for resource
+=================================================*/
+function go_res(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Resource
+	</div>`;
+	
+	var newele2 = `
+		<div class="left_ele" style="text-align:center;margin-top:3%;">
+		  <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
+		</div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
+}
+
+
 /*=================Responsive Desgin======================*/
 
 function openNav() {

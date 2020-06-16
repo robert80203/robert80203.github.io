@@ -43,25 +43,24 @@
 				<a href="#col1" data-toggle="collapse" style="color:white;font-size:20px">Research</a>
 				<div id="col1" class="collapse">
 					<a href="#" onclick='go_IVC();'>Image/Video Compression</a>
-					<a href="#" onclick=''>TBD</a>
+					<a href="#" onclick='go_CV();'>TBD</a>
 				</div>
 				<a href="#col2" onclick='go_Publication();' data-toggle="collapse" style="color:white;font-size:20px">Publication</a>
 
 				<a href="#col3" data-toggle="collapse" style="color:white;font-size:20px">Courses
 				</a>
 				<div id="col3" class="collapse">
-					<a href="#" onclick=''>Deep Learning and Practice</a>
-					<a href="#" onclick=''>Matrix Method and Data Science</a>
-					<a href="#" onclick=''>Video Compression</a>
-					<a href="#" onclick=''>Linear Algebra</a>
+					<a href="#" onclick='go_lec_DLP();'>Deep Learning and Practice</a>
+					<a href="#" onclick='go_lec_MM();'>Matrix Method and Data Science</a>
+					<a href="#" onclick='go_lec_VC();'>Video Compression</a>
 				</div>
 				<a href="#col4" data-toggle="collapse" style="color:white;font-size:20px">Members</a>
 				<div id="col4" class="collapse">
-					<a href="#" onclick=''>Current Members</a>
-					<a href="#" onclick=''>Alumni</a>
+					<a href="#" onclick='go_cur_members();'>Current Members</a>
+					<a href="#" onclick='go_alu();'>Alumni</a>
 				</div>
-				<a href="#col6" data-toggle="collapse" style="color:white;font-size:20px">Join Us</a>
-				<a href="#col6" data-toggle="collapse" style="color:white;font-size:20px">Resource</a>
+				<a href="#col6" onclick='go_joinus();' data-toggle="collapse" style="color:white;font-size:20px">Join Us</a>
+				<a href="#col6" onclick='go_res();' data-toggle="collapse" style="color:white;font-size:20px">Resource</a>
 
 			</div>
 		</div>
@@ -81,7 +80,7 @@
 						<li class="dropdown" ><a href="#">Research</a>
 							<ul class="dropdown-menu" style="padding-top: 0px;">
 								<li><a href="#" onclick='go_IVC();'>Image/Video Compression</a></li>
-								<li><a href="#" onclick=''>TBD</a></li>
+								<li><a href="#" onclick='go_CV();'>Computer Vision</a></li>
 							</ul>
 						</li><!-- data-toggle="dropdown" for click-->
 						<li class="dropdown"><a href="#" onclick='go_Publication();'>Publication</a>
@@ -91,7 +90,6 @@
 								<li><a href="#" onclick='go_lec_DLP();'>Deep Learning and Practice</a></li>
 								<li><a href="#" onclick='go_lec_MM();'>Matrix Method and Data Science</a></li>
 								<li><a href="#" onclick='go_lec_VC();'>Video Compression</a></li>
-								<li><a href="#" onclick='go_lec_LA();'>Linear Algebra</a></li>
 							</ul>
 						</li> 
 						<li class="dropdown"><a  href="#">Members</a>
@@ -100,9 +98,9 @@
 								<li><a href="#" onclick='go_alu();'>Alumni</a></li>
 							</ul>
 						</li>
-						<li class="dropdown"><a  href="#">Join Us</a>
+						<li class="dropdown"><a href="#" onclick='go_joinus();'>Join Us</a>
 						</li>
-						<li class="dropdown"><a  href="#">Resource</a>
+						<li class="dropdown"><a href="#" onclick='go_res();'>Resource</a>
 						</li> 
 					</ul>
 
