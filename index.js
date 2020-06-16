@@ -4,7 +4,7 @@ Change the variables below to modify the content
 
 /*You should use embedded url from youtube*/
 homepage_youtube = "https://www.youtube.com/embed/X3WpaQzZBfE"
-DLP_demo_yourube = "https://www.youtube.com/embed/CGPo546M6d8"
+DLP_demo_youtube = "https://www.youtube.com/embed/CGPo546M6d8"
 
 RLencoderimg = "encoder_control.png"
 RLencoderimg2 = "encoder_control2.png"
@@ -198,7 +198,7 @@ function go_IVC(){
             </table>
             <table style='text-align:left;border-spacing:10px 20px;border-collapse:separate;'>
               	<img class="title_num" src='figures/2.png'><img>
-            	<span class="research_topic">Laerning-based Image/Video Compression</span>
+            	<span class="research_topic">Learning-based Image/Video Compression</span>
                 <tbody>
                     <tr>
                         <td>
@@ -298,16 +298,53 @@ function go_lec_DLP(){
 	</div>`;
 	
 	var newele2 = `
+
 		<div class="left_ele course">
-            <div class="course_title">Spring Semester 2018 - </div>
-            
-            <iframe width="750px" height="450" src="` + DLP_demo_yourube + `" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="course_description">
+<span style="font-weight:bolder;">Description:</span>
+(1)	 To understand the maths of deep learning techniques
+(2)	 To familiarize with deep learning tools, such as PyTorch, Tensor Flow, etc.
+(3)	 To understand the latest developments and applications of deep learning techniques
+(4)	 To develop practical working systems 
+			</div>
+            <div class="course_title">Spring Semester 2018 - Selected Projects</div>
+            <table style='text-align:left;border-spacing:10px 20px;border-collapse:separate;'>
+                <tbody>
+                    <tr>
+                        <td>
+            				<iframe width="300px" height="200px" src="` + DLP_demo_youtube + `" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                        <td style="vertical-align: top;text-align: left;">
+				    		<div style="text-align:justify;">
+				    			<div class="research_title">Learnt Image Compressor</div>
+				    			<div class="research_author">Chih-Peng Chang</div>
+				    			<div style="font-size:16px">Abstract: You should put your abstract here.</div>
+				    			<a style="font-size:16px" href="">Poster</a>
+				            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+            				<iframe width="300px" height="200px" src="https://www.youtube.com/embed/Gbs1KCEphDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	                        
+            			</td>
+                        <td style="vertical-align: top;text-align: left;">
+				    		<div style="text-align:justify;">
+				    			<div class="research_title">Simple Does It: Weakly Supervised Instance and Semantic Segmentation with Tensorflow</div>
+				    			<div class="research_author">呂承祐, 黃宇晟</div>
+				    			<div style="font-size:16px">Abstract: You should put your abstract here.</div>
+				    			<a style="font-size:16px" href="">Poster</a>
+				            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <div class="course_css">
                 <a href="https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=108&Sem=2&CrsNo=5253&lang=zh-tw">Syllabus</a>
-                <a href="https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=108&Sem=2&CrsNo=5253&lang=zh-tw">Project Video</a>
-                <a href="https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=108&Sem=2&CrsNo=5253&lang=zh-tw">Final Workshop</a>
+                | <a href="https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=108&Sem=2&CrsNo=5253&lang=zh-tw">Project Video</a>
+                | <a href="https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=108&Sem=2&CrsNo=5253&lang=zh-tw">Final Workshop</a>
             </div>
         </div>
+        
             
             
 	`;
@@ -377,10 +414,10 @@ function go_cur_members(){
             <td><img style="width:150px;height:200px;"src='members/advisor.png'><img></td>
             <td>    <span style="font-weight:bolder;color:blue">Prof. Wen-Hsiao Peng, NCTU CS</span>
     <a href="https://www.cs.nctu.edu.tw/">Department of Computer Science, National Chiao Tung University</a>
+    <span style="font-weight:bolder">Research Highlights:</span> Machine/deep learning, ISO/IEC & ITU-T video coding standards
     <span style="font-weight:bolder;">Address: </span>Room 431, Engineering Building 3, 1001 Ta-Hsueh Rd., Hsinchu 30010, Taiwan
     <span style="font-weight:bolder;">Email: </span><a href="mailto:wpeng@cs.nctu.edu.tw">wpeng@cs.nctu.edu.tw</a>
-    <span style="font-weight:bolder;">Personal Website: </span><a href="https://sites.google.com/g2.nctu.edu.tw/wpeng">wpeng</a>
-    <a href="https://scholar.google.com/citations?user=HucsFB4AAAAJ&hl=en">Google Scholar</a> | <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwen-hsiao-peng-02752b141%2F&sa=D&sntz=1&usg=AFQjCNF4fUU-UdJ0UaACYsu17FzEh1LdAA">LinkedIn</a>
+    <a href="https://sites.google.com/g2.nctu.edu.tw/wpeng">Personal Website</a> | <a href="https://scholar.google.com/citations?user=HucsFB4AAAAJ&hl=en">Google Scholar</a> | <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwen-hsiao-peng-02752b141%2F&sa=D&sntz=1&usg=AFQjCNF4fUU-UdJ0UaACYsu17FzEh1LdAA">LinkedIn</a>
             </td>
         </tr>
     </tbody>
