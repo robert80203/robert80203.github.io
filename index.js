@@ -4,7 +4,6 @@ Change the variables below to modify the content
 
 /*You should use embedded url from youtube*/
 homepage_youtube = "https://www.youtube.com/embed/X3WpaQzZBfE"
-DLP_demo_youtube = "https://www.youtube.com/embed/CGPo546M6d8"
 
 RLencoderimg = "encoder_control.png"
 RLencoderimg2 = "encoder_control2.png"
@@ -177,7 +176,7 @@ function go_IVC(){
 				    			<div class="research_title">SME-Net: Sparse Motion Estimation for Parametric Video Prediction through Reinforcement Learning</div>
 				    			<div class="research_author">Yung-Han Ho, Chuan-Yuan Cho, Wen-Hsiao Peng, and Guo-Lun Jin</div>
 				            	<div class="research_from">IEEE International Conference on Computer Vision (ICCV), Oct. 2019.</div>
-				            	<a style="font-size:16px" href="">PDF</a> | <a href="">Github</a>
+				            	<a style="font-size:16px" href="#">PDF</a> | <a href="#">Github</a>
 				            </div>
                         </td>
                     </tr>
@@ -190,7 +189,7 @@ function go_IVC(){
 				    			<div class="research_title">Deep Video Prediction Through Sparse Motion Regularization,</div>
 				    			<div class="research_author">Yung-Han Ho, C. C. Chan, and Wen-Hsiao Peng</div>
 				            	<div class="research_from">IEEE International Conference on Image Processing (ICIP), Oct. 2020.</div>
-				            	<a style="font-size:16px" href="">PDF</a> | <a href="">Github</a>
+				            	<a style="font-size:16px" href="#">PDF</a> | <a href="#">Github</a>
 				            </div>
                         </td>
                     </tr>
@@ -209,7 +208,7 @@ function go_IVC(){
 				    			<div class="research_title">Description of Challenge Proposal by NCTU: An Autoencoder-based Image Compressor with Principle Component Analysis and Soft-Bit Rate Estimation</div>
 				    			<div class="research_author">Chih-Peng Chang, David Alexandr, Wen-Hsiao Peng,  Hsueh-Ming Hang</div>
 				            	<div class="research_from">IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, Jun. 2019.</div>
-				            	<a style="font-size:16px" href="">PDF</a> | <a href="">Github</a>
+				            	<a style="font-size:16px" href="#">PDF</a> | <a href="#">Github</a>
 				            </div>
                         </td>
                     </tr>
@@ -312,14 +311,14 @@ function go_lec_DLP(){
                 <tbody>
                     <tr>
                         <td>
-            				<iframe width="300px" height="200px" src="` + DLP_demo_youtube + `" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            				<iframe width="300px" height="200px" src="https://www.youtube.com/embed/CGPo546M6d8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </td>
                         <td style="vertical-align: top;text-align: left;">
 				    		<div style="text-align:justify;">
 				    			<div class="research_title">Learnt Image Compressor</div>
 				    			<div class="research_author">Chih-Peng Chang</div>
 				    			<div style="font-size:16px">Abstract: You should put your abstract here.</div>
-				    			<a style="font-size:16px" href="">Poster</a>
+				    			<a style="font-size:16px" href="#">Poster</a>
 				            </div>
                         </td>
                     </tr>
@@ -332,7 +331,7 @@ function go_lec_DLP(){
 				    			<div class="research_title">Simple Does It: Weakly Supervised Instance and Semantic Segmentation with Tensorflow</div>
 				    			<div class="research_author">呂承祐, 黃宇晟</div>
 				    			<div style="font-size:16px">Abstract: You should put your abstract here.</div>
-				    			<a style="font-size:16px" href="">Poster</a>
+				    			<a style="font-size:16px" href="#">Poster</a>
 				            </div>
                         </td>
                     </tr>
@@ -340,8 +339,8 @@ function go_lec_DLP(){
             </table>
             <div class="course_css">
                 <a href="https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=108&Sem=2&CrsNo=5253&lang=zh-tw">Syllabus</a>
-                | <a href="https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=108&Sem=2&CrsNo=5253&lang=zh-tw">Project Video</a>
-                | <a href="https://timetable.nctu.edu.tw/?r=main/crsoutline&Acy=108&Sem=2&CrsNo=5253&lang=zh-tw">Final Workshop</a>
+                | <a href="https://www.youtube.com/watch?v=QgoxtGi-trU&list=PLZAKTu7XAqHWY1J522ldYk29DjzdGA8jh">Project Video</a>
+                | <a href="#">Final Workshop</a>
             </div>
         </div>
         
@@ -436,13 +435,13 @@ function go_cur_members(){
     <img style="width:150px;height:200px;" src='members/hector.jpg'></img>
     何永涵 Yung-Han Ho
     <img style="width:20px;height:20px;" src='figures/mail.png'></img><a href="mailto:hectorho0409@gmail.com">Email</a>
-    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href=""></a>
+    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href="#"></a>
             </td>
             <td>
     <img style="width:150px;height:200px;" src='members/Niraj.jpg'></img>
     Niraj Prakash Kini
     <img style="width:20px;height:20px;" src='figures/mail.png'></img><a href="mailto:nirajnctu17@gmail.com">Email</a>
-    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href=""></a>
+    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href="#"></a>
             </td> 
         </tr>
     </tbody>
