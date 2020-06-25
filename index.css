@@ -5,7 +5,8 @@ body {
 	background-size: 20% , 100% ;
 	background-position: 0% 0%, bottom;*/
     /*background-image: url(figures/footer.jpg);*/
-	background-color: 	#8E8E8E;
+	/*background-color: 	#FFF3EE;*/
+    background-image:linear-gradient(#FFF3EE,#FFCBB3);
     background-repeat: no-repeat;
 	background-size: 100% ;
 	background-position: bottom;
@@ -20,11 +21,11 @@ body {
 	text-align:left;
 	cursor: pointer;
 }
-
+/*
 table tbody tr td{
     text-align:left;
 }
-
+*/
 .element-container{
 	margin-top:100px;
 	z-index:-1
@@ -40,71 +41,107 @@ table tbody tr td{
 }
 /*CSS for News content*/
 .news{
-	width:750px;
+	width:900px;
 	margin-left:auto;
 	margin-right:auto;
-	border-style: solid;
-	border-color: #A52A2A;
-	border-width: 1px;
+	/*border-style: solid;
+	border-color: white;
+	border-width: 0px;*/
 	margin-top:2%;
 }
 
 .news_title{
-	background-color:#FFE4C4;
+	background-color:none;
 	display: inline-block;
-	width: 748px;
-	border-style: solid;
-	border-color: #A52A2A;
+	width: 900px;
 	border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: brown;
 	text-align:left;
-	font-family:fantasy;
+    font-family: 'Comic Sans MS';
+    font-size: 18px;
+    color:		#D200D2;
 	padding:5px;
 }
 
 .news_date{
-	font-family:fantasy;
-    font-style:bold;
-    color:red;
+    font-size:16px;
+    font-weight:bold;
+    color:	#9D9D9D;
 }
+/*
 .news_description{
     font-size:16px;
     font-weight:bold;
-    margin-right:1%;
+    border-width: 0px 0px 1px 0px;
 }
+*/
 
 .news_content{
-    font-size:14px;
-    margin-right:1%;
+    font-size:16px;
+    font-weight:normal;
+    /*color:#CAFFFF;*/
+    width: 900px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: brown;
+    text-align:justify;
+    /*margin-right:5%;*/
 }
 
 
 
 /*CSS for members*/
 .members_css{
-    width:750px;
+    width:950px;
 	margin-left:auto;
 	margin-right:auto;
 	font-family: Times New Roman;
-	font-size:18px;
-	white-space: pre;/*For text alignment*/
-	text-align:justify;
+	font-size:16px;
+	/*white-space: pre;
+	text-align:justify;*/
 }
+
+
+.member_size{
+    width:150px;
+    height:200px;
+}
+
+.member_advisor{
+    width:800px;
+    height:200px;
+}
+.member_title{
+    color: #D200D2;
+    font-family: 'Comic Sans MS';
+    font-size: 18px;
+}
+
+.icon_css{
+    width:20px;
+    height:20px;
+    
+}
+
 
 /*CSS for homepage introduction*/
 .intro{
-    width:750px;
+    width:950px;
     margin-left:auto;
 	margin-right:auto;
-    background-color:rgba(255, 181, 107, 0.5);
+    /*background-color:rgba(255, 181, 107, 0.5);*/
     margin-bottom:1%;
-    white-space: pre;/*For text alignment*/
+    white-space: pre;
     text-align:justify;
 }
 
 .intro_css{
+    background-color:none;
     font-size:16px;
     margin-top:-7%;
     margin-bottom:-7%;
+    /*box-shadow: 0 0 10px 10px 	#FFF3EE inset;*/
 }
 
 /*CSS for courses*/
@@ -213,7 +250,7 @@ table tbody tr td{
 	/*background-color:transparent;*/
 	text-align:center;
 	/*box-shadow: 0 0 10px 20px white inset;*/
-	box-shadow: 0 0 10px 20px 	#8E8E8E inset;
+	box-shadow: 0 0 10px 20px 	#FFF3EE inset;
 	padding:40px;
 }
 
@@ -278,7 +315,7 @@ table tbody tr td{
 
 /*Change sub menu background color*/
 .nav_self_css ul{
-	background-color:rgb(255, 255, 255, 0.8);/*rgb(134, 255, 82, 0.5);*//*#77DDFF;*/
+	background-color:rgb(255, 255, 255, 1.0);/*rgb(134, 255, 82, 0.5);*//*#77DDFF;*/
 }
 /*Sub menu font color*/
 .nav_self_css ul li a{
@@ -319,7 +356,7 @@ nav.fill ul li a:focus{
 nav.fill ul li a:hover {
   /*color: #E63F00;*/
   z-index: 1;
-  background-color:rgb(255, 255, 255, 0.8);/*rgb(134, 255, 82, 0.5);*//*Change hover background color*/
+  background-color:rgb(255, 255, 255, 1.0);/*rgb(134, 255, 82, 0.5);*//*Change hover background color*/
 
 }
 /*
@@ -333,12 +370,12 @@ nav.fill ul li a:hover:after {
 }
 */
 
-/*For contact table*/
+/*
 table, th, td {
-    /*border: 1px solid black;*/
     border:none;
 	text-align:center;
 }
+*/
 
 /***************************************/
 
@@ -351,7 +388,7 @@ table, th, td {
 		
 		}
     to {
-		background-color:rgb(255, 255, 255, 0.8);/*rgb(134, 255, 82, 0.5)*/
+		background-color:rgb(255, 255, 255, 1.0);/*rgb(134, 255, 82, 0.5)*/
 	}
 }
 
@@ -360,7 +397,7 @@ table, th, td {
 }
 
 @keyframes upanime {
-    from {background-color:rgb(255, 255, 255, 0.8);/*#77DDFF;*/}
+    from {background-color:rgb(255, 255, 255, 1.0);/*#77DDFF;*/}
     to {background-color:none;}
 }
 .scrollup_css{

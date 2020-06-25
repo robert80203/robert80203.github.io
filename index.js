@@ -105,17 +105,19 @@ function go_home(){
 	var newele = `
     <div class="left_ele intro">
         <div class="intro_css">
-        <img src="figures/home_small2.gif" style="height:120px;width:400px"></img>
-        We are recruiting PhD/Master students interested in conducting research in the following areas:
-        1.Reinforcement Learning (RL) Applications
-          -  RL for video encoder control
-          -  Deep video prediction
-          -  Visual question answering
-        2.Image/video Analytics
-          -  Domain adaptation for semantic segmentation
-          -  Compressed domain video analytics
-          -  Weakly supervised semantic segmentation
-        3.Deep Image/video Compression
+        
+        <img src="figures/home_small2.gif" style="height:150px;width:450px;margin-top:-3%"></img>
+        <div style="float: right;margin-top:3%;margin-right:3%;"><img src="photos/pic1.jpg" style="height:230px;width:430px"></img></div>
+        <span style="color: #7c795d; font-family: 'Trocchi', serif; font-size: 20px; font-weight: bold; line-height: 28px; margin: 0;">Our research mainly focuses on the following areas:</span>
+        <span style="color: red; font-size: 16px; font-weight: bold; "><img class="title_num" src='figures/1.png'><img>Image/Video Compression</span>
+            -  Reinforcement learning for video encoder control
+            -  Learning-based image compression
+        <span style="color: red; font-size: 16px; font-weight: bold; "><img class="title_num" src='figures/2.png'><img>Image/Video Semantic Segmentation</span>
+            -  Domain adaptation for semantic segmentation
+            -  Weakly supervised semantic segmentation
+            -  Fast video-based semantic segmentation
+        <span style="color: red; font-size: 16px; font-weight: bold; "><img class="title_num" src='figures/3.png'><img>Incremental Learning</span>
+        <span style="color: red; font-size: 16px; font-weight: bold; "><img class="title_num" src='figures/4.png'><img>AI Drone</span>
         </div>
     </div>
     <!--<iframe class="left_ele" width="750px" height="450px" src="`+homepage_youtube+`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->`;
@@ -123,7 +125,7 @@ function go_home(){
     var newele2 = `
 		<div class="news left_ele">
             <span class="news_title">News & Events</span>
-            <ul>
+            <!--<ul>
                 <li class="news_date">2020/06/02</li>
                 <div class="news_description">Wen-Hsiao Peng: Co-organizer of IEEE TCSVT Special Section on Learning-based Image and Video Compression</div>
                 <div class="news_content">Prof. Wen-Hsiao Peng served as Co-organizer of the IEEE TCSVT Special Section on Learning-based Image and Video Compression (to appear in the 2020 July issue).</div>
@@ -131,7 +133,10 @@ function go_home(){
                 <li class="news_date">2020/01/11</li>
                 <div class="news_description">Wen-Hsiao Peng: Associate Editor-in-Chief of Digital Communications for JETCAS</div>
                 <div class="news_content">Prof. Wen-Hsiao Peng was appointed as Associate Editor-in-Chief of Digital Communications for IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS).</div>
-            </ul>  
+            </ul> -->
+            <div class="news_content"><span class="news_date">June 2020</span> Prof. Wen-Hsiao Peng served as Co-organizer of the IEEE TCSVT Special Section on Learning-based Image and Video Compression (to appear in the 2020 July issue).</div>
+            <div class="news_content"><span class="news_date">January 2020</span> Prof. Wen-Hsiao Peng was appointed as Associate Editor-in-Chief of Digital Communications for IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS).</div>
+
 			
 			
 		</div>`;
@@ -222,15 +227,57 @@ function go_IVC(){
 }
 
 /*=================================================
-Add materials for computer vision
+Add materials for semantic segmentation
 =================================================*/
-function go_CV(){
+function go_SS(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
 	var newele = `
 	<div class="left_ele title_css">
-		Computer Vision
+		Semantic Segmentation
+	</div>`;
+	
+	var newele2 = `
+		<div class="left_ele" style="text-align:center;margin-top:3%;">
+            <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
+		</div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
+}
+
+/*=================================================
+Add materials for incremental learning
+=================================================*/
+function go_IL(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		Incremental Learning
+	</div>`;
+	
+	var newele2 = `
+		<div class="left_ele" style="text-align:center;margin-top:3%;">
+            <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
+		</div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
+}
+
+/*=================================================
+Add materials for AI Drone
+=================================================*/
+function go_drone(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_css">
+		AI Drone
 	</div>`;
 	
 	var newele2 = `
@@ -406,46 +453,54 @@ function go_cur_members(){
 	
 	var newele2 = `
 <div class="members_css left_ele">
-    <div class="course_title">Advisor</div>
-<table style='text-align:left;'>
-    <tbody>
-        <tr>
-            <td><img style="width:150px;height:200px;"src='members/advisor.png'><img></td>
-            <td>    <span style="font-weight:bolder;color:blue">Prof. Wen-Hsiao Peng, NCTU CS</span>
-    <a href="https://www.cs.nctu.edu.tw/">Department of Computer Science, National Chiao Tung University</a>
-    <span style="font-weight:bolder">Research Highlights:</span> Machine/deep learning, ISO/IEC & ITU-T video coding standards
-    <span style="font-weight:bolder;">Address: </span>Room 431, Engineering Building 3, 1001 Ta-Hsueh Rd., Hsinchu 30010, Taiwan
-    <span style="font-weight:bolder;">Email: </span><a href="mailto:wpeng@cs.nctu.edu.tw">wpeng@cs.nctu.edu.tw</a>
-    <a href="https://sites.google.com/g2.nctu.edu.tw/wpeng">Personal Website</a> | <a href="https://scholar.google.com/citations?user=HucsFB4AAAAJ&hl=en">Google Scholar</a> | <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwen-hsiao-peng-02752b141%2F&sa=D&sntz=1&usg=AFQjCNF4fUU-UdJ0UaACYsu17FzEh1LdAA">LinkedIn</a>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<div class="course_title">Ph.D. Students</div>
-<table style="text-align:left;border-spacing:40px 0px;border-collapse:separate;">
-    <tbody>
-        <tr>            
-            <td>
-    <img style="width:150px;height:200px;" src='members/Christine.jpg'></img>
-    林惠婷 Hui-Ting Lin
-    <img style="width:20px;height:20px;" src='figures/mail.png'></img><a href="mailto:lin.huiting.christine@gmail.com">Email</a>
-    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href="https://sites.google.com/site/huitinglinchristine/">Website</a>
-            </td>
-            <td>
-    <img style="width:150px;height:200px;" src='members/hector.jpg'></img>
-    何永涵 Yung-Han Ho
-    <img style="width:20px;height:20px;" src='figures/mail.png'></img><a href="mailto:hectorho0409@gmail.com">Email</a>
-    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href="#"></a>
-            </td>
-            <td>
-    <img style="width:150px;height:200px;" src='members/Niraj.jpg'></img>
-    Niraj Prakash Kini
-    <img style="width:20px;height:20px;" src='figures/mail.png'></img><a href="mailto:nirajnctu17@gmail.com">Email</a>
-    <img style="width:20px;height:20px;" src='figures/web.gif'></img><a href="#"></a>
-            </td> 
-        </tr>
-    </tbody>
-</table>
+        <div class="member_title">Advisor</div>
+        <table style="border-collapse: separate; border-spacing: 15px;">
+            <tbody>
+                <tr>
+                    <td class="member_size"><img class="member_size" src='members/advisor.png'><img></td>
+                    <td class="member_advisor">
+                        <div style="font-weight:bolder;color:blue">Prof. Wen-Hsiao Peng, NCTU CS</div>
+                        <div><a href="https://www.cs.nctu.edu.tw/">Department of Computer Science, National Chiao Tung University</a></div>
+                        <span style="font-weight:bolder;">Research Highlights:</span>Machine/deep learning, ISO/IEC & ITU-T video coding standards
+                        <span style="font-weight:bolder;">Address: </span>Room 431, Engineering Building 3, 1001 Ta-Hsueh Rd., Hsinchu 30010, Taiwan
+                        <span style="font-weight:bolder;">Email: </span><a href="mailto:wpeng@cs.nctu.edu.tw">wpeng@cs.nctu.edu.tw</a>
+                        <div><a href="https://sites.google.com/g2.nctu.edu.tw/wpeng">Personal Website</a> | <a href="https://scholar.google.com/citations?user=HucsFB4AAAAJ&hl=en">Google Scholar</a> | <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwen-hsiao-peng-02752b141%2F&sa=D&sntz=1&usg=AFQjCNF4fUU-UdJ0UaACYsu17FzEh1LdAA">LinkedIn</a>
+                        </div>
+                    </td>
+                </tr>
+           </tbody>
+        </table>
+        <div class="member_title">Ph.D Students</div>
+        <table style="border-collapse: separate; border-spacing: 15px;">
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="member_size" src='members/Christine.jpg'></img>
+                        <div>林惠婷 Hui-Ting Lin</div>
+                        <span><img class="icon_css" src='figures/mail.png'></img></span>
+                        <a href="mailto:lin.huiting.christine@gmail.com">Email</a>
+                        <span><img class="icon_css" src='figures/web.gif'></img></span>
+                        <a href="https://sites.google.com/site/huitinglinchristine/">Website</a>
+                     </td>
+                     <td>
+                        <img class="member_size" src='members/hector.jpg'></img>
+                        <div>何永涵 Yung-Han Ho</div>
+                        <span><img class="icon_css" src='figures/mail.png'></img></span>
+                        <a href="mailto:hectorho0409@gmail.com">Email</a>
+                        <span><img class="icon_css" src='figures/web.gif'></img></span>
+                        <a href="https://sites.google.com/site/huitinglinchristine/">Website</a>
+                     </td>
+                     <td>
+                        <img class="member_size" src='members/niraj.jpg'></img>
+                        <div>Niraj Prakash Kini</div>
+                        <span><img class="icon_css" src='figures/mail.png'></img></span>
+                        <a href="mailto:nirajnctu17@gmail.com">Email</a>
+                        <span><img class="icon_css" src='figures/web.gif'></img></span>
+                        <a href="https://sites.google.com/site/huitinglinchristine/">Website</a>
+                     </td>
+                </tr>
+            </tbody>
+        </table>
         </div>`;
 	parent.append(newele);
 	parent2.append(newele2);
