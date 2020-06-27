@@ -491,7 +491,7 @@ function go_cur_members(){
                         <a href="https://sites.google.com/site/huitinglinchristine/">Website</a>
                      </td>
                      <td>
-                        <img class="member_style" src='members/niraj.jpg'></img>
+                        <img class="member_style" src='members/Niraj.jpg'></img>
                         <div>Niraj Prakash Kini</div>
                         <span><img class="icon_css" src='figures/mail.png'></img></span>
                         <a href="mailto:nirajnctu17@gmail.com">Email</a>
