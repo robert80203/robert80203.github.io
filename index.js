@@ -461,9 +461,9 @@ function go_cur_members(){
                     <td class="member_advisor">
                         <div style="font-weight:bolder;color:blue">Prof. Wen-Hsiao Peng, NCTU CS</div>
                         <div><a href="https://www.cs.nctu.edu.tw/">Department of Computer Science, National Chiao Tung University</a></div>
-                        <span style="font-weight:bolder;">Research Highlights:</span>Machine/deep learning, ISO/IEC & ITU-T video coding standards
-                        <span style="font-weight:bolder;">Address: </span>Room 431, Engineering Building 3, 1001 Ta-Hsueh Rd., Hsinchu 30010, Taiwan
-                        <span style="font-weight:bolder;">Email: </span><a href="mailto:wpeng@cs.nctu.edu.tw">wpeng@cs.nctu.edu.tw</a>
+                        <div><span style="font-weight:bolder;">Research Highlights:</span>Machine/deep learning, ISO/IEC & ITU-T video coding standards</div>
+                        <div><span style="font-weight:bolder;">Address: </span>Room 431, Engineering Building 3, 1001 Ta-Hsueh Rd., Hsinchu 30010, Taiwan</div>
+                        <div><span style="font-weight:bolder;">Email: </span><a href="mailto:wpeng@cs.nctu.edu.tw">wpeng@cs.nctu.edu.tw</a></div>
                         <div><a href="https://sites.google.com/g2.nctu.edu.tw/wpeng">Personal Website</a> | <a href="https://scholar.google.com/citations?user=HucsFB4AAAAJ&hl=en">Google Scholar</a> | <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwen-hsiao-peng-02752b141%2F&sa=D&sntz=1&usg=AFQjCNF4fUU-UdJ0UaACYsu17FzEh1LdAA">LinkedIn</a>
                         </div>
                     </td>
