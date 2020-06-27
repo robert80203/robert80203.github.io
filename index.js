@@ -454,10 +454,10 @@ function go_cur_members(){
 	var newele2 = `
 <div class="members_css left_ele">
         <div class="member_title">Advisor</div>
-        <table style="border-collapse: separate; border-spacing: 15px;">
+        <table style="border-collapse: separate; border-spacing: 30px;">
             <tbody>
                 <tr>
-                    <td class="member_size"><img class="member_size" src='members/advisor.png'><img></td>
+                    <td><img class="advisor_style" src='members/advisor.png'><img></td>
                     <td class="member_advisor">
                         <div style="font-weight:bolder;color:blue">Prof. Wen-Hsiao Peng, NCTU CS</div>
                         <div><a href="https://www.cs.nctu.edu.tw/">Department of Computer Science, National Chiao Tung University</a></div>
@@ -471,11 +471,11 @@ function go_cur_members(){
            </tbody>
         </table>
         <div class="member_title">Ph.D Students</div>
-        <table style="border-collapse: separate; border-spacing: 15px;">
+        <table style="border-collapse: separate; border-spacing: 30px;">
             <tbody>
                 <tr>
                     <td>
-                        <img class="member_size" src='members/Christine.jpg'></img>
+                        <img class="member_style" src='members/Christine.jpg'></img>
                         <div>林惠婷 Hui-Ting Lin</div>
                         <span><img class="icon_css" src='figures/mail.png'></img></span>
                         <a href="mailto:lin.huiting.christine@gmail.com">Email</a>
@@ -483,7 +483,7 @@ function go_cur_members(){
                         <a href="https://sites.google.com/site/huitinglinchristine/">Website</a>
                      </td>
                      <td>
-                        <img class="member_size" src='members/hector.jpg'></img>
+                        <img class="member_style" src='members/hector.jpg'></img>
                         <div>何永涵 Yung-Han Ho</div>
                         <span><img class="icon_css" src='figures/mail.png'></img></span>
                         <a href="mailto:hectorho0409@gmail.com">Email</a>
@@ -491,7 +491,7 @@ function go_cur_members(){
                         <a href="https://sites.google.com/site/huitinglinchristine/">Website</a>
                      </td>
                      <td>
-                        <img class="member_size" src='members/niraj.jpg'></img>
+                        <img class="member_style" src='members/niraj.jpg'></img>
                         <div>Niraj Prakash Kini</div>
                         <span><img class="icon_css" src='figures/mail.png'></img></span>
                         <a href="mailto:nirajnctu17@gmail.com">Email</a>
@@ -541,24 +541,33 @@ function go_joinus(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="left_ele" style="text-align:center;margin-top:3%;">
-		  <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
-		</div>
+		<div class="members_css left_ele">
+            <div class="member_title">Ph.D/Graduate Students Recruitment</div>
+            <div class="news_content">We are recruiting PhD/Master students interested in conducting research for publication.</div>
+            <div class="member_title">For Undergraduate Students</div>
+            <div class="news_content">We provide international intership/study opportunities.</div>
+            <div class="member_title">Students Exchange</div>
+            <div class="news_content">
+                <ul>
+                  <li>Internship at Max Planck Institute, Germany</li>
+                  <li>Internship at University of Washington, USA</li>
+                </ul>
+            </div>
+        </div>
 	`;
 	parent.append(newele);
 	parent2.append(newele2);
 }
-
 /*=================================================
-Add materials for resource
+Add materials for life
 =================================================*/
-function go_res(){
+function go_life(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
 	var newele = `
 	<div class="left_ele title_css">
-		Resource
+		Life
 	</div>`;
 	
 	var newele2 = `
