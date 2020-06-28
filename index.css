@@ -12,15 +12,215 @@ body {
 	background-position: bottom;
 }
 
+/*CSS for container*/
+.ele_container{
+    width:900px;
+    margin-left:auto;
+	margin-right:auto;
+    margin-bottom:1%;
+}
+
+/*CSS for all titles*/
+.title{
+	width: 900px;
+	text-align:left;
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    color: #D200D2;
+    margin-bottom:1%;
+    margin-top:1%;
+}
+
+/*CSS for style of titles, including background*/
+.title_style{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1%;
+	font-size: 4em;
+    z-index: 100;
+	color:#FFFFFF;
+    text-shadow: .08em .08em 0 #000000;
+	width:940px;/*900+40*/
+	height:150px;
+    background-image: url(figures/nctu_build3.jpg);
+	background-repeat: no-repeat;
+	background-size:940px 150px;
+	/*background-color:transparent;*/
+	text-align:center;
+	/*box-shadow: 0 0 10px 20px white inset;*/
+	box-shadow: 0 0 10px 20px 	#FFF3EE inset;
+	padding:40px;
+}
+
+/*CSS for research topics*/
+.topic{
+	text-align:justify;
+    font-size: 18px;
+    color: #984B4B;
+    font-weight:bold;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+/*CSS for num picture*/
+.title_num{
+	width:18px;
+	height:18px;
+    margin-top:-5px;
+	margin-right:5px;
+}
+
+/*CSS for all content*/
+.content{
+    font-size:16px;
+    font-weight:normal;
+    width: 900px;
+    padding: 5px;
+    border-width: 0px 0px 1.5px 0px;
+    border-style: solid;
+    border-color: brown;
+    text-align:justify;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+/*CSS for date*/
+.date{
+    font-size:16px;
+    font-weight:bold;
+    color:	#007979;
+}
+
+/*CSS for list*/
+.list li{
+    font-size:16px;
+    font-weight:normal;
+    text-align:justify;
+    margin-top:1%;
+}
+
+/*CSS for research tables*/
+.research_table{
+    border-spacing: 0px 20px;/*right-left, top-bottom*/
+    border-collapse:separate;
+    width: 900px;
+    
+}
+
+/*CSS for all research titles*/
+.research_title{
+	/*width: 900px;*/
+	text-align:justify;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+/*CSS for research img*/
+.research_img{
+	width:300px;
+	height:200px;
+    float:left;
+    margin-right:20px;
+}
+
+/*CSS for research authors*/
+.research_author{
+	font-size:16px;
+	color:#0066CC;
+}
+
+/*CSS for research where it's from*/
+.research_from{
+	font-size:16px;
+	color:gray;
+	font-style:italic;
+}
+
+/*CSS for td in table of research*/
+.research_td{
+    vertical-align: text-top;
+}
+
+/*CSS for video*/
+.video{
+    width:300px;
+    height:200px;
+    float:left;
+    margin-right:20px;
+}
+
+/*CSS for abstract button*/
+.button {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+
+/*CSS for abstract*/
+.abstract{
+    font-size:16px;
+    display: none;
+}
+
+/*CSS for member table*/
+.member_table{
+    border-collapse: separate; 
+    border-spacing: 30px;
+}
+/*
+.research_table tbody tr {
+    vertical-align: text-top;
+}
+*/
+
+/*CSS for advisor photos*/
+.advisor_style{
+    border-radius: 20%;
+    padding: 5px;
+    width:150px;
+    height:200px;
+}
+
+/*CSS for member photos*/
+.member_style{
+    width:150px;
+    height:180px;
+    border: 1px solid white;
+    border-radius: 30%;
+    padding: 5px;
+}
+
+
+.icon_css{
+    width:18px;
+    height:18px;
+    margin-top:-5px;
+	margin-right:5px;
+}
+
+.link{
+    font-size:16px;
+}
+
+/*
+=========================================================================
+=========================================================================
+=========================================================================
+*/
+
 
 .topnav{
 }
 
-/*For 7 links under symposium agenda*/
-.sym_link{
-	text-align:left;
-	cursor: pointer;
-}
 /*
 table tbody tr td{
     text-align:left;
@@ -39,17 +239,15 @@ table tbody tr td{
 	background-repeat: no-repeat;
 	background-size:75px 50px;
 }
-/*CSS for News content*/
+/*CSS for News content
 .news{
 	width:900px;
 	margin-left:auto;
 	margin-right:auto;
-	/*border-style: solid;
-	border-color: white;
-	border-width: 0px;*/
 	margin-top:2%;
 }
-
+*/
+/*
 .news_title{
 	background-color:none;
 	display: inline-block;
@@ -63,12 +261,15 @@ table tbody tr td{
     color:		#D200D2;
 	padding:5px;
 }
+*/
 
+/*
 .news_date{
     font-size:16px;
     font-weight:bold;
     color:	#9D9D9D;
 }
+*/
 /*
 .news_description{
     font-size:16px;
@@ -77,19 +278,18 @@ table tbody tr td{
 }
 */
 
+/*
 .news_content{
     font-size:16px;
     font-weight:normal;
-    /*color:#CAFFFF;*/
     width: 900px;
     border-width: 0px 0px 1px 0px;
     border-style: solid;
     border-color: brown;
     text-align:justify;
-    /*margin-right:5%;*/
 }
 
-
+*/
 
 /*CSS for members*/
 .members_css{
@@ -103,20 +303,7 @@ table tbody tr td{
 }
 
 
-.advisor_style{
-    border-radius: 20%;
-    padding: 5px;
-    width:150px;
-    height:200px;
-}
 
-.member_style{
-    width:150px;
-    height:200px;
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: 5px;
-}
 
 .member_title{
     color: #D200D2;
@@ -124,90 +311,70 @@ table tbody tr td{
     font-size: 18px;
 }
 
-.icon_css{
-    width:20px;
-    height:20px;
-    
-}
 
 
-/*CSS for homepage introduction*/
-.intro{
-    width:950px;
-    margin-left:auto;
-	margin-right:auto;
-    /*background-color:rgba(255, 181, 107, 0.5);*/
-    margin-bottom:1%;
-    white-space: pre;
-    text-align:justify;
-}
 
+
+/*
 .intro_css{
     background-color:none;
     font-size:16px;
     margin-top:-7%;
     margin-bottom:-7%;
-    /*box-shadow: 0 0 10px 10px 	#FFF3EE inset;*/
 }
-
+*/
 /*CSS for courses*/
+/*
 .course{
     width:950px;
     margin-left:auto;
 	margin-right:auto;
 	font-size:20px;
-    /*white-space: pre;
-    text-align:left;*/
 }
-
+*/
+/*
 .course_description{
 	white-space: pre;
     text-align: justify;
 }
-
+*/
+/*
 .course_title{
     font-style:bold;
     color:#842B00;
     font-size:26px;
 }
-
+*/
+/*
 .course_css{
     
 }
-
+*/
 /*CSS for research content*/
+/*
 .research{
     width:950px;
     margin-left:auto;
 	margin-right:auto;
 }
-
+*/
+/*
 .research_topic{
 	font-weight:bolder;
 	font-size:22px;
 	font-family: Times New Roman, Helvetica, sans-serif;
 }
+*/
 
-.research_img{
-	width:250px;
-	height:150px;
-}
 
+/*
 .research_title{
 	font-weight:bolder;
 	font-size:18px;
 }
+*/
 
-.research_author{
-	font-size:16px;
-	color:#0066CC;
-}
 
-.research_from{
-	font-size:16px;
-	color:gray;
-	font-style:italic;
-}
 
 /*CSS for general purpose*/
 .ats{
@@ -220,7 +387,7 @@ table tbody tr td{
 	text-align:justify;
 }
 
-/*CSS for publication*/
+/*
 .publication_css{
 	width:750px;
 	margin-left:auto;
@@ -238,8 +405,9 @@ table tbody tr td{
     font-family:arial;
 }
 
-
+*/
 /*parent1 title css*/
+
 .title_css{
 	margin-left:auto;
 	margin-right:auto;
@@ -261,12 +429,6 @@ table tbody tr td{
 }
 
 
-/*For title number - image*/
-.title_num{
-	width:26px;
-	height:26px;
-	margin-right:5px;
-}
 
 .footer_css {
 	margin-top:10%;
