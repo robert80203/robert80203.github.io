@@ -96,7 +96,7 @@ function go_home(){
 	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
 	var newele = `
-		<div class="left_ele title_style">
+		<div class="left_ele title_home">
 			<!--<img src="figures/home_small2.gif" style="height:150px;width:450px;"></img>-->
 		</div>
         <div class="left_ele ele_container">
