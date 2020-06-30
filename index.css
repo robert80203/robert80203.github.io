@@ -6,11 +6,13 @@ body {
 	background-position: 0% 0%, bottom;*/
     /*background-image: url(figures/footer.jpg);*/
 	/*background-color: 	#FFF3EE;*/
-    background-image:linear-gradient(#FFFAF4,#FFCBB3);
+    /*background-image:linear-gradient(#FFFAF4,#FFCBB3);*/
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     background-repeat: no-repeat;
 	background-size: 100% ;
 	background-position: bottom;
 }
+
 
 /*CSS for container*/
 .ele_container{
@@ -32,6 +34,7 @@ body {
 }
 
 /*CSS for style of titles, including background*/
+/*
 .title_style{
 	margin-left:auto;
 	margin-right:auto;
@@ -40,16 +43,32 @@ body {
     z-index: 100;
 	color:#FFFFFF;
     text-shadow: .08em .08em 0 #000000;
-	width:940px;/*900+40*/
+	width:940px;
 	height:150px;
     background-image: url(figures/nctu_build3.jpg);
 	background-repeat: no-repeat;
 	background-size:940px 150px;
-	/*background-color:transparent;*/
 	text-align:center;
-	/*box-shadow: 0 0 10px 20px white inset;*/
 	box-shadow: 0 0 10px 20px 	#FFF3EE inset;
 	padding:40px;
+}
+*/
+
+.title_style{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1%;
+	font-size: 4em;
+	font-family: "Work Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	color:black;
+	width:100%;
+	height:250px;
+	background-image: url(figures/bg1.png);/*url(figures/nctu_build3.jpg);*/
+	background-repeat: no-repeat;
+	background-size:940px 250px;
+	background-position: center;
+	background-color:#FFFFFF;
+	padding:80px;
 }
 
 /*CSS for research topics*/

@@ -96,9 +96,13 @@ function go_home(){
 	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
 	var newele = `
+		<div class="left_ele title_style">
+			Multimedia Architecture and Processing Laboratory
+		</div>
         <div class="left_ele ele_container">
             <div>
-                <img src="figures/home_small2.gif" style="height:150px;width:450px;"></img>
+                <!--<img src="figures/home_small2.gif" style="height:150px;width:450px;"></img>-->
+                
                 <div class="title">Highlights of our research</div>
                 <img src="photos/pic1.jpg" style="height:230px;width:430px;float: right;"></img>
                 <div class="topic">Image/Video Compression</div>
