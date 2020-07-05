@@ -250,9 +250,76 @@ function go_SS(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="left_ele" style="text-align:center;margin-top:3%;">
-            <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
-		</div>
+		<div class="left_ele ele_container">  
+            <div class="topic">
+                <img class="title_num" src='figures/1.png'><img>
+                Domain Adaptation for Semantic Segmentation
+            </div>
+            <table class="research_table">
+                <tbody>
+                    <tr>
+                        <td class="research_td">
+                            <img class="research_img" src="research/segmentation/DA_1.jpg"></img>
+                            <div class="research_title">All about Structure: Adapting Structural Information across Domains for Boosting Semantic Segmentation</div>
+                            <div class="research_author">Wei-Lun Chang,  Hui-Po Wang, Wen-Hsiao Peng, Wei-Chen Chiu</div>
+                            <div class="research_from">IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR), June 2019.</div>
+                            <div class="link"><a href="https://arxiv.org/abs/1903.12212">PDF</a> | <a href="https://github.com/a514514772/DISE-Domain-Invariant-Structure-Extraction">Github</a> | <a href="https://a514514772.github.io/DISE-Domain-Invariant-Structure-Extraction/">Project Page</a></div>
+                            <button class="button" onclick="ShowAbstract('research_DA_1');">Abstract</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <div class="abstract" id="research_DA_1">
+                            In this paper we tackle the problem of unsupervised
+                            domain adaptation for the task of semantic segmentation,
+                            where we attempt to transfer the knowledge learned upon
+                            synthetic datasets with ground-truth labels to real-world
+                            images without any annotation. With the hypothesis that
+                            the structural content of images is the most informative and
+                            decisive factor to semantic segmentation and can be readily shared across domains, we propose a Domain Invariant
+                            Structure Extraction (DISE) framework to disentangle images into domain-invariant structure and domain-specific
+                            texture representations, which can further realize imagetranslation across domains and enable label transfer to improve segmentation performance. Extensive experiments
+                            verify the effectiveness of our proposed DISE model and
+                            demonstrate its superiority over several state-of-the-art approaches.
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="topic">
+                <img class="title_num" src='figures/2.png'><img>
+                Video Semantic Segmentation
+            </div>
+            <table class="research_table">
+                <tbody>
+                    <tr>
+                        <td class="research_td">
+                            <img class="research_img" src="research/segmentation/VSS_1.png"></img>
+                            <div class="research_title">Semantic Segmentation on Compressed Video Using Block Motion Compensation and Guided Inpainting</div>
+                            <div class="research_author">Stefanie Tanujaya, Tieh Chu, Jia-Hao Liu, Wen-Hsiao Peng</div>
+                            <div class="research_from">IEEE International Symposium on Circuits and Systems (ISCAS), Spain, Oct 2020.</div>
+                            <div class="link"><a href="#">PDF</a> | <a href="#">Github</a></div>
+                            <button class="button" onclick="ShowAbstract('research_VSS_1');">Abstract</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <div class="abstract" id="research_VSS_1">
+                           	This paper addresses the problem of fast semantic segmentation on compressed video. 
+                            Unlike most prior works for video segmentation, which perform feature propagation based on optical flow estimates or sophisticated warping techniques, 
+                            ours takes advantage of block motion vectors in the compressed bitstream to propagate the segmentation of a keyframe to subsequent non-keyframes. 
+                            This approach, however, needs to respect the inter-frame prediction structure, 
+                            which often suggests recursive, multi-step prediction with error propagation and accumulation in the temporal dimension. To tackle the issue, 
+                            we refine the motion-compensated segmentation using inpainting. Our inpainting network incorporates guided non-local attention for long-range reference and pixel-adaptive convolution for ensuring the local coherence of the segmentation. 
+                            A fusion step then follows to combine both the motion-compensated and inpainted segmentations. 
+                            Experimental results show that our method outperforms the state-of-the-art baselines in terms of segmentation accuracy. 
+                            Moreover, it introduces the least amount of network parameters and multiply-add operations for non-keyframe segmentation. 
+                           </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 	`;
 	parent.append(newele);
 	parent2.append(newele2);
