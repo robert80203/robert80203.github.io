@@ -125,7 +125,15 @@ function go_home(){
             <span class="title">News & Events</span>
             <div class="content"><span class="date">June 2020</span> Prof. Wen-Hsiao Peng served as Co-organizer of the IEEE TCSVT Special Section on Learning-based Image and Video Compression (to appear in the 2020 July issue).</div>
             <div class="content"><span class="date">January 2020</span> Prof. Wen-Hsiao Peng was appointed as Associate Editor-in-Chief of Digital Communications for IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS).</div>
-		</div>`;
+            <div class="content">
+                <span class="date">September 2019</span> [Invited Talk] Beyond end-to-end learning: Dialog system, sentence generation, and conversation analysis for automatic mental disorder diagnosis.
+                <div><span style="font-weight:bolder">Honorary Speaker</span>: Prof. Yoshinobu Kano</div>
+                <div><span style="font-weight:bolder">Time</span>: 14:00 - 15:00, Monday, 30 September, 2019</div>
+                <div><span style="font-weight:bolder">Venue</span>: National Chiao Tung University, EC321 (交通大學工程三館 EC321)</div>
+                <div><span style="font-weight:bolder">Information</span>: <a href="http://mapl.nctu.edu.tw/sample/20190930_Yoshinobu_Talk.pdf">here</a></div>
+             </div>
+
+        </div>`;
     parent.append(newele);
 	parent2.append(newele2);
 	current_page_position = 'go_home';
@@ -205,7 +213,7 @@ function go_IVC(){
                 <tbody>
                     <tr>
                         <td class="research_td">
-                            <img class="research_img" src="research/compression/Videopred/` + Videopredimg + `"></img>
+                            <img class="research_img" src="research/compression/Compression/` + Compressionimg + `"></img>
                             <div class="research_title">An Autoencoder-based Image Compressor with Principle Component Analysis and Soft-Bit Rate Estimation</div>
                             <div class="research_author">Chih-Peng Chang, David Alexandr, Wen-Hsiao Peng, Hsueh-Ming Hang</div>
                             <div class="research_from">IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, Jun. 2019.</div>
@@ -284,9 +292,24 @@ function go_drone(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="left_ele" style="text-align:center;margin-top:3%;">
-            <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
-		</div>
+        <div class="left_ele ele_container">  
+            <table class="research_table">
+                <tbody>
+                    <tr>
+                        <td class="research_td">
+                            <iframe class="research_img" src="https://www.youtube.com/embed/BgyGibg9tH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="research_td">
+                            <iframe class="research_img" src="https://www.youtube.com/embed/X3WpaQzZBfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+      </div>
 	`;
 	parent.append(newele);
 	parent2.append(newele2);
@@ -473,8 +496,9 @@ function go_cur_members(){
                             <div><a href="https://www.cs.nctu.edu.tw/">Department of Computer Science, National Chiao Tung University</a></div>
                             <div><span style="font-weight:bolder;">Research Highlights:</span>Machine/deep learning, ISO/IEC & ITU-T video coding standards</div>
                             <div><span style="font-weight:bolder;">Office: </span>Room 431, Engineering Building 3</div>
-                            <div><span style="font-weight:bolder;">Email: </span><a href="mailto:wpeng@cs.nctu.edu.tw">wpeng@cs.nctu.edu.tw</a></div>
+                            <div><img class="icon_css" src='figures/mail.png'></img><span style="font-weight:bolder;">Email: </span><a href="mailto:wpeng@cs.nctu.edu.tw">wpeng@cs.nctu.edu.tw</a></div>
                             <div>
+                                <img class="icon_css" src='figures/web.gif'></img>
                                 <a href="https://sites.google.com/g2.nctu.edu.tw/wpeng">Personal Website</a> | 
                                 <a href="https://scholar.google.com/citations?user=HucsFB4AAAAJ&hl=en">Google Scholar</a> | 
                                 <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwen-hsiao-peng-02752b141%2F&sa=D&sntz=1&usg=AFQjCNF4fUU-UdJ0UaACYsu17FzEh1LdAA">LinkedIn</a>
@@ -483,7 +507,7 @@ function go_cur_members(){
                     </tr>
                </tbody>
             </table>
-            <div class="title">Ph.D Students</div>
+            <div class="title">Ph.D. Students</div>
             <table class="member_table" style="text-align:center;">
                 <tbody>
                     <tr>
@@ -532,9 +556,99 @@ function go_alu(){
 	</div>`;
 	
 	var newele2 = `
-		<div class="left_ele" style="text-align:center;margin-top:3%;">
-		  <img  src="unavailable.png" alt="error" style="width:15vw;height:15vw;border:0;">
-		</div>
+        <div class="left_ele ele_container">
+            <div class="title">2019</div>
+                <table class="member_table" style="text-align:center;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img class="member_style" src='members/alumni/wangmeng.jpg'></img>
+                                <div>王濛 Meng Mang</div>
+                                <span><img class="icon_css" src='figures/mail.png'></img></span>
+                                <a href="mailto:mm20103462@gmail.com">Email</a>
+                                <span><img class="icon_css" src='figures/web.gif'></img></span>
+                                <a href="https://sites.google.com/site/mengwang404/">Website</a>
+                             </td>
+                             <td>
+                                <img class="member_style" src='members/alumni/francis.jpg'></img>
+                                <div>張硯為 Yen-Wei Chang</div>
+                                <span><img class="icon_css" src='figures/mail.png'></img></span>
+                                <a href="mailto:francis87192@gmail.com">Email</a>
+                                <span><img class="icon_css" src='figures/web.gif'></img></span>
+                                <a href="http://people.cs.nctu.edu.tw/~changyw03/">Website</a>
+                             </td>
+                        </tr>
+                    </tbody>
+                </table>
+       </div>
+	`;
+	parent.append(newele);
+	parent2.append(newele2);
+}
+
+/*=================================================
+Add materials for PhD graduates
+=================================================*/
+function go_phdgrad(){
+	var parent = $('#left_parent');
+	var parent2 = $('#left_parent2');
+	$('.left_ele').remove();
+	var newele = `
+	<div class="left_ele title_style">
+		Ph.D. Graduates
+	</div>`;
+	
+	var newele2 = `
+        <div class="left_ele ele_container">
+            <div class="title">2017</div>
+            <table class="member_table">
+                <tbody>
+                    <tr>
+                        <td><img class="advisor_style" src='members/phd_graduates/ChunChiChen2015.jpg'><img></td>
+                        <td>
+                            <div>Chun-Chi Chen, 陳俊吉</div>
+                            <div>
+                                <img class="icon_css" src='figures/mail.png'></img><span>Email: </span>
+                                <a href="mailto:cheerchen.cs98g@g2.nctu.edu.tw">cheerchen.cs98g@g2.nctu.edu.tw</a>,
+                                <a href="mailto:cheerchen73@gmail.com">cheerchen73@gmail.com</a>
+                            </div>
+                            <div>
+                                <img class="icon_css" src='figures/web.gif'></img>
+                                <a href="http://mapl.nctu.edu.tw/ogre">Personal Website</a>
+                            </div>
+                            <div>
+                                <img class="icon_css" src='figures/work.jpg'></img>
+                                <span>Mandatory National Service (Term ends on Februay 6, 2018)</span>
+                            </div>
+                        </td>
+                    </tr>
+               </tbody>
+            </table>
+            <div class="title">2011</div>
+            <table class="member_table">
+                <tbody>
+                    <tr>                 
+                        <td><img class="advisor_style" src='members/phd_graduates/YiWenChen.jpg'><img></td>
+                        <td>
+                            <div>Yi-Wen Chen (Jeff), 陳渏紋</div>
+                            <div>
+                                <img class="icon_css" src='figures/mail.png'></img><span>Email: </span>
+                                <a href="mailto:yiwench@gti.qualcomm.com">yiwench@gti.qualcomm.com</a>,
+                                <a href="mailto:ewchen@csie.nctu.edu.tw">ewchen@csie.nctu.edu.tw</a>
+                            </div>
+                            <div>
+                                <img class="icon_css" src='figures/web.gif'></img>
+                                <a href="https://tw.linkedin.com/in/yi-wen-chen-180b1059">Personal Website</a>
+                            </div>
+                            <div>
+                                <img class="icon_css" src='figures/work.jpg'></img>
+                                <span>Qualcomm, San Diego, CA, USA</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+       </div>
 	`;
 	parent.append(newele);
 	parent2.append(newele2);
@@ -574,7 +688,7 @@ function go_joinus(){
 /*=================================================
 Add materials for life
 =================================================*/
-function go_life(){
+/*function go_life(){
 	var parent = $('#left_parent');
 	var parent2 = $('#left_parent2');
 	$('.left_ele').remove();
@@ -590,7 +704,7 @@ function go_life(){
 	`;
 	parent.append(newele);
 	parent2.append(newele2);
-}
+}*/
 
 
 /*=================Responsive Desgin======================*/
