@@ -10,12 +10,12 @@ body {
     /*background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);*/
     /*background-color:#E0E0E0;*/
     
-    background-image: url(figures/home_small2.gif);
+    /*background-image: url(figures/home_small2.gif);*/
     background-repeat: no-repeat;
-	background-size: 25%;
-	background-position: bottom right;
+	background-size: 200px 80px;
+	background-position: right 0px top 0px;
     background-color: #F0F0F0;
-    /*background: linear-gradient(to bottom, white 20%, #BEBEBE 80%);*/
+
 }
 
 
@@ -69,9 +69,9 @@ body {
 	font-weight: 800;
 	text-align: center; 
 	color:black;
-	width:100%;
+	width:1520px;
 	height:220px;
-	background-image: url(figures/home_day.png);
+	background-image: url(figures/home.png);
 	background-repeat: no-repeat;
 	background-size:920px 220px;
 	background-position: center;
@@ -89,9 +89,9 @@ body {
 	font-weight: 550;
 	text-align: center; 
 	color:black;
-	width:100%;
+	width:1520px;
 	height:220px;
-	background-image: url(figures/bg_day.png);
+	background-image: url(figures/bg.png);
 	background-repeat: no-repeat;
 	background-size:920px 220px;
 	background-position: center;
