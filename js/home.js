@@ -16,6 +16,7 @@ function go_home(){
                 <div class="topic">Image/Video Compression</div>
                 <ul class="list">
                     <li>Reinforcement learning for video encoder control</li>
+                    <li>Learning-based video compression</li>
                     <li>Learning-based image compression</li>
                 </ul>
                 <div class="topic">Image/Video Semantic Segmentation</div>
@@ -25,6 +26,7 @@ function go_home(){
                     <li>Fast video-based semantic segmentation</li>
                 </ul>
                 <div class="topic">Incremental Learning</div>
+                <div class="topic">Video Super-Resolution</div>
                 <div class="topic">AI Drone</div>
             </div>
         </div>`
