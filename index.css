@@ -71,9 +71,9 @@ body {
 	color:black;
 	width:1520px;
 	height:220px;
-	background-image: url(figures/home.png);
+	background-image: url(figures/home_small2.gif);
 	background-repeat: no-repeat;
-	background-size:920px 220px;
+	background-size:920px 250px;
 	background-position: center;
 	background-color:#FFFFFF;
     box-shadow: 0px 5px 8px 0px #888888;
