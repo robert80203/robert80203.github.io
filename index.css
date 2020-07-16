@@ -74,6 +74,7 @@ body {
 	background-image: url(figures/home_small2.gif);
 	background-repeat: no-repeat;
 	background-size:920px 250px;
+    opacity: 0.5;
 	background-position: center;
 	background-color:#FFFFFF;
     box-shadow: 0px 5px 8px 0px #888888;
@@ -489,11 +490,13 @@ table tbody tr td{
 	
 }
 
+/*normal header css*/
 .header_css{
 	position:absolute;
 	top:0px;	
 	z-index:9999;
 	width:100%;
+	background-color: #5B5B5B;
 }
 /***********Let menu center*******/
 .navbar-nav {
@@ -519,7 +522,7 @@ table tbody tr td{
 }
 /*Menu font color*/
 .nav_self_css a {
-	color:	#000000;
+	color:	white/*#000000*/;
 	font-size:16px;
 	font-weight:bold;
 	
@@ -531,28 +534,23 @@ table tbody tr td{
 
 /*Change sub menu background color*/
 .nav_self_css ul{
-	background-color:rgb(255, 255, 255, 1.0);/*rgb(134, 255, 82, 0.5);*//*#77DDFF;*/
+	background-color:#5B5B5B;/*rgb(134, 255, 82, 0.5);*//*#77DDFF;*/
 }
 /*Sub menu font color*/
 .nav_self_css ul li a{
-	color:	#000000;
 	font-weight:bold;
-	/*color : #33CCFF;*/
+	color : white;
 }
 
 .navbar-brand {
 	font-size: 24px;
 	
 }
-
-.nav_self_css ul li a:hover{
-	/*color:	#880000;*/
-}
-
+/*
 .dropdown:focus{
 	color: black;
 }
-
+*/
 /**********special effect************/
 nav.fill ul li a {
   transition: all 1s;
@@ -567,14 +565,19 @@ nav.fill ul li a:after {
 
 /*After clicking menu bar button*/
 nav.fill ul li a:focus{
+	background-color:#5B5B5B;
 }
+
+
 /*Change sub menu hover color*/
 nav.fill ul li a:hover {
-  /*color: #E63F00;*/
   z-index: 1;
-  background-color:rgb(255, 255, 255, 1.0);/*rgb(134, 255, 82, 0.5);*//*Change hover background color*/
-
+  background-color:#5B5B5B;
+  color:white;
 }
+
+
+
 /*
 nav.fill ul li a:hover:after {
   z-index: -10;
@@ -598,24 +601,26 @@ table, th, td {
 /*******Menu bar auto open*****/
 
 /*scroll down effect, with color*/
+/*
 @keyframes downanime {
     from {
 		background-color:none;
 		
 		}
     to {
-		background-color:rgb(255, 255, 255, 1.0);/*rgb(134, 255, 82, 0.5)*/
+		background-color:rgb(255, 255, 255, 1.0);
 	}
 }
-
+@keyframes upanime {
+    from {background-color:rgb(255, 255, 255, 1.0);}
+    to {background-color:none;}
+}
+*/
 .scrolldown_css{
 	animation: downanime 1.0s forwards;
 }
 
-@keyframes upanime {
-    from {background-color:rgb(255, 255, 255, 1.0);/*#77DDFF;*/}
-    to {background-color:none;}
-}
+
 .scrollup_css{
 	animation-name: upanime;
 	animation-duration: 1s;
@@ -696,12 +701,11 @@ table, th, td {
 
 
     
-
+/*
 .sidenav a:hover, .offcanvas a:focus{
-    /*color: #f1f1f1;*/
-	
-}
 
+}
+*/
 .sidenav .closebtn {
     position: absolute;
     top: 0;
