@@ -6,9 +6,9 @@ body {
   background-attachment: fixed;
   background-position: bottom;*/
 
-  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  /*background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 .profile{
 	text-align:center;
