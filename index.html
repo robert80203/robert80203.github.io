@@ -1,157 +1,25 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- jquery-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- Self-defined-->
-		<link href="index.css" rel="stylesheet">
-		<!--<script src="nav.js"></script><!--navbar-fixed-top-->
-		<script src="index.js"></script>
-        <script src="js/research.js"></script>
-        <script src="js/home.js"></script>
-        <script src="js/publication.js"></script>
-        <script src="js/teaching.js"></script>
-        <script src="js/member.js"></script>
-		<script type="text/javascript">
-		</script>
-		<style>
-			@media screen and (max-width: 768px) {
-				#header {
-					display:none;
-				}
-				#main{
-
-					display:block;
-
-				}
-				body {
-					background-image:none;
-				}
-				.element-container{
-					margin-top:20px;
-				}
-			}
-
-		</style>
-	</head>
-	<body>
-		<!------------------------Responsive Menu------------------>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<div class="container">
-				<a href="#" onclick='go_home();'><img src="figures/home_black.png" style="height:15px;width:60px;"></a>
-				<a href="#col1" data-toggle="collapse" onclick='go_research();' style="color:white;font-size:20px">Research</a>
-				<!--<div id="col1" class="collapse">
-					<a href="#" onclick='go_IVC();'>Image/Video Compression</a>
-					<a href="#" onclick='go_SS();'>Semantic Segmentation</a>
-                    <a href="#" onclick='go_IL();'>Incremental Learning</a>
-                    <a href="#" onclick='go_drone();'>AI drone</a>
-				</div>-->
-				<a href="#col2" data-toggle="collapse" style="color:white;font-size:20px">Teaching
-				</a>
-				<div id="col2" class="collapse">
-					<a href="#" onclick='go_lec_DLP();'>Deep Learning and Practice</a>
-					<a href="#" onclick='go_lec_MM();'>Matrix Method and Data Science</a>
-					<a href="#" onclick='go_lec_VC();'>Video Compression</a>
-				</div>
-				<a href="#col3" data-toggle="collapse" style="color:white;font-size:20px">Members</a>
-				<div id="col3" class="collapse">
-					<a href="#" onclick='go_cur_members();'>Current Members</a>
-					<a href="#" onclick='go_alu();'>Alumni</a>
-                    <a href="#" onclick='go_phdgrad();'>Ph.D. Graduates</a>
-				</div>
-				<a href="#col4" onclick='go_joinus();' data-toggle="collapse" style="color:white;font-size:20px">Join Us</a>
-				<a href="#col5" onclick='go_Publication();' data-toggle="collapse" style="color:white;font-size:20px">Publication</a>
-                <a href="https://get.google.com/albumarchive/102189842204618830782" data-toggle="collapse" style="color:white;font-size:20px">Life</a>
-			</div>
-		</div>
-		<div id="main">
-		  <span class="sidebar" onclick="openNav()">&#9776;</span>
-		</div>
-		<!------------------------Responsive Menu------------------>
-		<nav id="header" class="navbar header_css fill" style="top:0px;">
-			<div id="header-container" class="container navbar-container" >
-				<div id="navbar" class="collapse navbar-collapse"  style="text-align:center;">
-					<ul class="nav_self_css nav navbar-nav">
-						<li class="dropdown">
-                            <a href="#" onclick='go_home();'>
-                                <img src="figures/home_black.png" style="height:15px;width:60px;margin-top:-8%">
-                            </a>
-						</li>
-						<li class="dropdown" ><a href="#" onclick='go_research();'>Research</a>
-							<!--<ul class="dropdown-menu" style="padding-top: 0px;">
-								<li><a href="#" onclick='go_IVC();'>Image/Video Compression</a></li>
-								<li><a href="#" onclick='go_SS();'>Semantic Segmentation</a></li>
-                                <li><a href="#" onclick='go_IL();'>Incremental Learning</a></li>
-                                <li><a href="#" onclick='go_drone();'>AI drone</a></li>
-							</ul>-->
-						</li><!-- data-toggle="dropdown" for click-->
-						
-						<li class="dropdown"><a  href="#">Teaching</a>
-							<ul class="dropdown-menu" style="padding-top: 0px;">
-								<li><a href="#" onclick='go_lec_DLP();'>Deep Learning and Practice</a></li>
-								<li><a href="#" onclick='go_lec_MM();'>Matrix Method and Data Science</a></li>
-								<li><a href="#" onclick='go_lec_VC();'>Video Compression</a></li>
-							</ul>
-						</li> 
-						<li class="dropdown"><a  href="#">Members</a>
-							<ul class="dropdown-menu" style="padding-top: 0px;">
-								<li><a href="#" onclick='go_cur_members();'>Current Members</a></li>
-								<li><a href="#" onclick='go_alu();'>Alumni</a></li>
-                                <li><a href="#" onclick='go_phdgrad();'>Ph.D. Graduates</a></li>
-							</ul>
-						</li>
-                        <li class="dropdown"><a href="#" onclick='go_joinus();'>Join Us</a>
-						</li>
-                        <li class="dropdown"><a href="#" onclick='go_Publication();'>Publication</a>
-						</li>
-                        <li class="dropdown"><a href="https://get.google.com/albumarchive/102189842204618830782">Life</a>
-						</li>
-						
-					</ul>
-
-				</div><!-- /.nav-collapse -->
-			</div><!-- /.container -->
-		</nav><!-- /.navbar -->
-		<div  class="container-fluid element-container">
-			<div class="row">
-				<div id="left_parent" style="text-align:center">
-                    <div class="left_ele">
-                    Introduction ...
-                    </div>
-					<iframe class="left_ele" width="750px" height="450px" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<!--<div class="col-md-4" style="text-align:center"></div>-->
-				<div id="left_parent2" ><!--class="col-md-12"-->
-					<div class="news left_ele">
-						<span class="news_title">News & Events</span>
-						<div class="news_info">
-						</div>
-					</div>
-						
-				</div>
-			</div>
-			  
-			
+<!DOCTYPE>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
 	
-			<!--<span>Copyright c National Sun Yat-sen University All rights reserved.</span>
-			<span>Address: No. 70, Lienhai Rd., Kaohsiung 80424 Taiwan, R.O.C.</span>
-			<p>Tel: +886-7- 5252000 x 2614</p>-->
+	<div class="profile">
+		<img src="img.jpg" width="250" height="250">
+		<div>Robert Lee</div>
+		</br>
+		<div class="text">Hi~I'm a graduate student who majors in computer science and engineering at National Chiao-Tung University in Taiwan.
 		</div>
-		<div style="height:100px" class="footer_css">
-			<div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;"><!--<img src="figures/home_small2.gif" style="width:260px;height:90px;"></img>-->
-  Copyright @ National Ciao Tung University MAPL all rights reserved.
-  Telephone: +886-3-5712121 ext54779
-  Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science</div>
+		<div class="text">The main research now is deep learning and Natural Language Processing(NLP).
 		</div>
-        
-
-
-		
-	</body>
-</html>
+		</br>
+		<div class="contact_info">
+			<div>Contact me</div>
+			<div>Email: robert80203@gmail.com</div>
+		</div>
+	</div>
+	<div class="footer_css"></div>
+</body>
