@@ -9,6 +9,7 @@ body {
   /*background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;*/
+  background-color: #FFF8D7;
 }
 .profile{
 	text-align:center;
@@ -26,7 +27,7 @@ body {
     border-radius: 20%;
     padding: 5px;
     width:200px;
-    height:250px;
+    height:230px;
 }
 
 .institute_style{
