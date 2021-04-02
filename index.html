@@ -1,14 +1,31 @@
 <!DOCTYPE>
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=f0ad20c3c35c">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/mobile.css?v=23aa547f66b9">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Self-defined-->
+    <link href="index.css" rel="stylesheet">
+    <!--<script src="nav.js"></script><!--navbar-fixed-top-->
+    <script src="index.js"></script>
+    <script type="text/javascript">
+    </script>
+    <style>
+        
+    </style>
 </head>
 <body>
 	
 	<div class="profile">
-		<table class="member_table">
+		<table class="member_table direct_show">
             <tbody>
                 <tr>
                     <td><img class="personal_style" src='figures/img.jpg'><img></td>
@@ -23,8 +40,8 @@
                 </tr>
            </tbody>
         </table>
-        <div class="title">Education</div>
-        <table class="member_table">
+        <div class="title direct_show">Education</div>
+        <table class="member_table direct_show">
             <tbody>
             	<tr>
                     <td><img class="institute_style" src='figures/nctu.png'><img></td>
@@ -42,8 +59,8 @@
                 </tr>
            </tbody>
         </table>
-        <div class="title">Experience</div>
-        <table class="member_table">
+        <div class="title later_show element-to-hide">Experience</div>
+        <table class="member_table later_show element-to-hide">
             <tbody>
             	<tr>
                     <td><img class="institute_style" src='figures/nctu.png'><img></td>
@@ -61,8 +78,40 @@
                 </tr>
            </tbody>
         </table>
-        <div class="title">Research Interests</div>
-        <table class="member_table">
+        <div class="title later_show element-to-hide">Research Interests</div>
+        <div class="later_show element-to-hide title_css">Image/Video Semantic Segmentation</div>
+        <div class="container">
+            <div class="row row_css later_show element-to-hide">
+                <div class="col-sm">
+                    <img style="height:150px;width:400px;" src="figures/ivs.png"><img>
+                    <img style="height:200px;width:400px;" src="figures/GSVNet.png"><img>
+                </div>
+                <div class="col-sm col_style">
+                    <div class="research_title">GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video</div>
+                    <div class="research_author">Shih-Po Lee, Si-Cun Chen, Wen-Hsiao Peng</div>
+                    <div class="research_from">IEEE International Conference on Multimedia and Expo (ICME), July 2021.</div>
+                    <div class="link"><a href="https://arxiv.org/abs/2103.08834">PDF</a>| <a href="http://mapl.nctu.edu.tw/GSVNet/">Project Page</a></div>
+                </div>
+                
+            </div>
+            <div class="row row_css later_show element-to-hide">
+                <div class="col-sm">
+                    <img style="height:200px;width:300px;" src="figures/wsss.png"><img>
+                    <img style="height:250px;width:400px;" src="figures/WSGCN.png"><img>
+                </div>
+                <div class="col-sm col_style">
+                    <div class="research_title">Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks</div>
+                    <div class="research_author">Shun-Yi Pan*, Cheng-You Lu*, Shih-Po Lee, Wen-Hsiao Peng</div>
+                    <div class="research_from">IEEE International Conference on Multimedia and Expo (ICME), July 2021.</div>
+                    <div class="link"><a href="https://arxiv.org/abs/2103.16762">PDF</a> | <a href="https://github.com/Xavier-Pan/WSGCN">Github</a> | <a href="http://mapl.nctu.edu.tw/WSGCN/">Project Page</a></div>
+                </div>
+            </div>
+            <div class="later_show element-to-hide title_css">3D Human Pose Estimation using mmWave Radar</div>
+            <div class="later_show element-to-hide title_css">Domain Adaptation</div>
+        </div>
+        <footer>
+        </footer>
+        <!--<table class="member_table later_show element-to-hide">
             <tbody>
             	<tr>
                     <td><img style="height:150px;width:300px;" src='figures/ivs.png'><img></td>
@@ -77,6 +126,6 @@
                     </td>
                 </tr>
            </tbody>
-        </table>
+        </table>-->
 	</div>
 </body>
