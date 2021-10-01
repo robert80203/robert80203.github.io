@@ -37,6 +37,11 @@
                             <img class="icon_css" src='figures/web.png'></img>
                             <a href="https://scholar.google.com.tw/citations?user=evmoWxUAAAAJ&hl=zh-TW">Google Scholar</a> | <a href="https://github.com/robert80203">Github</a> 
                         </div>
+                        <div class="bio">
+                            I am Shih-Po Lee. I am currently an intern in Information Processing Lab in University of Washington in Seattle, U.S.,
+                            working on computer vision and deep learning. Specifically, the subject is using mmWave radar to estimate 2D single human pose
+                            and using single image to predict multiple 3D human pose.
+                        </div>
                     </td>
                 </tr>
            </tbody>
@@ -63,6 +68,13 @@
         <div class="title later_show element-to-hide">Experience</div>
         <table class="member_table later_show element-to-hide">
             <tbody>
+                <tr>
+                    <td><img class="institute_style" style="height: 100px; width:160px" src='figures/uw2.png'><img></td>
+                    <td style="vertical-align: top;">
+                    	<div>Intern of ECE department of University of Washington, Seattle, USA</div>
+                    	<div class="period_style">[September 2021 - present]</div>
+                    </td>
+                </tr>
             	<tr>
                     <td><img class="institute_style" src='figures/nctu.png'><img></td>
                     <td style="vertical-align: top;">
@@ -71,7 +83,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img class="institute_style" src='figures/mtk.jpg'><img></td>
+                    <td><img class="institute_style" style="height: 150px; width:160px" src='figures/mtk.jpg'><img></td>
                     <td style="vertical-align: top;">
                     	<div>Teaching Assistant for MediaTek in-house AI training program</div>
                     	<div class="period_style">[August 2019 - January 2020]</div>
@@ -80,25 +92,43 @@
            </tbody>
         </table>
         <div class="title later_show element-to-hide">Research Interests</div>
-        <div class="later_show element-to-hide title_css">Image/Video Semantic Segmentation</div>
         <div class="container">
-            <div class="row row_css later_show element-to-hide">
-                <div class="col-sm">
+            <div class="later_show element-to-hide research_topic">
+                <div class="later_show element-to-hide title_css">Video Semantic Segmentation</div>
+                <div class="later_show element-to-hide">
                     <img style="height:150px;width:400px;" src="figures/ivs.png"><img>
-                    <img style="height:200px;width:400px;" src="figures/GSVNet.png"><img>
+                    <div class="research_abstract">
+                        Video semantic segmentation aims at predicting semantic classes for every pixel in video frames.
+                    </div>
                 </div>
-                <div class="col-sm col_style">
-                    <div class="research_title">GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video</div>
-                    <div class="research_author">Shih-Po Lee, Si-Cun Chen, Wen-Hsiao Peng</div>
-                    <div class="research_from">IEEE International Conference on Multimedia and Expo (ICME), July 2021.</div>
-                    <div class="link"><a href="https://arxiv.org/abs/2103.08834">PDF</a>| <a href="http://mapl.nctu.edu.tw/GSVNet/">Project Page</a></div>
-                </div>
-                
             </div>
             <div class="row row_css later_show element-to-hide">
                 <div class="col-sm">
-                    <img style="height:200px;width:300px;" src="figures/wsss.png"><img>
-                    <img style="height:250px;width:400px;" src="figures/WSGCN.png"><img>
+                    <img style="height:250px;width:500px;" src="figures/GSVNet.png"><img>
+                </div>
+                <div class="col-sm col_style">
+                    <div>
+                        <div class="research_title">GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video</div>
+                        <div class="research_author">Shih-Po Lee, Si-Cun Chen, Wen-Hsiao Peng</div>
+                        <div class="research_from">IEEE International Conference on Multimedia and Expo (ICME), July 2021.</div>
+                        <div class="link"><a href="https://arxiv.org/abs/2103.08834">PDF</a>| <a href="http://mapl.nctu.edu.tw/GSVNet/">Project Page</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="later_show element-to-hide research_topic">
+                <div class="later_show element-to-hide title_css">Weakly-Supervised Semantic Segmentation</div>
+                <div class="later_show element-to-hide">
+                    <img style="height:250px;width:300px;" src="figures/wsss.png"><img>
+                    <div class="research_abstract">
+                        Since pixel-wise annotations for image semantic segmentation are hard to obtain, weakly-supervised semantic segmentation adopts image-level classes to generate pseudo 
+                    sematic segmentation labels for training a segmentation network.
+                    </div>
+                </div>
+            </div>
+            <div class="row row_css later_show element-to-hide">
+                <div class="col-sm">
+                    
+                    <img style="height:250px;width:500px;" src="figures/WSGCN.png"><img>
                 </div>
                 <div class="col-sm col_style">
                     <div class="research_title">Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks</div>
@@ -107,7 +137,16 @@
                     <div class="link"><a href="https://arxiv.org/abs/2103.16762">PDF</a> | <a href="https://github.com/Xavier-Pan/WSGCN">Github</a> | <a href="http://mapl.nctu.edu.tw/WSGCN/">Project Page</a></div>
                 </div>
             </div>
-            <div class="later_show element-to-hide title_css">3D Human Pose Estimation using mmWave Radar</div>
+            <div class="later_show element-to-hide research_topic">
+                <div class="later_show element-to-hide title_css">3D Human Pose Estimation using mmWave Radar</div>
+            </div>
+        </div>
+        <div class="title later_show element-to-hide">Publication</div>
+        <div class="publication">
+            <ul>
+                <li>S. P. Lee, S. C. Chen, and W. H. Peng, "GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video" <i>IEEE International Conference on Multimedia and Expo (ICME),</i> July 2021.</li>
+                <li>S. Y. Pan, C. Y. Lu, S. P. Lee, and W. H. Peng,  "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks" <i>IEEE International Conference on Multimedia and Expo (ICME),</i> July 2021.</li>
+            </ul>
         </div>
         <footer>
         </footer>
