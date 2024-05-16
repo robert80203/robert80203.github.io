@@ -1,7 +1,7 @@
 
 .profile{
 	text-align:center;
-	width:1100px;
+	width:1400px;
 	/*height:600px;*/
 	font-size:20px;
 	margin-left:auto;margin-right:auto;margin-top:3%;
@@ -26,16 +26,24 @@
 }
 
 .personal_style{
-    border-radius: 20%;
+    /* border-radius: 20%; */
     padding: 5px;
-    width:200px;
-    height:230px;
+    width: 25%;
+    /* width:200px;
+    height:230px; */
 }
 
 .institute_style{
-    width:150px;
-    height:150px;
+    width:230px;
+    height:140px;
 }
+
+
+.teaser_style{
+    height:250px;
+    width:520px;
+}
+
 
 .icon_css{
     width:22px;
@@ -342,7 +350,7 @@ li{
 }*/
 
 .jumbotron{
-    margin-bottom: 200px;
+    margin-bottom: 420px;
 }
 .jumbotron .container{
     position: relative;

@@ -14,7 +14,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Self-defined-->
     <link href="index.css" rel="stylesheet">
-    <!--<script src="nav.js"></script><!--navbar-fixed-top-->
     <script src="index.js"></script>
     <script type="text/javascript">
     </script>
@@ -28,13 +27,12 @@
 	<div class="profile">
         <div class="jumbotron jumbotron-billboard">
             <div class="img"></div>
-            <div class="container jumbotron-title direct_show">
+            <div class="container jumbotron-title">
                 <img class="personal_style" src='figures/img.jpg'><img>
-                <div style="font-weight:bolder;color:blue;margin-bottom: 5px">Shih-Po Lee (Robert)</div>
+                <!-- <div style="font-weight:bolder;color:blue;margin-bottom: 5px">Shih-Po Lee (Robert)</div> -->
                 <div class="bio">
-                    I am currently pursuing my PhD degree in Northeastern University Khoury College of Computer Sciences, Boston, USA.
-		    Computer Vision and Deep Learning are my areas of interest.
-                    Feel free to contact me if you have any questions about me.
+                    Hello! My name is Shih-Po (Robert) Lee. I am a second-year PhD student at Khoury College of Computer Sciences of Northeastern University
+		            My research directions are Computer Vision and Deep Learning and currently working on error detection in procedural tasks.
                 </div>
                 
                 <div>
@@ -49,72 +47,69 @@
                 </div>
             </div>
         </div>
-		<table class="member_table direct_show">
-            <tbody>
-                <tr>
-                    <!--<td><img class="personal_style" src='figures/img.jpg'><img></td>
-                    <td style="vertical-align: top;">
-                    	<div style="font-weight:bolder;color:blue;margin-bottom: 5px">Shih-Po Lee (Robert)</div>
-                        <div style="margin-bottom: 5px"><img class="icon_css" src='figures/email.jpg'></img><a href="mailto:robert80203@gmail.com"> robert80203@gmail.com</a></div>
-                        <div>
-                            <img class="icon_css" src='figures/web.png'></img>
-                            <a href="https://scholar.google.com.tw/citations?user=evmoWxUAAAAJ&hl=zh-TW">Google Scholar</a> | <a href="https://github.com/robert80203">Github</a> 
-                        </div>
-                        <div class="bio">
-                            I am a research assistant in Computer Science at National Yang-Ming Chiao-Tung University, Taiwan.
-                            Computer Vision and Deep Learning are my areas of interest.
-                            Feel free to contact me and I am happy to answer your questions.
-                        </div>
-                    </td>-->
-                    <!--<td>
-                        
-                    </td>-->
-                </tr>
-           </tbody>
-        </table>
-        <div class="title later_show element-to-hide">Education</div>
-        <table class="member_table later_show element-to-hide">
+        <div class="title">Education</div>
+        <table class="member_table">
             <tbody>
                 <!--<tr>
                     <img class="bgimg" src="figures/test.jpg"></img>
                 </tr>-->
-		<tr>
-                    <td><img class="institute_style" src='figures/neu.jpeg'><img></td>
-                    <td style="vertical-align: top;">
-                    	<div>PhD of Khoury College of Computer Sciences, Northeastern University, Boston, USA</div>
+		        <tr>
+                    <td><img class="institute_style" src='https://brand.northeastern.edu/wp-content/uploads/2022/06/ac-grid-4-red-1.svg'><img></td>
+                    <td style="vertical-align: middle;">
+                    	<div>PhD student in Khoury College of Computer Sciences, Northeastern University, Boston, USA</div>
                     	<div class="period_style">[September 2022 - present]</div>
                     </td>
                 </tr>
             	<tr>
-                    <td><img class="institute_style" src='figures/nctu.png'><img></td>
-                    <td style="vertical-align: top;">
+                    <td><img class="institute_style" src='https://www.nycu.edu.tw/userfiles/nycuch/images/20230915165412300.png'><img></td>
+                    <td style="vertical-align: middle;">
                     	<div>Master of Science in Institute of Computer Science and Engineering, National Chiao Tung University (NCTU), Taiwan</div>
                     	<div class="period_style">[September 2018 - August 2020]</div>
                     </td>
                 </tr>
                 <tr>
-                    <td><img class="institute_style" src='figures/nsysu.png'><img></td>
-                    <td style="vertical-align: top;">
+                    <td><img class="institute_style" src='https://www.nsysu.edu.tw/var/file/0/1000/img/80/213315840.svg'><img></td>
+                    <td style="vertical-align: middle;">
                     	<div>Bachelor of Science in Computer Science and Engineering, National Sun Yat-sen University (NSYSU), Taiwan</div>
                     	<div class="period_style">[September 2014 - July 2018]</div>
                     </td>
                 </tr>
            </tbody>
         </table>
-        <div class="title later_show element-to-hide">Research Interests</div>
+        <div class="title">Research Projects</div>
         <div class="container">
-            <div class="later_show element-to-hide research_topic">
-                <div class="later_show element-to-hide title_css">Video Semantic Segmentation</div>
-                <div class="later_show element-to-hide">
+            <!-- <div class="research_topic">
+                <div class="title_css">Human Pose Estimation Using Millimeter Wave Radar</div>
+                <div class="">
+                    <img style="height:400px;width:500px;" src="figures/mmWave_teaser.png"><img>
+                    <div class="research_abstract">
+                        Human pose estimation (HPE) is a widely studied task in computer vision. Given RGB images, a network predicts 2D/3D human skeletons.
+                        The figure on the right illustrates a new application in HPE by using radar signals to predict keypoints.                 
+                    </div>
+                </div>
+            </div> -->
+            <div class="row row_css">
+                <div class="col-sm">
+                    <img class="teaser_style" src="figures/mmWave_model.png"><img>
+                </div>
+                <div class="col-sm col_style">
+                    <div class="research_title">HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar</div>
+                    <div class="research_from">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Jan 2023</div>
+                    <div class="link"><a href="https://arxiv.org/abs/2210.12564">PDF</a> | <a href="https://github.com/robert80203/HuPR-A-Benchmark-for-Human-Pose-Estimation-Using-Millimeter-Wave-Radar">Github</a> | <a href="http://mapl.nctu.edu.tw/HuPR/">Project Page</a></div>
+                </div>
+            </div>
+            <!-- <div class="research_topic">
+                <div class="title_css">Video Semantic Segmentation</div>
+                <div class="">
                     <img style="height:150px;width:400px;" src="figures/ivs.png"><img>
                     <div class="research_abstract">
                         Video semantic segmentation aims at predicting semantic classes for every pixel in video frames.
                     </div>
                 </div>
-            </div>
-            <div class="row row_css later_show element-to-hide">
+            </div> -->
+            <div class="row row_css">
                 <div class="col-sm">
-                    <img style="height:250px;width:500px;" src="figures/GSVNet.png"><img>
+                    <img class="teaser_style" src="figures/GSVNet.png"><img>
                 </div>
                 <div class="col-sm col_style">
                     <div>
@@ -125,19 +120,19 @@
                     </div>
                 </div>
             </div>
-            <div class="later_show element-to-hide research_topic">
-                <div class="later_show element-to-hide title_css">Weakly-Supervised Semantic Segmentation</div>
-                <div class="later_show element-to-hide">
+            <!-- <div class="research_topic">
+                <div class="title_css">Weakly-Supervised Semantic Segmentation</div>
+                <div class="">
                     <img style="height:250px;width:300px;" src="figures/wsss.png"><img>
                     <div class="research_abstract">
                         Since pixel-wise annotations for image semantic segmentation are hard to obtain, weakly-supervised semantic segmentation adopts image-level classes to generate pseudo 
                     sematic segmentation labels for training a segmentation network.
                     </div>
                 </div>
-            </div>
-            <div class="row row_css later_show element-to-hide">
+            </div> -->
+            <div class="row row_css">
                 <div class="col-sm">
-                    <img style="height:250px;width:500px;" src="figures/WSGCN.png"><img>
+                    <img class="teaser_style" src="figures/WSGCN.png"><img>
                 </div>
                 <div class="col-sm col_style">
                     <div class="research_title">Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks</div>
@@ -146,55 +141,35 @@
                     <div class="link"><a href="https://arxiv.org/abs/2103.16762">PDF</a> | <a href="https://github.com/Xavier-Pan/WSGCN">Github</a> | <a href="http://mapl.nctu.edu.tw/WSGCN/">Project Page</a></div>
                 </div>
             </div>
-            <div class="later_show element-to-hide research_topic">
-                <div class="later_show element-to-hide title_css">Human Pose Estimation Using Millimeter Wave Radar</div>
-                <div class="later_show element-to-hide">
-                    <img style="height:400px;width:500px;" src="figures/mmWave_teaser.png"><img>
-                    <div class="research_abstract">
-                        Human pose estimation (HPE) is a widely studied task in computer vision. Given RGB images, a network predicts 2D/3D human skeletons.
-                        The figure on the right illustrates a new application in HPE by using radar signals to predict keypoints.                 
-                    </div>
-                </div>
-            </div>
-            <div class="row row_css later_show element-to-hide">
-                <div class="col-sm">
-                    <img style="height:225px;width:550px;" src="figures/mmWave_model.png"><img>
-                </div>
-                <div class="col-sm col_style">
-                    <div class="research_title">HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar</div>
-                    <div class="research_from">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Jan 2023</div>
-                    <div class="link"><a href="https://arxiv.org/abs/2210.12564">PDF</a> | <a href="https://github.com/robert80203/HuPR-A-Benchmark-for-Human-Pose-Estimation-Using-Millimeter-Wave-Radar">Github</a> | <a href="http://mapl.nctu.edu.tw/HuPR/">Project Page</a></div>
-                </div>
-            </div>
         </div>
-        <div class="title later_show element-to-hide">Experience</div>
-        <table class="member_table later_show element-to-hide">
+        <div class="title">Experience</div>
+        <table class="member_table">
             <tbody>
                 <tr>
-                    <td><img class="institute_style" style="height: 100px; width:160px" src='figures/uw2.png'><img></td>
-                    <td style="vertical-align: top;">
+                    <td><img class="institute_style" src='https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/230/2023/04/02134421/Signature_Stacked_Purple_Hex.png'><img></td>
+                    <td style="vertical-align: middle;">
                     	<div>Intern in Electrical & Computer Engineering at University of Washington, Seattle, USA</div>
                     	<div class="period_style">[September 2021 - March 2022]</div>
                     </td>
                 </tr>
             	<tr>
-                    <td><img class="institute_style" src='figures/nctu.png'><img></td>
-                    <td style="vertical-align: top;">
+                    <td><img class="institute_style" src='https://www.nycu.edu.tw/userfiles/nycuch/images/20230915165412300.png'><img></td>
+                    <td style="vertical-align: middle;">
                     	<div>Research Assistant of UW-NCTU AI Lab supported by University of Washington and National Chiao Tung University, Hsinchu, Taiwan</div>
                     	<div class="period_style">[August 2020 - August 2022]</div>
                     </td>
                 </tr>
                 <tr>
-                    <td><img class="institute_style" style="height: 150px; width:160px" src='figures/mtk.jpg'><img></td>
-                    <td style="vertical-align: top;">
+                    <td><img class="institute_style" src='https://cdn-www.mediatek.com/page/PRIMARY-MASTER-LOGO_EN_CMYK_ORANGE.png'><img></td>
+                    <td style="vertical-align: middle;">
                     	<div>Teaching Assistant for MediaTek in-house AI training program, Hsinchu, Taiwan</div>
                     	<div class="period_style">[August 2019 - January 2020]</div>
                     </td>
                 </tr>
            </tbody>
         </table>
-        <div class="title later_show element-to-hide">Publications</div>
-        <div class="publication later_show element-to-hide">
+        <div class="title">Publications</div>
+        <div class="publication">
             <ul>
                 <li><u>S.-P. Lee</u>, N. P. Kini, W.-H. Peng, C.-W. Ma, and J.-N. Hwang, "HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar" <i>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), </i>Jan 2023.</li>
                 <li><u>S. P. Lee</u>, S. C. Chen, and W. H. Peng, "GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video" <i>IEEE International Conference on Multimedia and Expo (ICME),</i> July 2021.</li>
