@@ -24,12 +24,11 @@
 </head>
 <body>
 	
-	<div class="profile">
-        <div class="jumbotron jumbotron-billboard">
+	<div class="main">
+        <!-- <div class="jumbotron jumbotron-billboard">
             <div class="img"></div>
             <div class="container jumbotron-title">
                 <img class="personal_style" src='figures/img.jpg'><img>
-                <!-- <div style="font-weight:bolder;color:blue;margin-bottom: 5px">Shih-Po Lee (Robert)</div> -->
                 <div class="bio">
                     Hello! My name is Shih-Po (Robert) Lee. I am a second-year PhD student at Khoury College of Computer Sciences of Northeastern University
 		            My research directions are Computer Vision and Deep Learning and currently working on error detection in procedural tasks.
@@ -46,67 +45,78 @@
                     <a href="https://www.linkedin.com/in/shih-po-lee-9554b423a/" target="_blank">Linkedin</a> 
                 </div>
             </div>
-        </div>
-        <div class="title">Education</div>
-        <table class="member_table">
-            <tbody>
-                <!--<tr>
-                    <img class="bgimg" src="figures/test.jpg"></img>
-                </tr>-->
-		        <tr>
-                    <td><img class="institute_style" src='https://brand.northeastern.edu/wp-content/uploads/2022/06/ac-grid-4-red-1.svg'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>PhD student in Khoury College of Computer Sciences, Northeastern University, Boston, USA</div>
-                    	<div class="period_style">[September 2022 - present]</div>
-                    </td>
-                </tr>
-            	<tr>
-                    <td><img class="institute_style" src='https://www.nycu.edu.tw/userfiles/nycuch/images/20230915165412300.png'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>Master of Science in Institute of Computer Science and Engineering, National Chiao Tung University (NCTU), Taiwan</div>
-                    	<div class="period_style">[September 2018 - August 2020]</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="institute_style" src='https://www.nsysu.edu.tw/var/file/0/1000/img/80/213315840.svg'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>Bachelor of Science in Computer Science and Engineering, National Sun Yat-sen University (NSYSU), Taiwan</div>
-                    	<div class="period_style">[September 2014 - July 2018]</div>
-                    </td>
-                </tr>
-           </tbody>
-        </table>
-        <div class="title">Research Projects</div>
-        <div class="container">
-            <!-- <div class="research_topic">
-                <div class="title_css">Human Pose Estimation Using Millimeter Wave Radar</div>
-                <div class="">
-                    <img style="height:400px;width:500px;" src="figures/mmWave_teaser.png"><img>
-                    <div class="research_abstract">
-                        Human pose estimation (HPE) is a widely studied task in computer vision. Given RGB images, a network predicts 2D/3D human skeletons.
-                        The figure on the right illustrates a new application in HPE by using radar signals to predict keypoints.                 
+        </div> -->
+        <div class="container profile">
+            <div class="row">
+                <div class="col">
+                    <a href="#research" style="margin-left:10px; margin-right:10px">Research Projects</a>
+                    <a href="#experience" style="margin-left:10px; margin-right:10px">Experience</a>
+                    <a href="#education" style="margin-left:10px; margin-right:10px">Education</a>
+                    <a href="#publication" style="margin-left:10px; margin-right:10px">Publications</a> 
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <div class="col-9">
+                    <div class="bio">
+                        Hello! My name is Shih-Po (Robert) Lee. I am a second-year PhD student at Khoury College of Computer Sciences of Northeastern University.
+                        My research directions are <b>Video Understanding with Computer Vision and Deep Learning</b>. I am currently working on <b>error detection in procedural tasks</b>, 
+                        which aims to detect erroneous/abnormal action/steps in the process of performing actions to complete tasks.
                     </div>
                 </div>
-            </div> -->
+                <div class="col" style="text-align: center">
+                    <img class="personal_style" src='figures/img.jpg'><img>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <div class="col">
+                        <img class="icon_css" src='figures/email.png'></img>
+                        <a href="mailto:lee.shih@northeastern.edu"> lee.shih@northeastern.edu</a>
+                        <img class="icon_css" src='figures/gcholar.png'></img>
+                        <a href="https://scholar.google.com.tw/citations?user=evmoWxUAAAAJ&hl=zh-TW" target="_blank">Google Scholar</a>
+                        <img class="icon_css" src="figures/github.png">
+                        <a href="https://github.com/robert80203" target="_blank">Github</a>
+                        <img class="icon_css" src="figures/linkd.png">
+                        <a href="https://www.linkedin.com/in/shih-po-lee-9554b423a/" target="_blank">Linkedin</a> 
+                </div>
+            </div>
+        </div>
+        <div id="news" class="title">
+            News
+            <img class="title_icon" src="figures/news.png"></img>
+        </div>
+        <div class="news">
+            6/17/2024 - attend CVPR2024 in Seattle and present paper <b>"Error Detection in Egocentric Procedural Task Videos"</b>.
+        </div>
+        <div class="news">
+            2/26/2024 - our paper has been accepted by CVPR2024.
+        </div>
+        <div id='research' class="title">
+            Research Projects
+            <img class="title_icon" src="figures/research.png"></img>
+        </div>
+        <div class="container">
+            <div class="row row_css">
+                <div class="col-sm">
+                    <img class="teaser_style" src="figures/EgoPER.png"><img>
+                </div>
+                <div class="col-sm col_style">
+                    <div class="research_title">Error Detection in Egocentric Procedural Task Videos</div>
+                    <div class="research_author">Shih-Po Lee, Zijia Lu, Zekun Zhang, Minh Hoai, Ehsan Elhamifar</div>
+                    <div class="research_from">IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), June 2024</div>
+                    <div class="link"><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Error_Detection_in_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.pdf">PDF</a> | <a href="https://github.com/robert80203/EgoPER_official">Github</a> | <a href="https://www.khoury.northeastern.edu/home/eelhami/data.htm">Project Page</a></div>
+                </div>
+            </div>
             <div class="row row_css">
                 <div class="col-sm">
                     <img class="teaser_style" src="figures/mmWave_model.png"><img>
                 </div>
                 <div class="col-sm col_style">
                     <div class="research_title">HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar</div>
+                    <div class="research_author">Shih-Po Lee, Niraj Prakash Kini, Wen-Hsiao Peng, Ching-Wen Ma, Jenq-Neng Hwang</div>
                     <div class="research_from">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Jan 2023</div>
-                    <div class="link"><a href="https://arxiv.org/abs/2210.12564">PDF</a> | <a href="https://github.com/robert80203/HuPR-A-Benchmark-for-Human-Pose-Estimation-Using-Millimeter-Wave-Radar">Github</a> | <a href="http://mapl.nctu.edu.tw/HuPR/">Project Page</a></div>
+                    <div class="link"><a href="https://arxiv.org/abs/2210.12564">PDF</a> | <a href="https://github.com/robert80203/HuPR-A-Benchmark-for-Human-Pose-Estimation-Using-Millimeter-Wave-Radar">Github</a> | <a href="https://mapl.cs.nycu.edu.tw/HuPR/">Project Page</a></div>
                 </div>
             </div>
-            <!-- <div class="research_topic">
-                <div class="title_css">Video Semantic Segmentation</div>
-                <div class="">
-                    <img style="height:150px;width:400px;" src="figures/ivs.png"><img>
-                    <div class="research_abstract">
-                        Video semantic segmentation aims at predicting semantic classes for every pixel in video frames.
-                    </div>
-                </div>
-            </div> -->
             <div class="row row_css">
                 <div class="col-sm">
                     <img class="teaser_style" src="figures/GSVNet.png"><img>
@@ -116,20 +126,10 @@
                         <div class="research_title">GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video</div>
                         <div class="research_author">Shih-Po Lee, Si-Cun Chen, Wen-Hsiao Peng</div>
                         <div class="research_from">IEEE International Conference on Multimedia and Expo (ICME), July 2021.</div>
-                        <div class="link"><a href="https://arxiv.org/abs/2103.08834">PDF</a> | <a href="https://github.com/robert80203/GSVNet">Github</a> | <a href="http://mapl.nctu.edu.tw/GSVNet/">Project Page</a></div>
+                        <div class="link"><a href="https://arxiv.org/abs/2103.08834">PDF</a> | <a href="https://github.com/robert80203/GSVNet">Github</a> | <a href="https://mapl.cs.nycu.edu.tw/GSVNet/">Project Page</a></div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="research_topic">
-                <div class="title_css">Weakly-Supervised Semantic Segmentation</div>
-                <div class="">
-                    <img style="height:250px;width:300px;" src="figures/wsss.png"><img>
-                    <div class="research_abstract">
-                        Since pixel-wise annotations for image semantic segmentation are hard to obtain, weakly-supervised semantic segmentation adopts image-level classes to generate pseudo 
-                    sematic segmentation labels for training a segmentation network.
-                    </div>
-                </div>
-            </div> -->
             <div class="row row_css">
                 <div class="col-sm">
                     <img class="teaser_style" src="figures/WSGCN.png"><img>
@@ -138,11 +138,14 @@
                     <div class="research_title">Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks</div>
                     <div class="research_author">Shun-Yi Pan*, Cheng-You Lu*, Shih-Po Lee, Wen-Hsiao Peng</div>
                     <div class="research_from">IEEE International Conference on Multimedia and Expo (ICME), July 2021.</div>
-                    <div class="link"><a href="https://arxiv.org/abs/2103.16762">PDF</a> | <a href="https://github.com/Xavier-Pan/WSGCN">Github</a> | <a href="http://mapl.nctu.edu.tw/WSGCN/">Project Page</a></div>
+                    <div class="link"><a href="https://arxiv.org/abs/2103.16762">PDF</a> | <a href="https://github.com/Xavier-Pan/WSGCN">Github</a> | <a href="https://mapl.cs.nycu.edu.tw/WSGCN/">Project Page</a></div>
                 </div>
             </div>
         </div>
-        <div class="title">Experience</div>
+        <div id="experience" class="title">
+            Experience
+            <img class="title_icon" src="figures/experience.png"></img>
+        </div>
         <table class="member_table">
             <tbody>
                 <tr>
@@ -168,9 +171,42 @@
                 </tr>
            </tbody>
         </table>
-        <div class="title">Publications</div>
+        <div id="education" class="title">
+            Education
+            <img class="title_icon" src="figures/education.png"></img>
+        </div>
+        <table class="member_table">
+            <tbody>
+		        <tr>
+                    <td><img class="institute_style" src='https://brand.northeastern.edu/wp-content/uploads/2022/06/ac-grid-4-red-1.svg'><img></td>
+                    <td style="vertical-align: middle;">
+                    	<div>PhD student in Khoury College of Computer Sciences, Northeastern University, Boston, USA</div>
+                    	<div class="period_style">[September 2022 - present]</div>
+                    </td>
+                </tr>
+            	<tr>
+                    <td><img class="institute_style" src='https://www.nycu.edu.tw/userfiles/nycuch/images/20230915165412300.png'><img></td>
+                    <td style="vertical-align: middle;">
+                    	<div>Master of Science in Institute of Computer Science and Engineering, National Chiao Tung University (NCTU), Taiwan</div>
+                    	<div class="period_style">[September 2018 - August 2020]</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img class="institute_style" src='https://www.nsysu.edu.tw/var/file/0/1000/img/80/213315840.svg'><img></td>
+                    <td style="vertical-align: middle;">
+                    	<div>Bachelor of Science in Computer Science and Engineering, National Sun Yat-sen University (NSYSU), Taiwan</div>
+                    	<div class="period_style">[September 2014 - July 2018]</div>
+                    </td>
+                </tr>
+           </tbody>
+        </table>
+        <div id="publication" class="title">
+            Publications
+            <img class="title_icon" src="figures/publication.png"></img>
+        </div>
         <div class="publication">
             <ul>
+                <li><u>S.-P. Lee</u>, Z. Lu, Z. Zhang, M. Hoai, and E. Elhamifar, "Error Detection in Egocentric Procedural Task Videos" <i>IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), </i>June 2024.</li>
                 <li><u>S.-P. Lee</u>, N. P. Kini, W.-H. Peng, C.-W. Ma, and J.-N. Hwang, "HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar" <i>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), </i>Jan 2023.</li>
                 <li><u>S. P. Lee</u>, S. C. Chen, and W. H. Peng, "GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video" <i>IEEE International Conference on Multimedia and Expo (ICME),</i> July 2021.</li>
                 <li>S. Y. Pan, C. Y. Lu, <u>S. P. Lee</u>, and W. H. Peng,  "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks" <i>IEEE International Conference on Multimedia and Expo (ICME),</i> July 2021.</li>
