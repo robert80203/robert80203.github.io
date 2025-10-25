@@ -1,13 +1,13 @@
 .news {
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
 }
 
 .main{
 	text-align:center;
-	width:1200px;
+	width:900px;
 	/*height:600px;*/
-	font-size:20px;
+	font-size:16px;
 	margin-left:auto;margin-right:auto;
 }
 
@@ -184,7 +184,7 @@ footer {
 /*CSS for all research abstract*/
 .research_abstract{
     text-align:justify;
-    font-size: 18px;
+    font-size: 16px;
     font-weight:bold;
     width: 600px;
     margin-left: auto; margin-right: auto; margin-bottom: 3%;
@@ -252,13 +252,13 @@ footer {
 .research_title{
 	/*width: 900px;*/
 	text-align:justify;
-    font-size: 18px;
+    font-size: 16px;
     font-weight:bold;
 }
 
 /*CSS for research authors*/
 .research_author{
-	font-size:18px;
+	font-size:16px;
 	color:#0066CC;
 }
 
