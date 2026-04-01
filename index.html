@@ -1,264 +1,768 @@
-<!DOCTYPE>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=f0ad20c3c35c">
-    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/mobile.css?v=23aa547f66b9">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Self-defined-->
-    <link href="index.css" rel="stylesheet">
-    <script src="index.js"></script>
-    <script type="text/javascript">
-    </script>
-    <title>Shih-Po (Robert) Lee's Website</title>
-    <style>
-        
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shih-Po (Robert) Lee</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-2: #f0f4ff;
+      --text: #18212f;
+      --muted: #5f6b7a;
+      --accent: #2356d8;
+      --accent-soft: #dfe8ff;
+      --border: #dbe3f0;
+      --shadow: 0 16px 40px rgba(15, 37, 78, 0.08);
+      --radius: 22px;
+      --maxw: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, #e7eeff 0, transparent 28%),
+        radial-gradient(circle at top right, #eef3ff 0, transparent 25%),
+        var(--bg);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(var(--maxw), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(14px);
+      background: rgba(245, 247, 251, 0.82);
+      border-bottom: 1px solid rgba(219, 227, 240, 0.8);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 600;
+      padding: 8px 0;
+    }
+
+    .hero {
+      padding: 56px 0 36px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-card,
+    .panel,
+    .timeline-item,
+    .publication-item,
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: 34px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin: 0 0 22px;
+      max-width: 60ch;
+      text-align: justify;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 14px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 12px 28px rgba(35, 86, 216, 0.22);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--text);
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .profile-card {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+    }
+
+    .avatar-frame {
+      width: min(100%, 300px);
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 28px;
+      border: 1px solid var(--border);
+      margin: 0 auto;
+      background: var(--surface-2);
+    }
+
+    .avatar-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .quick-facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .fact {
+      padding: 14px;
+      border-radius: 16px;
+      background: #fff;
+      border: 1px solid var(--border);
+      grid-column: span 2;
+    }
+
+    .fact-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .fact-value {
+      font-size: 0.98rem;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 28px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: 1.7rem;
+      letter-spacing: -0.03em;
+    }
+
+    .section-head p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .news-grid,
+    .publication-list,
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .panel {
+      padding: 20px 22px;
+    }
+
+    .news-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .news-date {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .news-text {
+      color: var(--text);
+    }
+
+    .projects {
+      display: grid;
+      gap: 18px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+    }
+
+    .project-media {
+      min-height: 100%;
+      background: #eef3ff;
+      border-right: 1px solid var(--border);
+      padding: 8px;
+    }
+
+    .project-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-body {
+      padding: 24px;
+    }
+
+    .project-body h3 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+      line-height: 1.25;
+    }
+
+    .authors,
+    .venue,
+    .project-links {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .authors {
+      margin-bottom: 6px;
+    }
+
+    .venue {
+      margin-bottom: 14px;
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-weight: 700;
+    }
+
+    .timeline-item {
+      padding: 20px 22px;
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .logo-wrap {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      background: #fff;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .logo-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .timeline-role {
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .timeline-meta {
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .timeline-period {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .publication-item {
+      padding: 18px 20px;
+    }
+
+    .publication-item strong {
+      color: var(--text);
+    }
+
+    footer {
+      padding: 40px 0 56px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+
+      .project-media {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        min-height: 220px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .hero-card,
+      .profile-card,
+      .panel,
+      .project-body,
+      .timeline-item,
+      .publication-item {
+        padding: 18px;
+      }
+
+      .quick-facts {
+        grid-template-columns: 1fr;
+      }
+
+      .news-item,
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+
+      .logo-wrap {
+        width: 76px;
+        height: 76px;
+      }
+    }
+  </style>
 </head>
 <body>
-	
-	<div class="main">
-        <!-- <div class="jumbotron jumbotron-billboard">
-            <div class="img"></div>
-            <div class="container jumbotron-title">
-                <img class="personal_style" src='figures/img.jpg'><img>
-                <div class="bio">
-                    Hello! My name is Shih-Po (Robert) Lee. I am a second-year PhD student at Khoury College of Computer Sciences of Northeastern University
-		            My research directions are Computer Vision and Deep Learning and currently working on error detection in procedural tasks.
-                </div>
-                
-                <div>
-                    <img class="icon_css" src='figures/email.png'></img>
-                    <a href="mailto:lee.shih@northeastern.edu"> lee.shih@northeastern.edu</a>
-                    <img class="icon_css" src='figures/gcholar.png'></img>
-                    <a href="https://scholar.google.com.tw/citations?user=evmoWxUAAAAJ&hl=zh-TW" target="_blank">Google Scholar</a>
-                    <img class="icon_css" src="figures/github.png">
-                    <a href="https://github.com/robert80203" target="_blank">Github</a>
-                    <img class="icon_css" src="figures/linkd.png">
-                    <a href="https://www.linkedin.com/in/shih-po-lee-9554b423a/" target="_blank">Linkedin</a> 
-                </div>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">Shih-Po (Robert) Lee</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <div class="eyebrow">PhD Candidate · Northeastern University</div>
+          <!-- <h1>Video Understanding, Procedural Reasoning, and Vision-Language Learning</h1> -->
+          <p class="subtitle">
+            Hello! My name is <span class="highlight">Shih-Po (Robert) Lee</span>. I am a PhD candidate in the Khoury College of Computer Sciences at Northeastern University, advised by
+            <a href="https://www.khoury.northeastern.edu/home/eelhami/" target="_blank" rel="noreferrer">Ehsan Elhamifar</a>.
+            My research focuses on video understanding, computer vision, and deep learning. I am curretnly working on <span class="highlight">multimodal large language models</span> and <span class="highlight">vision-language models</span> for understanding long ego/exo-view procedural video.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#research">View Research</a>
+            <a class="btn btn-secondary" href="#publications">See Publications</a>
+          </div>
+          <div class="contact-row">
+            <a class="chip" href="mailto:lee.shih@northeastern.edu">Email</a>
+            <a class="chip" href="https://scholar.google.com.tw/citations?user=evmoWxUAAAAJ&hl=zh-TW" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a class="chip" href="https://github.com/robert80203" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/in/shih-po-lee-9554b423a/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="hero-card profile-card">
+          <div class="avatar-frame">
+            <img src="figures/img.jpg" alt="Portrait of Shih-Po Lee" />
+          </div>
+          <div class="quick-facts">
+            <!-- <div class="fact">
+              <div class="fact-label">Current Role</div>
+              <div class="fact-value">PhD Candidate</div>
             </div>
-        </div> -->
-        <div class="container profile">
-            <div class="row">
-                <div class="col">
-                    <a href="#research" style="margin-left:10px; margin-right:10px">Research Projects</a>
-                    <a href="#experience" style="margin-left:10px; margin-right:10px">Experience</a>
-                    <a href="#education" style="margin-left:10px; margin-right:10px">Education</a>
-                    <a href="#publication" style="margin-left:10px; margin-right:10px">Publications</a> 
-                </div>
+            <div class="fact">
+              <div class="fact-label">Institution</div>
+              <div class="fact-value">Northeastern University</div>
+            </div> -->
+            <div class="fact">
+              <div class="fact-label">Focus</div>
+              <div class="fact-value">Video Understanding · Computer Vision</div>
             </div>
-            <div class="row" style="margin-top: 20px">
-                <div class="col-8">
-                    <div class="bio">
-                        Hello! My name is Shih-Po (Robert) Lee. I am a PhD candidate at Khoury College of Computer Sciences of Northeastern University, advised by <a href="https://www.khoury.northeastern.edu/home/eelhami/">Ehsan Elhamifar</a>.
-                        My research directions are <b>Video Understanding, Computer Vision, and Deep Learning</b>. I am currently working on ego/exo-view procedural video understanding and procedural error/mistake understanding using vision-language models (VLMs). 
-                    </div>
-                </div>
-                <div class="col-4" style="text-align: center">
-                    <img class="personal_style" src='figures/img.jpg'><img>
-                </div>
+            <!-- <div class="fact">
+              <div class="fact-label">Methods</div>
+              <div class="fact-value">VLMs · CV · DL</div>
+            </div> -->
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>News</h2>
+            <!-- <p>Recent milestones, talks, and research updates.</p> -->
+          </div>
+        </div>
+        <div class="panel news-grid">
+          <div class="news-item">
+            <div class="news-date">Feb 20, 2026</div>
+            <div class="news-text">Our paper has been accepted to <strong>CVPR 2026</strong>.</div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">Oct 22, 2025</div>
+            <div class="news-text">Attended ICCV 2025 in Hawaii and presented <strong>"Error Recognition in Procedural Videos using Generalized Task Graph"</strong>.</div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">May 5, 2025</div>
+            <div class="news-text">Joined <strong>Honda Research Institute USA</strong> as a research intern.</div>
+          </div>
+          <div class="news-item">
+            <div class="news-date">Jun 17, 2024</div>
+            <div class="news-text">Attended CVPR 2024 in Seattle and presented <strong>"Error Detection in Egocentric Procedural Task Videos"</strong>.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Selected Research Projects</h2>
+            <p>A cleaner card-based layout that gives each project more visual hierarchy.</p>
+          </div>
+        </div>
+
+        <div class="projects">
+          <article class="project-card">
+            <div class="project-media"><img src="figures/AXG-Reasoner.png" alt="AXG-Reasoner teaser" /></div>
+            <div class="project-body">
+              <h3>AXG-Reasoner: Error Detection and Explanation in Long Task Videos with Vision–Language Models</h3>
+              <div class="authors">Shih-Po Lee, Ehsan Elhamifar</div>
+              <div class="venue">CVPR 2026 · June</div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noreferrer">PDF</a>
+                <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
             </div>
-            <div class="row" style="margin-top: 20px">
-                <div class="col">
-                        <img class="icon_css" src='figures/email.png'></img>
-                        <a href="mailto:lee.shih@northeastern.edu"> lee.shih@northeastern.edu</a>
-                        <img class="icon_css" src='figures/gcholar.png'></img>
-                        <a href="https://scholar.google.com.tw/citations?user=evmoWxUAAAAJ&hl=zh-TW" target="_blank">Google Scholar</a>
-                        <img class="icon_css" src="figures/github.png">
-                        <a href="https://github.com/robert80203" target="_blank">Github</a>
-                        <img class="icon_css" src="figures/linkd.png">
-                        <a href="https://www.linkedin.com/in/shih-po-lee-9554b423a/" target="_blank">Linkedin</a> 
-                </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media"><img src="figures/GTG2Vid.png" alt="GTG2Vid teaser" /></div>
+            <div class="project-body">
+              <h3>Error Recognition in Procedural Videos using Generalized Task Graph</h3>
+              <div class="authors">Shih-Po Lee, Ehsan Elhamifar</div>
+              <div class="venue">ICCV 2025 · October</div>
+              <div class="project-links">
+                <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Lee_Error_Recognition_in_Procedural_Videos_using_Generalized_Task_Graph_ICCV_2025_paper.pdf" target="_blank" rel="noreferrer">PDF</a>
+                <a href="https://github.com/robert80203/GTG2Vid" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
             </div>
-        </div>
-        <div id="news" class="title">
-            News
-            <img class="title_icon" src="figures/news.png"></img>
-        </div>
-        <div class="news">
-            Feb. 20, 2026 - Our paper has been accepted to CVPR2026.
-        </div>
-        <div class="news">
-            Oct. 22, 2025 - Attended ICCV2025 in Hawaii and presented our paper <b>"Error Recognition in Procedural Videos using Generalized Task Graph"</b>.
-        </div>
-        <!-- <div class="news">
-            Jun. 25, 2025 - Our paper has been accepted to ICCV2025.
-        </div> -->
-        <div class="news">
-            May 5, 2025 - Joined Honda Research Institute USA as a research intern.
-        </div>
-        <div class="news">
-            Jun. 17, 2024 - Attended CVPR2024 in Seattle and presented our paper <b>"Error Detection in Egocentric Procedural Task Videos"</b>.
-        </div>
-        <!-- <div class="news">
-            Feb. 26, 2024 - Our paper has been accepted to CVPR2024.
-        </div> -->
-        <div id='research' class="title">
-            Research Projects
-            <img class="title_icon" src="figures/research.png"></img>
-        </div>
-        <div class="container">
-            <div class="row row_css">
-                <div class="col-sm">
-                    <img class="teaser_style" src="figures/GTG2Vid.png"><img>
-                </div>
-                <div class="col-sm col_style">
-                    <div class="research_title">Error Recognition in Procedural Videos using Generalized Task Graph</div>
-                    <div class="research_author">Shih-Po Lee, Ehsan Elhamifar</div>
-                    <div class="research_from">IEEE/CVF International Conference on Computer Vision (ICCV), October 2025</div>
-                    <div class="link"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Lee_Error_Recognition_in_Procedural_Videos_using_Generalized_Task_Graph_ICCV_2025_paper.pdf">PDF</a> | <a href="https://github.com/robert80203/GTG2Vid">Github</a></div>
-                </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media"><img src="figures/EgoPER.png" alt="EgoPER teaser" /></div>
+            <div class="project-body">
+              <h3>Error Detection in Egocentric Procedural Task Videos</h3>
+              <div class="authors">Shih-Po Lee, Zijia Lu, Zekun Zhang, Minh Hoai, Ehsan Elhamifar</div>
+              <div class="venue">CVPR 2024 · June</div>
+              <div class="project-links">
+                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Error_Detection_in_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.pdf" target="_blank" rel="noreferrer">PDF</a>
+                <a href="https://github.com/robert80203/EgoPER_official" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.khoury.northeastern.edu/home/eelhami/egoper.htm" target="_blank" rel="noreferrer">Project Page</a>
+              </div>
             </div>
-            <div class="row row_css">
-                <div class="col-sm">
-                    <img class="teaser_style" src="figures/EgoPER.png"><img>
-                </div>
-                <div class="col-sm col_style">
-                    <div class="research_title">Error Detection in Egocentric Procedural Task Videos</div>
-                    <div class="research_author">Shih-Po Lee, Zijia Lu, Zekun Zhang, Minh Hoai, Ehsan Elhamifar</div>
-                    <div class="research_from">IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), June 2024</div>
-                    <div class="link"><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Error_Detection_in_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.pdf">PDF</a> | <a href="https://github.com/robert80203/EgoPER_official">Github</a> | <a href="https://www.khoury.northeastern.edu/home/eelhami/egoper.htm">Project Page</a></div>
-                </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media"><img src="figures/mmWave_model.png" alt="HuPR teaser" /></div>
+            <div class="project-body">
+              <h3>HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar</h3>
+              <div class="authors">Shih-Po Lee, Niraj Prakash Kini, Wen-Hsiao Peng, Ching-Wen Ma, Jenq-Neng Hwang</div>
+              <div class="venue">WACV 2023 · January</div>
+              <div class="project-links">
+                <a href="https://arxiv.org/abs/2210.12564" target="_blank" rel="noreferrer">PDF</a>
+                <a href="https://github.com/robert80203/HuPR-A-Benchmark-for-Human-Pose-Estimation-Using-Millimeter-Wave-Radar" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://mapl.cs.nycu.edu.tw/HuPR/" target="_blank" rel="noreferrer">Project Page</a>
+              </div>
             </div>
-            <div class="row row_css">
-                <div class="col-sm">
-                    <img class="teaser_style" src="figures/mmWave_model.png"><img>
-                </div>
-                <div class="col-sm col_style">
-                    <div class="research_title">HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar</div>
-                    <div class="research_author">Shih-Po Lee, Niraj Prakash Kini, Wen-Hsiao Peng, Ching-Wen Ma, Jenq-Neng Hwang</div>
-                    <div class="research_from">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Jan 2023</div>
-                    <div class="link"><a href="https://arxiv.org/abs/2210.12564">PDF</a> | <a href="https://github.com/robert80203/HuPR-A-Benchmark-for-Human-Pose-Estimation-Using-Millimeter-Wave-Radar">Github</a> | <a href="https://mapl.cs.nycu.edu.tw/HuPR/">Project Page</a></div>
-                </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media"><img src="figures/GSVNet.png" alt="GSVNet teaser" /></div>
+            <div class="project-body">
+              <h3>GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video</h3>
+              <div class="authors">Shih-Po Lee, Si-Cun Chen, Wen-Hsiao Peng</div>
+              <div class="venue">ICME 2021 · July</div>
+              <div class="project-links">
+                <a href="https://arxiv.org/abs/2103.08834" target="_blank" rel="noreferrer">PDF</a>
+                <a href="https://github.com/robert80203/GSVNet" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://mapl.cs.nycu.edu.tw/GSVNet/" target="_blank" rel="noreferrer">Project Page</a>
+              </div>
             </div>
-            <div class="row row_css">
-                <div class="col-sm">
-                    <img class="teaser_style" src="figures/GSVNet.png"><img>
-                </div>
-                <div class="col-sm col_style">
-                    <div>
-                        <div class="research_title">GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video</div>
-                        <div class="research_author">Shih-Po Lee, Si-Cun Chen, Wen-Hsiao Peng</div>
-                        <div class="research_from">IEEE International Conference on Multimedia and Expo (ICME), July 2021.</div>
-                        <div class="link"><a href="https://arxiv.org/abs/2103.08834">PDF</a> | <a href="https://github.com/robert80203/GSVNet">Github</a> | <a href="https://mapl.cs.nycu.edu.tw/GSVNet/">Project Page</a></div>
-                    </div>
-                </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media"><img src="figures/WSGCN.png" alt="WSGCN teaser" /></div>
+            <div class="project-body">
+              <h3>Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks</h3>
+              <div class="authors">Shun-Yi Pan*, Cheng-You Lu*, Shih-Po Lee, Wen-Hsiao Peng</div>
+              <div class="venue">ICME 2021 · July</div>
+              <div class="project-links">
+                <a href="https://arxiv.org/abs/2103.16762" target="_blank" rel="noreferrer">PDF</a>
+                <a href="https://github.com/Xavier-Pan/WSGCN" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://mapl.cs.nycu.edu.tw/WSGCN/" target="_blank" rel="noreferrer">Project Page</a>
+              </div>
             </div>
-            <div class="row row_css">
-                <div class="col-sm">
-                    <img class="teaser_style" src="figures/WSGCN.png"><img>
-                </div>
-                <div class="col-sm col_style">
-                    <div class="research_title">Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks</div>
-                    <div class="research_author">Shun-Yi Pan*, Cheng-You Lu*, Shih-Po Lee, Wen-Hsiao Peng</div>
-                    <div class="research_from">IEEE International Conference on Multimedia and Expo (ICME), July 2021.</div>
-                    <div class="link"><a href="https://arxiv.org/abs/2103.16762">PDF</a> | <a href="https://github.com/Xavier-Pan/WSGCN">Github</a> | <a href="https://mapl.cs.nycu.edu.tw/WSGCN/">Project Page</a></div>
-                </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Experience</h2>
+            <!-- <p>A timeline-style structure is easier to scan than a dense table.</p> -->
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="logo-wrap"><img src="https://usa.honda-ri.com/o/liferay-hri-theme/images/honda-main-logo.png" alt="Honda Research Institute" /></div>
+            <div>
+              <div class="timeline-role">Research Intern · Honda Research Institute USA</div>
+              <div class="timeline-meta">Silicon Valley, San Jose, USA</div>
+              <div class="timeline-period">May 2025 – August 2025</div>
             </div>
+          </div>
+          <div class="timeline-item">
+            <div class="logo-wrap"><img src="https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/230/2023/04/02134421/Signature_Stacked_Purple_Hex.png" alt="University of Washington" /></div>
+            <div>
+              <div class="timeline-role">Visiting Student · Electrical &amp; Computer Engineering</div>
+              <div class="timeline-meta">University of Washington, Seattle, USA</div>
+              <div class="timeline-period">September 2021 – March 2022</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="logo-wrap"><img src="https://www.nycu.edu.tw/userfiles/nycuch/images/20230915165412300.png" alt="NYCU" /></div>
+            <div>
+              <div class="timeline-role">Research Assistant · UW-NCTU AI Lab</div>
+              <div class="timeline-meta">Hsinchu, Taiwan</div>
+              <div class="timeline-period">August 2020 – August 2022</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="logo-wrap"><img src="https://cdn-www.mediatek.com/page/PRIMARY-MASTER-LOGO_EN_CMYK_ORANGE.png" alt="MediaTek" /></div>
+            <div>
+              <div class="timeline-role">Teaching Assistant · MediaTek In-house AI Training Program</div>
+              <div class="timeline-meta">Hsinchu, Taiwan</div>
+              <div class="timeline-period">August 2019 – January 2020</div>
+            </div>
+          </div>
         </div>
-        <div id="experience" class="title">
-            Experience
-            <img class="title_icon" src="figures/experience.png"></img>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Education</h2>
+            <!-- <p>Consistent card styling keeps the page visually unified.</p> -->
+          </div>
         </div>
-        <table class="member_table">
-            <tbody>
-                <tr>
-                    <td><img class="institute_style" src='https://usa.honda-ri.com/o/liferay-hri-theme/images/honda-main-logo.png'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>Research Intern in Honda Research Institute - Silicon Valley, San Jose, USA</div>
-                    	<div class="period_style">[May 2025 - August 2025]</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="institute_style" src='https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/230/2023/04/02134421/Signature_Stacked_Purple_Hex.png'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>Visiting student in Electrical & Computer Engineering at University of Washington, Seattle, USA</div>
-                    	<div class="period_style">[September 2021 - March 2022]</div>
-                    </td>
-                </tr>
-            	<tr>
-                    <td><img class="institute_style" src='https://www.nycu.edu.tw/userfiles/nycuch/images/20230915165412300.png'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>Research Assistant of UW-NCTU AI Lab supported by University of Washington and National Chiao Tung University, Hsinchu, Taiwan</div>
-                    	<div class="period_style">[August 2020 - August 2022]</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="institute_style" src='https://cdn-www.mediatek.com/page/PRIMARY-MASTER-LOGO_EN_CMYK_ORANGE.png'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>Teaching Assistant for MediaTek in-house AI training program, Hsinchu, Taiwan</div>
-                    	<div class="period_style">[August 2019 - January 2020]</div>
-                    </td>
-                </tr>
-           </tbody>
-        </table>
-        <div id="education" class="title">
-            Education
-            <img class="title_icon" src="figures/education.png"></img>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="logo-wrap"><img src="https://brand.northeastern.edu/wp-content/uploads/2022/06/ac-grid-4-red-1.svg" alt="Northeastern University" /></div>
+            <div>
+              <div class="timeline-role">PhD in Khoury College of Computer Sciences</div>
+              <div class="timeline-meta">Northeastern University, Boston, USA</div>
+              <div class="timeline-period">September 2022 – Present</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="logo-wrap"><img src="https://www.nycu.edu.tw/userfiles/nycuch/images/20230915165412300.png" alt="National Chiao Tung University" /></div>
+            <div>
+              <div class="timeline-role">M.S. in Computer Science and Engineering</div>
+              <div class="timeline-meta">National Chiao Tung University, Taiwan</div>
+              <div class="timeline-period">September 2018 – August 2020</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="logo-wrap"><img src="https://www.nsysu.edu.tw/var/file/0/1000/img/80/213315840.svg" alt="National Sun Yat-sen University" /></div>
+            <div>
+              <div class="timeline-role">B.S. in Computer Science and Engineering</div>
+              <div class="timeline-meta">National Sun Yat-sen University, Taiwan</div>
+              <div class="timeline-period">September 2014 – July 2018</div>
+            </div>
+          </div>
         </div>
-        <table class="member_table">
-            <tbody>
-		        <tr>
-                    <td><img class="institute_style" src='https://brand.northeastern.edu/wp-content/uploads/2022/06/ac-grid-4-red-1.svg'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>PhD student in Khoury College of Computer Sciences, Northeastern University, Boston, USA</div>
-                    	<div class="period_style">[September 2022 - present]</div>
-                    </td>
-                </tr>
-            	<tr>
-                    <td><img class="institute_style" src='https://www.nycu.edu.tw/userfiles/nycuch/images/20230915165412300.png'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>Master of Science in Institute of Computer Science and Engineering, National Chiao Tung University (NCTU), Taiwan</div>
-                    	<div class="period_style">[September 2018 - August 2020]</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="institute_style" src='https://www.nsysu.edu.tw/var/file/0/1000/img/80/213315840.svg'><img></td>
-                    <td style="vertical-align: middle;">
-                    	<div>Bachelor of Science in Computer Science and Engineering, National Sun Yat-sen University (NSYSU), Taiwan</div>
-                    	<div class="period_style">[September 2014 - July 2018]</div>
-                    </td>
-                </tr>
-           </tbody>
-        </table>
-        <div id="publication" class="title">
-            Publications
-            <img class="title_icon" src="figures/publication.png"></img>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Publications</h2>
+            <!-- <p>A publication list with card separation improves readability.</p> -->
+          </div>
         </div>
-        <div class="publication">
-            <ul>
-                <li><u>S.-P. Lee</u> and E. Elhamifar, "Error Recognition in Procedural Videos using Generalized Task Graph" <i>IEEE/CVF International Conference on Computer Vision (ICCV), </i>October 2025.</li>
-                <li><u>S.-P. Lee</u>, Z. Lu, Z. Zhang, M. Hoai, and E. Elhamifar, "Error Detection in Egocentric Procedural Task Videos" <i>IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), </i>June 2024.</li>
-                <li><u>S.-P. Lee</u>, N. P. Kini, W.-H. Peng, C.-W. Ma, and J.-N. Hwang, "HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar" <i>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), </i>Jan 2023.</li>
-                <li><u>S.-P. Lee</u>, S. C. Chen, and W. H. Peng, "GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video" <i>IEEE International Conference on Multimedia and Expo (ICME),</i> July 2021.</li>
-                <li>S. Y. Pan, C. Y. Lu, <u>S.-P. Lee</u>, and W. H. Peng,  "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks" <i>IEEE International Conference on Multimedia and Expo (ICME),</i> July 2021.</li>
-            </ul>
+        <div class="publication-list">
+          <div class="publication-item"><strong>S.-P. Lee</strong> and E. Elhamifar, "AXG-Reasoner: Error Detection and Explanation in Long Task Videos with Vision–Language Models," <em>CVPR</em>, June 2026</div>
+          <div class="publication-item"><strong>S.-P. Lee</strong> and E. Elhamifar, “Error Recognition in Procedural Videos using Generalized Task Graph.” <em>ICCV</em>, October 2025.</div>
+          <div class="publication-item"><strong>S.-P. Lee</strong>, Z. Lu, Z. Zhang, M. Hoai, and E. Elhamifar, “Error Detection in Egocentric Procedural Task Videos.” <em>CVPR</em>, June 2024.</div>
+          <div class="publication-item"><strong>S.-P. Lee</strong>, N. P. Kini, W.-H. Peng, C.-W. Ma, and J.-N. Hwang, “HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar.” <em>WACV</em>, January 2023.</div>
+          <div class="publication-item"><strong>S.-P. Lee</strong>, S. C. Chen, and W. H. Peng, “GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video.” <em>ICME</em>, July 2021.</div>
+          <div class="publication-item">S. Y. Pan, C. Y. Lu, <strong>S.-P. Lee</strong>, and W. H. Peng, “Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks.” <em>ICME</em>, July 2021.</div>
         </div>
-        <footer>
-        </footer>
-        <!--<table class="member_table later_show element-to-hide">
-            <tbody>
-            	<tr>
-                    <td><img style="height:150px;width:300px;" src='figures/ivs.png'><img></td>
-                    <td style="vertical-align: top">
-                    	<div style="font-weight:bolder;color:blue;margin-top: 20px;">Image/Video Semantic Segmentation</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img style="height:300px;width:300px;" src='figures/wsss.png'><img></td>
-                    <td style="vertical-align: top">
-                    	<div style="font-weight:bolder;color:blue;margin-top: 20px;">Weakly Supervised Semantic Segmentation</div>
-                    </td>
-                </tr>
-           </tbody>
-        </table>-->
-	</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Shih-Po (Robert) Lee.
+  </footer>
 </body>
+</html>
