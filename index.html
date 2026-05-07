@@ -33,7 +33,7 @@
         radial-gradient(circle at top left, #e7eeff 0, transparent 28%),
         radial-gradient(circle at top right, #eef3ff 0, transparent 25%),
         var(--bg);
-      line-height: 1.65;
+      line-height: 1.55;
     }
 
     a {
@@ -91,13 +91,13 @@
     }
 
     .hero {
-      padding: 56px 0 36px;
+      padding: 26px 0 14px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.35fr 0.85fr;
-      gap: 28px;
+      grid-template-columns: minmax(0, 1fr) 240px;
+      gap: 16px;
       align-items: stretch;
     }
 
@@ -113,7 +113,14 @@
     }
 
     .hero-card {
-      padding: 34px;
+      padding: 18px 20px;
+      min-height: 224px;
+    }
+
+    .intro-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .eyebrow {
@@ -137,11 +144,14 @@
     }
 
     .subtitle {
-      font-size: 1.05rem;
+      font-size: 1rem;
       color: var(--muted);
-      margin: 0 0 22px;
-      max-width: 60ch;
+      margin: 0 0 12px;
+      max-width: none;
+      line-height: 1.5;
       text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
     }
 
     .highlight {
@@ -149,19 +159,14 @@
       font-weight: 700;
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 22px;
-    }
-
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 12px 18px;
-      border-radius: 14px;
+      min-height: 36px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
       font-weight: 700;
       border: 1px solid var(--border);
       transition: transform 0.18s ease, box-shadow 0.18s ease;
@@ -187,36 +192,42 @@
     .contact-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      align-items: center;
+      gap: 7px;
+      margin-top: 10px;
     }
 
     .chip {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 10px 14px;
+      min-height: 36px;
+      padding: 7px 11px;
       background: #fff;
       border: 1px solid var(--border);
       border-radius: 999px;
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
     }
 
     .profile-card {
-      padding: 28px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
-      gap: 18px;
+      gap: 0;
+      height: 100%;
       background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
     }
 
     .avatar-frame {
-      width: min(100%, 300px);
+      width: 100%;
+      max-width: 176px;
       aspect-ratio: 1 / 1;
       overflow: hidden;
-      border-radius: 28px;
+      border-radius: 18px;
       border: 1px solid var(--border);
       margin: 0 auto;
       background: var(--surface-2);
@@ -433,6 +444,11 @@
         grid-template-columns: 1fr;
       }
 
+      .profile-card {
+        width: min(100%, 260px);
+        justify-self: center;
+      }
+
       .project-media {
         border-right: none;
         border-bottom: 1px solid var(--border);
@@ -448,12 +464,15 @@
       }
 
       .hero-card,
-      .profile-card,
       .panel,
       .project-body,
       .timeline-item,
       .publication-item {
         padding: 18px;
+      }
+
+      .profile-card {
+        padding: 12px;
       }
 
       .quick-facts {
@@ -490,19 +509,17 @@
   <main>
     <section id="about" class="hero">
       <div class="container hero-grid">
-        <div class="hero-card">
-          <div class="eyebrow">PhD Candidate · Northeastern University</div>
+        <div class="hero-card intro-card">
+          <!-- <div class="eyebrow">PhD Candidate · Northeastern University</div> -->
           <!-- <h1>Video Understanding, Procedural Reasoning, and Vision-Language Learning</h1> -->
           <p class="subtitle">
             Hello! My name is <span class="highlight">Shih-Po (Robert) Lee</span>. I am a PhD candidate in the Khoury College of Computer Sciences at Northeastern University, advised by
             <a href="https://www.khoury.northeastern.edu/home/eelhami/" target="_blank" rel="noreferrer">Ehsan Elhamifar</a>.
-            My research focuses on video understanding, computer vision, and deep learning. I am curretnly working on <span class="highlight">multimodal large language models</span> and <span class="highlight">vision-language models</span> for understanding long ego/exo-view procedural video.
+            My research focuses on video understanding, computer vision, and deep learning. I am currently working on <span class="highlight">multimodal large language models</span> and <span class="highlight">vision-language models</span> for understanding long ego/exo-view procedural video.
           </p>
-          <div class="hero-actions">
+          <div class="contact-row">
             <a class="btn btn-primary" href="#research">View Research</a>
             <a class="btn btn-secondary" href="#publications">See Publications</a>
-          </div>
-          <div class="contact-row">
             <a class="chip" href="mailto:lee.shih@northeastern.edu">Email</a>
             <a class="chip" href="https://scholar.google.com.tw/citations?user=evmoWxUAAAAJ&hl=zh-TW" target="_blank" rel="noreferrer">Google Scholar</a>
             <a class="chip" href="https://github.com/robert80203" target="_blank" rel="noreferrer">GitHub</a>
@@ -513,24 +530,6 @@
         <aside class="hero-card profile-card">
           <div class="avatar-frame">
             <img src="figures/img.jpg" alt="Portrait of Shih-Po Lee" />
-          </div>
-          <div class="quick-facts">
-            <!-- <div class="fact">
-              <div class="fact-label">Current Role</div>
-              <div class="fact-value">PhD Candidate</div>
-            </div>
-            <div class="fact">
-              <div class="fact-label">Institution</div>
-              <div class="fact-value">Northeastern University</div>
-            </div> -->
-            <div class="fact">
-              <div class="fact-label">Focus</div>
-              <div class="fact-value">Video Understanding · Computer Vision</div>
-            </div>
-            <!-- <div class="fact">
-              <div class="fact-label">Methods</div>
-              <div class="fact-value">VLMs · CV · DL</div>
-            </div> -->
           </div>
         </aside>
       </div>
